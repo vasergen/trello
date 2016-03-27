@@ -1,7 +1,12 @@
-"use strict"
+(function() {
+    "use strict"
 
-angular.module("trello")
-    .service('ServiceFirebase', function($timeout, ServiceConfig) {
+    angular.module("trello")
+        .service('ServiceFirebase', ServiceFirebase)
+
+    ServiceFirebase.$inject = ['$timeout', 'ServiceConfig']
+
+    function ServiceFirebase($timeout, ServiceConfig) {
         let ref = new Firebase(ServiceConfig.getFirebaseBaseUrl())
 
         //Public API
@@ -65,4 +70,5 @@ angular.module("trello")
                 $timeout(() => _fn(snapshot), 0)
             }, _fnError)
         }
-    })
+    }
+})()

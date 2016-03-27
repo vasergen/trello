@@ -40,7 +40,8 @@ describe("ServiceHelper Spec", () => {
     describe("Check timestamp Function", () => {
 
         it("should have timestamp function", () => {
-            expect(angular.isFunction(ServiceHelper.timestamp)).toBe(true)
+            let isFunction = angular.isFunction(ServiceHelper.timestamp)
+            expect(isFunction).toBe(true)
         })
 
         it("timestamp should be a number", () => {

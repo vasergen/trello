@@ -1,7 +1,12 @@
-"use strict"
+(function() {
+    "use strict"
 
-angular.module("trello")
-    .service("ServiceBoard", function(ServiceFirebase, ServiceHelper) {
+    angular.module("trello")
+        .service("ServiceBoard", ServiceBoard)
+
+    ServiceBoard.$inject = ['ServiceFirebase', 'ServiceHelper']
+
+    function ServiceBoard(ServiceFirebase, ServiceHelper) {
         let ref = ServiceFirebase.ref.child("boards")
         let getScheme = () => {
             return {
@@ -61,4 +66,5 @@ angular.module("trello")
         function onValue(fn, fnErr) {
             return ServiceFirebase.onValue(ref, fn, fnErr)
         }
-    })
+    }
+})()

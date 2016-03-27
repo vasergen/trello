@@ -1,7 +1,10 @@
-"use strict"
+(function() {
+    "use strict"
 
-angular.module("trello")
-    .service("ServiceHelper", function ServiceHelper() {
+    angular.module("trello")
+        .service("ServiceHelper", ServiceHelper)
+
+    function ServiceHelper() {
         let trimName = _.flow(_.get('name'), _.trim)
         let timestamp = Date.now
 
@@ -28,4 +31,5 @@ angular.module("trello")
             }
             return str
         }
-    })
+    }
+})()
