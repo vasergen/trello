@@ -18,6 +18,7 @@ module.exports = function(config) {
       'vendor/js/lodash.min.js',
       'vendor/js/lodash-fp.min.js',
       'vendor/js/firebase.js',
+      'vendor/js/angular-mocks.js',
       'src/**/*.js',
       'test/unit/**/*.spec.js'
     ],

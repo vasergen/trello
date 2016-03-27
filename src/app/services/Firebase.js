@@ -1,7 +1,7 @@
 "use strict"
 
 angular.module("trello")
-    .service('ServiceFirebase', function($q, $timeout, ServiceConfig) {
+    .service('ServiceFirebase', function($timeout, ServiceConfig) {
         let ref = new Firebase(ServiceConfig.getFirebaseBaseUrl())
 
         //Public API

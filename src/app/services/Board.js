@@ -6,6 +6,7 @@ angular.module("trello")
         let getScheme = () => {
             return {
                 id: ServiceHelper.randomString(),
+                timestamp: ServiceHelper.timestamp(),
                 name: '',
                 starred: false
             }

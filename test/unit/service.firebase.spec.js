@@ -1,6 +1,6 @@
 "use strict"
 
-describe("firebase factory", () => {
+describe("firebase service", () => {
     it("test", () => {
         expect(2).toBe(2)
     })

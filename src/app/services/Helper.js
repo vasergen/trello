@@ -1,11 +1,14 @@
 "use strict"
 
 angular.module("trello")
-    .service("ServiceHelper", function() {
+    .service("ServiceHelper", function ServiceHelper() {
         let trimName = _.flow(_.get('name'), _.trim)
+        let timestamp = Date.now
 
+        //Public API
         return {
             trimName,
+            timestamp,
             randomString
         }
 
