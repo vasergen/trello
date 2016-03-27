@@ -1,0 +1,20 @@
+<hr/>
+<p>
+    <h4>Boards</h4>
+    <input type="text" ng-model="$ctrl.boardName"/>
+    <button ng-click="$ctrl.boardPush()">Add board</button>
+    <br/>
+    <ul>
+        <li ng-repeat="(boardKey, board) in $ctrl.boards">
+            {{board.name}}
+            <button ng-click="$ctrl.boardRemove(boardKey)">Remove</button>
+        </li>
+    </ul>
+</p>
+<hr/>
+
+<p>
+    <h4>Lists</h4>
+</p>
+<hr/>
+

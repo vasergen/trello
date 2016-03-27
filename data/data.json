@@ -1,0 +1,42 @@
+{
+  "boards": {
+    "0" : {
+      "id": 1,
+      "name": "Angular",
+      "starred": true
+    },
+    "1": {
+      "id": 1,
+      "name": "GFT test",
+      "starred": false
+    },
+    "2": {
+      "id": 1,
+      "name": "to read",
+      "starred": false
+    }
+  },
+  "lists": {
+    "0": {
+      "id": 1,
+      "board_id": "1",
+      "name": "tasks"
+    },
+    "1": {
+      "id": 2,
+      "board_id": "1",
+      "name": "tasks2"
+    },
+    "2": {
+      "id": 3,
+      "board_id": "1",
+      "name": "tasks3"
+    }
+  },
+  "cards": {
+    "0": {
+      "id": 1,
+      "name": "read about ui-router"
+    }
+  }
+}

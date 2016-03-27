@@ -10,4 +10,8 @@ angular.module("trello")
                 url: '/',
                 templateUrl: 'src/app/routesTemplate/index.html'
             })
+            .state('test', {
+                url: '/test',
+                templateUrl: 'src/app/routesTemplate/test.html'
+            })
     })

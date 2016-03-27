@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "e2e": "protractor protractor.conf.js",
-    "unit": "karma start karma.conf.js",
+    "unit": "karma start karma.conf.js --single-run",
     "server": "browser-sync start --server --files=\"index.html, src/**/*\" "
   },
   "repository": {
@@ -32,6 +32,7 @@
     "karma-babel-preprocessor": "^6.0.1",
     "karma-chrome-launcher": "^0.2.3",
     "karma-jasmine": "^0.3.8",
+    "karma-phantomjs-launcher": "^1.0.0",
     "protractor": "^3.2.2",
     "stylus": "^0.54.2"
   }
