@@ -37,14 +37,14 @@ describe("Service Firebase", () => {
     })
 
     describe("Check push", () => {
-        let refMock
+        let ref
 
         beforeEach(() => {
-            refMock = {
+            ref = {
                 push: function() {}
             }
 
-            spyOn(refMock, 'push').and.callFake(() => {
+            spyOn(ref, 'push').and.callFake(() => {
                 let deffered = $q.defer()
                 deffered.resolve('remote result')
                 return deffered.promise
@@ -52,36 +52,37 @@ describe("Service Firebase", () => {
         })
 
         it("should execute ref.push", () => {
-            ServiceFirebase.push(refMock, {})
-            expect(refMock.push).toHaveBeenCalled()
+            let item = {}
+            ServiceFirebase.push(ref, item)
+            expect(ref.push).toHaveBeenCalledWith(item)
         })
 
         it("should not execute ref.push", () => {
-            ServiceFirebase.push(refMock, {}, () => "something")
-            expect(refMock.push).not.toHaveBeenCalled()
+            ServiceFirebase.push(ref, {}, () => "something")
+            expect(ref.push).not.toHaveBeenCalled()
         })
     })
 
     describe("Check remove", () => {
-        let refMock
+        let ref
 
         beforeEach(() => {
-            refMock = {
+            ref = {
                 child: function() {}
             }
             let remove = jasmine.createSpy('remove')
-            spyOn(refMock, 'child').and.returnValue({remove: remove})
+            spyOn(ref, 'child').and.returnValue({remove: remove})
         })
 
         it("should execute child", () => {
-            ServiceFirebase.remove(refMock, 'key')
-            expect(refMock.child).toHaveBeenCalledWith('key')
+            ServiceFirebase.remove(ref, 'key')
+            expect(ref.child).toHaveBeenCalledWith('key')
         })
 
         it("should execute remove", () => {
             let fn = () => {}
-            ServiceFirebase.remove(refMock, 'key', fn)
-            expect(refMock.child().remove).toHaveBeenCalledWith(fn)
+            ServiceFirebase.remove(ref, 'key', fn)
+            expect(ref.child().remove).toHaveBeenCalledWith(fn)
         })
     })
 
@@ -115,15 +116,4 @@ describe("Service Firebase", () => {
             expect(arg2).toBe(fnErr)
         })
     })
-
 })
-
-
-
-
-
-
-
-
-
-
