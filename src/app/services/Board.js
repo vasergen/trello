@@ -4,9 +4,9 @@
     angular.module("trello")
         .service("ServiceBoard", ServiceBoard)
 
-    ServiceBoard.$inject = ['ServiceFirebase', 'ServiceHelper']
+    ServiceBoard.$inject = ['ServiceFirebase', 'ServiceHelper', '_']
 
-    function ServiceBoard(ServiceFirebase, ServiceHelper) {
+    function ServiceBoard(ServiceFirebase, ServiceHelper, _) {
         let ref = ServiceFirebase.ref.child("boards")
         let getScheme = () => {
             return {

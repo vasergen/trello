@@ -22,7 +22,7 @@ exports.config = {
         jasmine.getEnv().addReporter(new SpecReporter({displayStacktrace: 'all'}));
     },
 
-    //remove protractor dot reporter: https://github.com/bcaudan/jasmine-spec-reporter/blob/master/docs/protractor-configuration.md
+    //remove protractor dot reporter, taken from here: https://github.com/bcaudan/jasmine-spec-reporter/blob/master/docs/protractor-configuration.md
     jasmineNodeOpts: {
         print: function() {}
     },

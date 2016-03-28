@@ -4,7 +4,9 @@
     angular.module("trello")
         .service("ServiceHelper", ServiceHelper)
 
-    function ServiceHelper() {
+    ServiceHelper.$inject = ['_']
+
+    function ServiceHelper(_) {
         let trimName = _.flow(_.get('name'), _.trim)
         let timestamp = Date.now
 
