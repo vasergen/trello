@@ -1,7 +1,7 @@
 "use strict"
 
 angular.module("trello", [
-    "lodashfp",
+    "lodash-fp",
     "firebase",
     "ui.router"
 ])

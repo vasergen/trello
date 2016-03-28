@@ -11,12 +11,25 @@ describe("ServiceHelper Spec", () => {
         })
     })
 
+    it("should have a ServiceHelper", () => {
+        expect(ServiceHelper).toBeTruthy()
+    })
+
+    it("check API is defined", () => {
+        let properties = [
+            'trimName',
+            'timestamp',
+            'randomString'
+        ]
+
+        for(let property in ServiceHelper) {
+            let index = _.indexOf(property, properties)
+            expect(index).toBeGreaterThan(-1)
+        }
+    })
+
     //trimName
     describe("Check trimName Function", () => {
-        it("should have a ServiceHelper", () => {
-            expect(ServiceHelper).toBeTruthy()
-        })
-
         it("should have a trimName function", () => {
             expect(angular.isFunction(ServiceHelper.trimName)).toBe(true)
         })

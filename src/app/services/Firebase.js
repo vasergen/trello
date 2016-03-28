@@ -4,9 +4,9 @@
     angular.module("trello")
         .service('ServiceFirebase', ServiceFirebase)
 
-    ServiceFirebase.$inject = ['$timeout', 'ServiceConfig', 'Firebase']
+    ServiceFirebase.$inject = ['$timeout', 'ServiceConfig', 'Firebase', '$q']
 
-    function ServiceFirebase($timeout, ServiceConfig, Firebase) {
+    function ServiceFirebase($timeout, ServiceConfig, Firebase, $q) {
         let ref = new Firebase(ServiceConfig.getFirebaseBaseUrl())
 
         //Public API
@@ -28,21 +28,18 @@
         function push(ref, item, validateFn) {
             let _validateFn = validateFn || function() {}
             let validateMessage
-            let deffered = $q.defer()
-            let promise = deffered.promise
 
-            if(validateMessage = _validateFn(item)) {
-                deffered.reject(validateMessage)
-                return promise
-            }
+            return $q(function(resolve, reject) {
+                if(validateMessage = _validateFn(item)) {
+                    return reject(validateMessage)
+                }
 
-            ref.push(item).then((response) => {
-                deffered.resolve(response)
-            }).catch((err) => {
-                deffered.reject(err)
+                ref.push(item).then((response) => {
+                    return resolve(response)
+                }).catch((err) => {
+                    return reject(err)
+                })
             })
-
-            return promise
         }
 
         /**
