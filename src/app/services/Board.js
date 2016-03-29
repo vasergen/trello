@@ -20,6 +20,7 @@
         //Public API
         return {
             ref,
+            getScheme,
             push,
             remove,
             onValue
