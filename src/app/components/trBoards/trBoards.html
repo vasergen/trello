@@ -1,0 +1,32 @@
+<!--Starred Board-->
+<div class="row">
+    <div class="col-xs-12">
+        <h3> <tr-icon icon="star"></tr-icon> Starred Boards</h3>
+    </div>
+</div>
+<div class="row">
+    <tr-board
+        ng-if="board.starred"
+        ng-repeat="(boardKey, board) in $ctrl.boards"
+        board="board"
+        board-key="boardKey"
+        >
+    </tr-board>
+</div>
+
+<!--My Boards-->
+<div class="row">
+    <div class="col-xs-12">
+        <h3> <tr-icon icon="user"></tr-icon> My Boards</h3>
+    </div>
+</div>
+
+<div class="row">
+    <tr-board
+        ng-repeat="(boardKey, board) in $ctrl.boards"
+        board="board"
+        board-key="boardKey"
+        >
+    </tr-board>
+    <tr-new-board></tr-new-board>
+</div>

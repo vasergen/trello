@@ -1,1 +1,12 @@
-trBoard
+<div class="col-xs-12 col-sm-6 col-md-4">
+    <div class="board" ng-class="{'board--starred': $ctrl.board.starred}">
+        {{$ctrl.board.name}}
+        <span ng-click="$ctrl.toggleStarred()" class="board__star">
+            <tr-icon ng-if="!$ctrl.board.starred" icon="star-o"></tr-icon>
+            <tr-icon ng-if="$ctrl.board.starred" icon="star"></tr-icon>
+        </span>
+        <span ng-click="$ctrl.remove()" class="board__delete">
+            <tr-icon icon="remove"></tr-icon>
+        </span>
+    </div>
+</div>

@@ -33,7 +33,7 @@ angular.module("trello")
         bindings: {
 
         },
-        controller: function($timeout, ServiceBoard) {
+        controller: function(ServiceBoard) {
             this.boardName = ''
             this.boards = null
 

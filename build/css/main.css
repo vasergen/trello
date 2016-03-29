@@ -1,0 +1,60 @@
+.board {
+  position: relative;
+  margin: 20px 0 0 0;
+  padding: 10px;
+  min-height: 100px;
+  border-radius: 5px;
+  cursor: pointer;
+  background: #303030;
+}
+.board:hover {
+  background: #292929;
+}
+.board:hover .board__star {
+  opacity: 1;
+  right: 15px;
+}
+.board:hover .board__delete {
+  opacity: 1;
+  right: 15px;
+}
+.board--new {
+  background: #303030;
+  min-height: 100px;
+}
+.board--new .board__name {
+  color: #0bcb9a;
+}
+.board--new:hover {
+  background: #292929;
+}
+.board--starred .board__star {
+  opacity: 1;
+  right: 15px;
+}
+.board__star {
+  color: #fff;
+  position: absolute;
+  top: 10px;
+  opacity: 0;
+  right: 0;
+  transition-property: opacity, right;
+  transition-duration: 0.3s, 0.3s;
+  font-size: 16px;
+}
+.board__star:hover {
+  font-size: 18px;
+}
+.board__delete {
+  color: #e43725;
+  position: absolute;
+  bottom: 10px;
+  opacity: 0;
+  right: 0;
+  font-size: 20px;
+  transition-property: opacity, right;
+  transition-duration: 0.3s, 0.3s;
+}
+.board__delete:hover {
+  font-size: 22px;
+}

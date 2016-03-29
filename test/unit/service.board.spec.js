@@ -80,6 +80,26 @@ describe("Check ServiceBoard", () => {
             expect(ServiceFirebase.onValue).toHaveBeenCalledWith(ref, fn, fnErr)
         })
     })
+
+    describe("Check ServiceBoard.update", () => {
+        beforeEach(() => {
+            spyOn(ServiceFirebase, 'update')
+        })
+
+        it("ServiceFirebase.update should be executed", () => {
+            let ref = ServiceBoard.ref
+            let validateFn = ServiceBoard.validate
+            let key = 'key'
+            let item = 'item'
+
+            ServiceBoard.update(key, item)
+            expect(ServiceFirebase.update).toHaveBeenCalledWith(ref, key, item, validateFn)
+        })
+    })
+
+    describe("Check validate", () => {
+        //TODO
+    })
 })
 
 

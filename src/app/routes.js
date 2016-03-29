@@ -9,11 +9,11 @@
             $stateProvider
                 .state('index', {
                     url: '/',
-                    templateUrl: 'src/app/routesTemplate/index.html'
+                    templateUrl: 'src/app/states/state.boards.html'
                 })
                 .state('test', {
                     url: '/test',
-                    templateUrl: 'src/app/routesTemplate/test.html'
+                    templateUrl: 'src/app/states/state.test.html'
                 })
         })
 })()

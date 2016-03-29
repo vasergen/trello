@@ -14,7 +14,8 @@
             ref,
             push,
             remove,
-            onValue
+            onValue,
+            update
         }
 
         //Function Declaration Section
@@ -66,6 +67,33 @@
             ref.on("value", (snapshot) => {
                 $timeout(() => _fn(snapshot), 0)
             }, _fnError)
+        }
+
+        /**
+         * Update
+         * @param ref
+         * @param key
+         * @param item
+         * @param fn
+         * @returns {*}
+         */
+        function update(ref, key, item, validateFn) {
+            let _validateFn = validateFn || function() {}
+            let validateMessage
+
+            return $q((resolve, reject) => {
+                if(validateMessage = _validateFn(item)) {
+                    return reject(new Error(validateMessage))
+                }
+
+                ref.child(key).update(item)
+                    .then((response) => {
+                        return resolve(response)
+                    })
+                    .catch((err) => {
+                        return reject(err)
+                    })
+            })
         }
     }
 })()

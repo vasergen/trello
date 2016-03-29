@@ -25,7 +25,8 @@ describe("Service Firebase", () => {
                 'ref',
                 'push',
                 'remove',
-                'onValue'
+                'onValue',
+                'update'
             ]
 
             for(let property in ServiceFirebase) {
@@ -114,6 +115,56 @@ describe("Service Firebase", () => {
             expect(arg0).toBe('value')
             expect(angular.isFunction(arg1)).toBe(true)
             expect(arg2).toBe(fnErr)
+        })
+    })
+
+    describe("Check Update", () => {
+        let ref
+        let update
+
+
+        beforeEach(() => {
+            update = jasmine.createSpy('update').and.callFake(() => {
+                let deffered = $q.defer()
+                deffered.resolve('remote result')
+                return deffered.promise
+            })
+
+            ref = {
+                child: function() {
+                    return {
+                        update: update
+                    }
+                }
+            }
+
+            spyOn(ref, 'child').and.callThrough()
+        })
+
+        it("ref.child should be executed", () => {
+            let key = 'key'
+            let item = {}
+            let fn = () => {}
+            ServiceFirebase.update(ref, key, item, fn)
+
+            expect(ref.child).toHaveBeenCalledWith(key)
+        })
+
+        it("ref.child.update should be executed", () => {
+            let key = 'key'
+            let item = {}
+            let validateFn = () => {}
+            ServiceFirebase.update(ref, key, item, validateFn)
+
+            expect(update).toHaveBeenCalledWith(item)
+        })
+
+        it("ref.child.update should not be executed", () => {
+            let key = 'key'
+            let item = {}
+            let validateFn = () => {return 'something'}
+            ServiceFirebase.update(ref, key, item, validateFn)
+            expect(update).not.toHaveBeenCalled()
         })
     })
 })

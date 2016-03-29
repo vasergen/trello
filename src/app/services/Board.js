@@ -12,6 +12,7 @@
             return {
                 id: ServiceHelper.randomString(),
                 timestamp: ServiceHelper.timestamp(),
+                updated: ServiceHelper.timestamp(),
                 name: '',
                 starred: false
             }
@@ -23,7 +24,9 @@
             getScheme,
             push,
             remove,
-            onValue
+            onValue,
+            update,
+            validate
         }
 
         //Function Declaration Section
@@ -67,6 +70,17 @@
          */
         function onValue(fn, fnErr) {
             return ServiceFirebase.onValue(ref, fn, fnErr)
+        }
+
+        /**
+         *
+         * @param key
+         * @param item
+         * @param fn
+         * @returns {*}
+         */
+        function update(key, item) {
+            return ServiceFirebase.update(ref, key, item, validate)
         }
     }
 })()
