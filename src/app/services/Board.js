@@ -19,6 +19,7 @@
 
         //Public API
         return {
+            ref,
             push,
             remove,
             onValue

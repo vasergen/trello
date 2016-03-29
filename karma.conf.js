@@ -53,7 +53,7 @@ module.exports = function(config) {
       maxLogLines: 5,
       suppressErrorSummary: true,
       suppressFailed: false,
-      suppressPassed: false,
+      suppressPassed: true,
       suppressSkipped: true
     },
 
@@ -83,8 +83,8 @@ module.exports = function(config) {
 
     // start these browsers
     // available browser launchers: https://npmjs.org/browse/keyword/karma-launcher
-    //browsers: ['PhantomJS'],
-    browsers: ['Chrome'],
+    browsers: ['PhantomJS'],
+    //browsers: ['Chrome'],
 
 
     // Continuous Integration mode

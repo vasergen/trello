@@ -28,7 +28,6 @@ describe("ServiceHelper Spec", () => {
         }
     })
 
-    //trimName
     describe("Check trimName Function", () => {
         it("should have a trimName function", () => {
             expect(angular.isFunction(ServiceHelper.trimName)).toBe(true)
@@ -49,9 +48,7 @@ describe("ServiceHelper Spec", () => {
         })
     })
 
-    //timestamp
     describe("Check timestamp Function", () => {
-
         it("should have timestamp function", () => {
             let isFunction = angular.isFunction(ServiceHelper.timestamp)
             expect(isFunction).toBe(true)
@@ -63,7 +60,6 @@ describe("ServiceHelper Spec", () => {
         })
     })
 
-    //randomString
     describe("Check randomString Function", () => {
         it("should have randomString function", () => {
             let isFunction = angular.isFunction(ServiceHelper.randomString)
@@ -76,7 +72,7 @@ describe("ServiceHelper Spec", () => {
 
         })
 
-        it("should generate random string", () => {
+        it("should generate n times different result", () => {
             let count = 10
             let strArr = []
             _.times(() => {
