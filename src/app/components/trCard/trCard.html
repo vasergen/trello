@@ -1,0 +1,31 @@
+<div class="card" ng-class="{'card--edited': $ctrl.isEdited}">
+
+    <!--Card Not Edited State -->
+    <div ng-if="!$ctrl.isEdited">
+        <div class="form-group">
+            <tr-icon ng-click="$ctrl.isEdited = true" class="card__edit" icon="edit"></tr-icon>
+            <tr-icon ng-click="$ctrl.remove()" class="card__remove" icon="remove"></tr-icon>
+            <input
+                ng-model="$ctrl.card.name"
+                class="form-control input-sm card__input"
+                type="text"
+                disabled
+                />
+        </div>
+    </div>
+
+    <!--Card Edited State-->
+    <div ng-if="$ctrl.isEdited">
+        <div class="form-group">
+            <input
+                ng-model="$ctrl.card.name"
+                class="form-control input-sm card__input"
+                type="text"
+                />
+        </div>
+        <div class="form-group">
+            <button ng-click="$ctrl.save()" class="btn btn-success btn-sm">Save</button>
+            <button ng-click="$ctrl.cancel()" class="btn btn-default btn-sm">Cancel</button>
+        </div>
+    </div>
+</div>

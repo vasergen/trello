@@ -4,8 +4,6 @@
     angular.module("trello")
         .service('ServiceFirebase', ServiceFirebase)
 
-    ServiceFirebase.$inject = ['$timeout', 'ServiceConfig', 'Firebase', '$q']
-
     function ServiceFirebase($timeout, ServiceConfig, Firebase, $q) {
         let ref = new Firebase(ServiceConfig.getFirebaseBaseUrl())
 

@@ -4,9 +4,7 @@
     angular.module("trello")
         .service("ServiceHelper", ServiceHelper)
 
-    ServiceHelper.$inject = ['_']
-
-    function ServiceHelper(_) {
+    function ServiceHelper(_, ServiceTranslit) {
         let trimName = _.flow(_.get('name'), _.trim)
         let timestamp = Date.now
 
@@ -15,7 +13,8 @@
             trimName,
             timestamp,
             randomString,
-            slug
+            slug,
+            logError
         }
 
         //Function Declaration Section
@@ -44,7 +43,16 @@
             if(!_.isString(str))
                 return ''
 
-            return _.kebabCase(str)
+            let translit = ServiceTranslit.translit(str)
+            return _.kebabCase(translit)
+        }
+
+        /**
+         * logError
+         * @param err
+         */
+        function logError(err) {
+            console.error(err)
         }
     }
 })()

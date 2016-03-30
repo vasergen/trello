@@ -1,0 +1,53 @@
+.card
+  position relative
+  &:hover
+    .card__edit
+      right 24px
+      opacity 1
+    .card__remove
+      right 9px
+      opacity 1
+
+  .card__input
+    cursor pointer
+
+.card--new
+  position relative
+  cursor pointer
+  .card__name
+    color $green
+
+.card--edited
+  position relative
+
+.card__remove
+  cursor pointer
+  position absolute
+  margin auto
+  height 21px
+  font-size 16px
+  top 0
+  bottom 0
+  right 0
+  opacity 0
+  color $red
+  transition-property right, opacity
+  transition-duration 0.3s, 0.3s
+  &:hover
+    color $red - 20%
+
+
+.card__edit
+  cursor pointer
+  position absolute
+  margin auto
+  height 20px
+  top 0
+  bottom 0
+  right 15px
+  opacity 0
+  color: $gray
+  transition-property right, opacity
+  transition-duration 0.3s, 0.3s
+  &:hover
+    color $gray - 20%

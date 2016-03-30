@@ -8,11 +8,11 @@
     <div ng-if="$ctrl.isEdited" class="board board--new">
         <div class="form-group">
             <label class="control-label" for="newBoardName">Title</label>
-            <input ng-model="$ctrl.boardName" class="form-control" type="text" id="newBoardName" value=""/>
+            <input ng-model="$ctrl.boardName" class="form-control input-sm" type="text" id="newBoardName" value=""/>
         </div>
         <div class="form-group">
-            <button ng-click="$ctrl.save()" class="btn btn-success">Save</button>
-            <button ng-click="$ctrl.cancel()" class="btn btn-default">Cancel</button>
+            <button ng-click="$ctrl.save()" class="btn btn-success btn-sm">Save</button>
+            <button ng-click="$ctrl.cancel()" class="btn btn-default btn-sm">Cancel</button>
         </div>
     </div>
 </div>

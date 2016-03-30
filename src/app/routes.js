@@ -12,7 +12,7 @@
                     templateUrl: 'src/app/states/state.boards.html'
                 })
                 .state('board', {
-                    url: '/board/:boardKey/:slug',
+                    url: '/board:boardKey/:slug',
                     templateUrl: 'src/app/states/state.board.html'
                 })
                 .state('test', {

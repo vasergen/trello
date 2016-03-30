@@ -20,7 +20,8 @@ describe("ServiceHelper Spec", () => {
             'trimName',
             'timestamp',
             'randomString',
-            'slug'
+            'slug',
+            'logError'
         ]
 
         for(let property in ServiceHelper) {

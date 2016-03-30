@@ -58,3 +58,99 @@
 .board__delete:hover {
   font-size: 22px;
 }
+.card {
+  position: relative;
+}
+.card:hover .card__edit {
+  right: 24px;
+  opacity: 1;
+}
+.card:hover .card__remove {
+  right: 9px;
+  opacity: 1;
+}
+.card .card__input {
+  cursor: pointer;
+}
+.card--new {
+  position: relative;
+  cursor: pointer;
+}
+.card--new .card__name {
+  color: #0bcb9a;
+}
+.card--edited {
+  position: relative;
+}
+.card__remove {
+  cursor: pointer;
+  position: absolute;
+  margin: auto;
+  height: 21px;
+  font-size: 16px;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  opacity: 0;
+  color: #e43725;
+  transition-property: right, opacity;
+  transition-duration: 0.3s, 0.3s;
+}
+.card__remove:hover {
+  color: #bd2717;
+}
+.card__edit {
+  cursor: pointer;
+  position: absolute;
+  margin: auto;
+  height: 20px;
+  top: 0;
+  bottom: 0;
+  right: 15px;
+  opacity: 0;
+  color: #808080;
+  transition-property: right, opacity;
+  transition-duration: 0.3s, 0.3s;
+}
+.card__edit:hover {
+  color: #666;
+}
+.list {
+  position: relative;
+  margin: 20px 0 0 0;
+  padding: 10px;
+  min-height: 100px;
+  border-radius: 5px;
+  background: #303030;
+}
+.list--new {
+  cursor: pointer;
+}
+.list--new .list__header_new_name {
+  color: #0bcb9a;
+}
+.list__header_name {
+  font-size: 22px;
+  color: #f39c12;
+}
+.list__header {
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+.list__header:hover .list__delete {
+  right: 15px;
+  opacity: 1;
+}
+.list__delete {
+  position: absolute;
+  color: #e43725;
+  top: 8px;
+  right: 0;
+  opacity: 0;
+  transition-property: opacity, right;
+  transition-duration: 0.3s, 0.3s;
+  font-size: 20px;
+}
+.list__delete:hover {
+  font-size: 22px;
+}

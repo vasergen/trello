@@ -1,0 +1,36 @@
+.list
+  position relative
+  margin 20px 0 0 0
+  padding 10px
+  min-height 100px
+  border-radius 5px
+  background $board_bgr
+
+.list--new
+  cursor pointer
+  .list__header_new_name
+    color $green
+
+.list__header_name
+  font-size 22px
+  color $yellow
+
+.list__header
+  cursor pointer
+  margin-bottom 10px
+  &:hover
+    .list__delete
+      right 15px
+      opacity 1
+
+.list__delete
+  position absolute
+  color $red
+  top 8px
+  right 0
+  opacity 0
+  transition-property opacity, right
+  transition-duration 0.3s, 0.3s
+  font-size 20px
+  &:hover
+    font-size 22px

@@ -1,23 +1,26 @@
 "use strict"
 
 angular.module("trello")
-    .component("trNewBoard", {
+    .component("trNewList", {
         bindings: {},
-        controller: function(ServiceBoard, ServiceHelper) {
+        controller: function(ServiceList, ServiceHelper, $state) {
+            let boardKey = $state.params.boardKey
+            let listInstance = new ServiceList(boardKey)
+
+            this.listName = ''
             this.isEdited = false
-            this.boardName = ''
 
             let resetState = () => {
+                this.listName = ''
                 this.isEdited = false
-                this.boardName = ''
             }
 
             this.save = function() {
                 let item = {
-                    name: this.boardName
+                    name: this.listName
                 }
-                return ServiceBoard
-                    .push(item)
+
+                listInstance.push(item)
                     .then(resetState)
                     .catch(ServiceHelper.logError)
             }
@@ -26,5 +29,5 @@ angular.module("trello")
                 resetState()
             }
         },
-        templateUrl: 'src/app/components/trNewBoard/trNewBoard.html'
+        templateUrl: 'src/app/components/trNewList/trNewList.html'
     })

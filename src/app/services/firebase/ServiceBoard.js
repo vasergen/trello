@@ -1,10 +1,7 @@
-(function() {
     "use strict"
 
     angular.module("trello")
         .service("ServiceBoard", ServiceBoard)
-
-    ServiceBoard.$inject = ['ServiceFirebase', 'ServiceHelper', '_']
 
     function ServiceBoard(ServiceFirebase, ServiceHelper, _) {
         let ref = ServiceFirebase.ref.child("boards")
@@ -27,7 +24,8 @@
             remove,
             onValue,
             update,
-            validate
+            validate,
+            onBoard
         }
 
         //Function Declaration Section
@@ -49,11 +47,11 @@
          * @returns {*}
          */
         function push(item) {
-            let itemPredefined = {
+            let itemPredefined = { //TODO: move this section to ServiceFirebase, func beforePush
                 slug: ServiceHelper.slug(item.name),
                 updated: ServiceHelper.timestamp()
             }
-            let itemScheme = _.assign(itemPredefined, item, getScheme())
+            let itemScheme = Object.assign({}, getScheme(), item, itemPredefined)
             return ServiceFirebase.push(ref, itemScheme, validate)
         }
 
@@ -78,7 +76,19 @@
         }
 
         /**
-         *
+         * onBoard
+         * @param key
+         * @param fn
+         * @param fnErr
+         * @returns {*}
+         */
+        function onBoard(key, fn, fnErr) {
+            let refBoard = ref.child(key)
+            return ServiceFirebase.onValue(refBoard, fn, fnErr)
+        }
+
+        /**
+         * Update
          * @param key
          * @param item
          * @param fn
@@ -89,8 +99,7 @@
                 slug: ServiceHelper.slug(item.name),
                 updated: ServiceHelper.timestamp()
             }
-            let itemScheme = _.assign(itemPredefined, item)
+            let itemScheme = _.assign(itemPredefined, item) //TODO: check it
             return ServiceFirebase.update(ref, key, itemScheme, validate)
         }
     }
-})()

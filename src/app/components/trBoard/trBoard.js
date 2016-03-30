@@ -19,7 +19,8 @@ angular.module("trello")
             this.goToBoard = function() {
                 $state.go('board', {
                     boardKey: this.boardKey,
-                    slug: this.board.slug
+                    slug: this.board.slug,
+                    board: this.board
                 })
             }
         },
