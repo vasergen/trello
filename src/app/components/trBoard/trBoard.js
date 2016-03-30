@@ -6,16 +6,21 @@ angular.module("trello")
             board: '=',
             boardKey: '<'
         },
-        controller: function(ServiceHelper, ServiceBoard) {
+        controller: function(ServiceHelper, ServiceBoard, $state) {
             this.toggleStarred = function() {
                 this.board.starred = !this.board.starred
-                this.board.updated = ServiceHelper.timestamp()
-
                 ServiceBoard.update(this.boardKey, this.board)
             }
 
             this.remove = function() {
                 ServiceBoard.remove(this.boardKey)
+            }
+
+            this.goToBoard = function() {
+                $state.go('board', {
+                    boardKey: this.boardKey,
+                    slug: this.board.slug
+                })
             }
         },
         templateUrl: "src/app/components/trBoard/trBoard.html"

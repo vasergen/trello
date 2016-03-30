@@ -14,7 +14,8 @@
         return {
             trimName,
             timestamp,
-            randomString
+            randomString,
+            slug
         }
 
         //Function Declaration Section
@@ -32,6 +33,18 @@
                 str += chars[Math.floor(Math.random() * chars.length)]
             }
             return str
+        }
+
+        /**
+         * Return slug (string without spaces)
+         * @param str
+         * @returns {*}
+         */
+        function slug(str) {
+            if(!_.isString(str))
+                return ''
+
+            return _.kebabCase(str)
         }
     }
 })()

@@ -7,9 +7,13 @@
             $urlRouterProvider.otherwise('/')
 
             $stateProvider
-                .state('index', {
+                .state('boards', {
                     url: '/',
                     templateUrl: 'src/app/states/state.boards.html'
+                })
+                .state('board', {
+                    url: '/board/:boardKey/:slug',
+                    templateUrl: 'src/app/states/state.board.html'
                 })
                 .state('test', {
                     url: '/test',

@@ -37,7 +37,7 @@ describe("Check ServiceBoard", () => {
         })
 
         it("ServiceFirebase.push should be called", () => {
-            ServiceBoard.push({})
+            ServiceBoard.push({name: 'item'})
             expect(ServiceFirebase.push).toHaveBeenCalled()
         })
 
@@ -87,18 +87,32 @@ describe("Check ServiceBoard", () => {
         })
 
         it("ServiceFirebase.update should be executed", () => {
-            let ref = ServiceBoard.ref
-            let validateFn = ServiceBoard.validate
             let key = 'key'
-            let item = 'item'
+            let item = {name: 'item'}
 
             ServiceBoard.update(key, item)
-            expect(ServiceFirebase.update).toHaveBeenCalledWith(ref, key, item, validateFn)
+            expect(ServiceFirebase.update).toHaveBeenCalled()
         })
     })
 
     describe("Check validate", () => {
-        //TODO
+        it("validate should return string error for item without name", () => {
+            let res = ServiceBoard.validate({})
+            let isString = angular.isString(res)
+            expect(isString).toBe(true)
+        })
+
+        it("validate should return string error for item with empty name", () => {
+            let res = ServiceBoard.validate({name: ''})
+            let isString = angular.isString(res)
+            expect(isString).toBe(true)
+        })
+
+        it("validate should return false for item with not empty name", () => {
+            let res = ServiceBoard.validate({name: 'item'})
+            let isString = angular.isString(res)
+            expect(isString).toBe(false)
+        })
     })
 })
 

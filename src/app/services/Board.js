@@ -14,6 +14,7 @@
                 timestamp: ServiceHelper.timestamp(),
                 updated: ServiceHelper.timestamp(),
                 name: '',
+                slug: '',
                 starred: false
             }
         }
@@ -48,7 +49,11 @@
          * @returns {*}
          */
         function push(item) {
-            let itemScheme = _.assign(item, getScheme())
+            let itemPredefined = {
+                slug: ServiceHelper.slug(item.name),
+                updated: ServiceHelper.timestamp()
+            }
+            let itemScheme = _.assign(itemPredefined, item, getScheme())
             return ServiceFirebase.push(ref, itemScheme, validate)
         }
 
@@ -80,7 +85,12 @@
          * @returns {*}
          */
         function update(key, item) {
-            return ServiceFirebase.update(ref, key, item, validate)
+            let itemPredefined = {
+                slug: ServiceHelper.slug(item.name),
+                updated: ServiceHelper.timestamp()
+            }
+            let itemScheme = _.assign(itemPredefined, item)
+            return ServiceFirebase.update(ref, key, itemScheme, validate)
         }
     }
 })()

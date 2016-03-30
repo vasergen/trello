@@ -19,7 +19,8 @@ describe("ServiceHelper Spec", () => {
         let properties = [
             'trimName',
             'timestamp',
-            'randomString'
+            'randomString',
+            'slug'
         ]
 
         for(let property in ServiceHelper) {
@@ -79,6 +80,38 @@ describe("ServiceHelper Spec", () => {
                 strArr.push(ServiceHelper.randomString())
             }, count)
             expect(_.uniq(strArr).length).toBe(count)
+        })
+    })
+
+    describe("Check slug function", () => {
+        it("slug should not have spaces", () => {
+            let slug = ServiceHelper.slug(' asd ASD ')
+            expect(slug.indexOf(' ')).toBe(-1)
+        })
+
+        it("should return '' for undefined", () => {
+            let slug = ServiceHelper.slug(undefined)
+            expect(slug).toBe('')
+        })
+
+        it("should return '' for false", () => {
+            let slug = ServiceHelper.slug(false)
+            expect(slug).toBe('')
+        })
+
+        it("should return '' for true", () => {
+            let slug = ServiceHelper.slug(true)
+            expect(slug).toBe('')
+        })
+
+        it("should return '' for null", () => {
+            let slug = ServiceHelper.slug(null)
+            expect(slug).toBe('')
+        })
+
+        it("should return '' for object", () => {
+            let slug = ServiceHelper.slug({})
+            expect(slug).toBe('')
         })
     })
 })
