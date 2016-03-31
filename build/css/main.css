@@ -64,9 +64,6 @@ tr-board.ng-leave {
 tr-board.ng-leave .board {
   animation: flipOutX 0.3s;
 }
-.board {
-  animation: flipInX 0.3s;
-}
 .board--new {
   animation: none;
 }

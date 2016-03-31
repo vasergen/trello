@@ -7,18 +7,34 @@ angular.module("trello")
             cardKey: '<',
             listKey: '<'
         },
-        controller: function(FactoryCard, ServiceHelper, $state) {
+        controller: function(FactoryCard, ServiceHelper, ServiceEvents, $state) {
+            let self = this
             let boardKey = $state.params.boardKey
             let Card = new FactoryCard(boardKey, this.listKey, this.cardKey)
 
             this.isEdited = false
 
-            let resetState = () => {
-                this.isEdited = false
+            ServiceEvents.subscribe('startEdit', (data) => {
+                if(data.id == self.cardKey) {
+                    return null
+                }
+
+                self.resetState()
+            })
+
+            this.publishStartEdit = () => {
+                ServiceEvents.publish('startEdit', {
+                    id: this.cardKey
+                })
+            }
+
+            this.resetState = () => {
+                self.isEdited = false
             }
 
             this.startEdit = () => {
                 this.isEdited = true
+                this.publishStartEdit()
             }
 
             this.remove = function() {
@@ -28,12 +44,12 @@ angular.module("trello")
             this.save = function() {
                 return Card
                     .update(this.card)
-                    .then(resetState)
+                    .then(this.resetState)
                     .catch(ServiceHelper.logError)
             }
 
             this.cancel = function() {
-                resetState()
+                this.resetState()
             }
         },
         templateUrl: "src/app/components/trCard/trCard.html"
