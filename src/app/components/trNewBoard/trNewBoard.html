@@ -1,16 +1,16 @@
 <div class="col-xs-12 col-sm-6 col-md-4">
     <!--Not Editable State-->
     <div
+        class="board board--new board--notediting"
         ng-click="$ctrl.startEdit()"
         event-focus="click" event-focus-id="{{$ctrl.inputId}}"
         ng-if="!$ctrl.isEdited"
-        class="board board--new"
         >
         <span class="board__name">New Board</span>
     </div>
 
     <!--Editable State-->
-    <div ng-if="$ctrl.isEdited" class="board board--new">
+    <div ng-if="$ctrl.isEdited" class="board board--new board--editing">
         <div class="form-group">
             <label class="control-label" for="newBoardName">Title</label>
             <input id="{{$ctrl.inputId}}" ng-model="$ctrl.boardName" class="form-control input-sm" type="text" id="newBoardName" value=""/>

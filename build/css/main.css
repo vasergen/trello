@@ -58,6 +58,24 @@
 .board__delete:hover {
   font-size: 22px;
 }
+tr-board.ng-leave {
+  animation: flipOutX 0.3s;
+}
+tr-board.ng-leave .board {
+  animation: flipOutX 0.3s;
+}
+.board {
+  animation: flipInX 0.3s;
+}
+.board--new {
+  animation: none;
+}
+.board--editing.ng-enter {
+  animation: flipInX 0.3s;
+}
+.board--notediting.ng-enter {
+  animation: fadeIn 0.3s;
+}
 .card {
   position: relative;
 }
@@ -120,6 +138,9 @@
 }
 .card__edit:hover {
   color: #666;
+}
+.footer {
+  height: 50px;
 }
 .list {
   position: relative;

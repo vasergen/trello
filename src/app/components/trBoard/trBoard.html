@@ -1,10 +1,17 @@
 <div class="col-xs-12 col-sm-6 col-md-4">
-    <div class="board animated flipOutX" ng-class="{'board--starred': $ctrl.board.starred}" ng-click="$ctrl.goToBoard()">
+    <div class="board"
+         ng-class="{'board--starred': $ctrl.board.starred}"
+         ng-click="$ctrl.goToBoard()"
+        >
         {{$ctrl.board.name}}
+
+        <!--Toggle starred btn-->
         <span ng-click="$ctrl.toggleStarred(); $event.stopPropagation();" class="board__star">
             <tr-icon ng-if="!$ctrl.board.starred" icon="star-o"></tr-icon>
             <tr-icon ng-if="$ctrl.board.starred" icon="star"></tr-icon>
         </span>
+
+        <!--Remove btn-->
         <span ng-click="$ctrl.remove(); $event.stopPropagation();" class="board__delete">
             <tr-icon icon="remove"></tr-icon>
         </span>

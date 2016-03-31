@@ -3,7 +3,8 @@
 angular.module("trello", [
     "lodash-fp",
     "firebase",
-    "ui.router"
+    "ui.router",
+    "ngAnimate"
 ])
 
 window.addEventListener('load', () => {
