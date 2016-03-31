@@ -15,12 +15,12 @@ module.exports = function(config) {
     files: [
       'vendor/js/angular.min.js',
       'vendor/js/angular-ui-router.min.js',
+      'vendor/js/angular-animate.min.js',
       'vendor/js/lodash.min.js',
       'vendor/js/lodash-fp.min.js',
       'vendor/js/firebase.js',
       'vendor/js/angular-mocks.js',
-      'src/**/*.js',
-      'test/unit/**/*.spec.js'
+      'src/**/*.js'
     ],
 
     // list of files to exclude

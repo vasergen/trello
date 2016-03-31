@@ -3,7 +3,7 @@
 angular.module("trello")
     /**
      * Set focus on element
-     * Example: <div event-focus="click" event-focus-id="email">Focus</div>
+     * Example: <div event-focus="click" event-focus-id="email">Focus email</div>
      */
     .directive('eventFocus', function($timeout, $window) {
         function focus(id) {
