@@ -12,7 +12,10 @@ describe("ServiceHelper Spec", () => {
     })
 
     it("should have a ServiceHelper", () => {
-        expect(ServiceHelper).toBeTruthy()
+        let actual = !!ServiceHelper
+        let expected = true
+
+        expect(actual).toEqual(expected)
     })
 
     it("check API is defined", () => {
@@ -23,96 +26,137 @@ describe("ServiceHelper Spec", () => {
             'slug',
             'logError'
         ]
+        let keys = Object.keys(ServiceHelper)
 
-        for(let property in ServiceHelper) {
-            let index = _.indexOf(property, properties)
-            expect(index).toBeGreaterThan(-1)
-        }
+        let actual = _.difference(properties, keys)
+        let expected = []
+
+        expect(actual).toEqual(expected)
     })
 
     describe("Check trimName Function", () => {
         it("should have a trimName function", () => {
-            expect(angular.isFunction(ServiceHelper.trimName)).toBe(true)
+            let actual = angular.isFunction(ServiceHelper.trimName)
+            let expected = true
+
+            expect(actual).toEqual(expected)
         })
 
         it("trimName should trim property name in object", () => {
-            let obj = {
-                name: ' Vasyl '
-            }
+            let obj = { name: ' Bob ' }
+            let actual = ServiceHelper.trimName(obj)
+            let expected = 'Bob'
 
-            let name = ServiceHelper.trimName(obj)
-            expect(name).toBe('Vasyl')
+            expect(actual).toEqual(expected)
         })
 
         it("if property does not exist return empty string", () => {
-            let name = ServiceHelper.trimName({})
-            expect(name).toBe('')
+            let actual = ServiceHelper.trimName({})
+            let expected = ''
+
+            expect(actual).toBe(expected)
         })
     })
 
     describe("Check timestamp Function", () => {
+
         it("should have timestamp function", () => {
-            let isFunction = angular.isFunction(ServiceHelper.timestamp)
-            expect(isFunction).toBe(true)
+            let actual = angular.isFunction(ServiceHelper.timestamp)
+            let expected = true
+            expect(actual).toEqual(expected)
         })
 
         it("timestamp should be a number", () => {
-            let isNumber = angular.isNumber(ServiceHelper.timestamp())
-            expect(isNumber).toBe(true)
+            let actual = angular.isNumber(ServiceHelper.timestamp())
+            let expected = true
+
+            expect(actual).toEqual(expected)
         })
     })
 
     describe("Check randomString Function", () => {
         it("should have randomString function", () => {
-            let isFunction = angular.isFunction(ServiceHelper.randomString)
-            expect(isFunction).toBe(true)
+            let actual = angular.isFunction(ServiceHelper.randomString)
+            let expected = true
+
+            expect(actual).toEqual(expected)
         })
 
         it("should return a string", () => {
-            let isString = angular.isString(ServiceHelper.randomString())
-            expect(isString).toBe(true)
+            let actual = angular.isString(ServiceHelper.randomString())
+            let expected = true
 
+            expect(actual).toBe(expected)
         })
 
         it("should generate n times different result", () => {
-            let count = 10
             let strArr = []
             _.times(() => {
                 strArr.push(ServiceHelper.randomString())
-            }, count)
-            expect(_.uniq(strArr).length).toBe(count)
+            }, 10)
+
+            let actual = _.uniq(strArr).length
+            let expected = 10
+
+            expect(actual).toBe(expected)
         })
     })
 
     describe("Check slug function", () => {
         it("slug should not have spaces", () => {
             let slug = ServiceHelper.slug(' asd ASD ')
-            expect(slug.indexOf(' ')).toBe(-1)
+            let actual = slug.indexOf(' ')
+            let expected = -1
+
+            expect(actual).toBe(expected)
         })
 
         it("should return '' for undefined", () => {
-            let slug = ServiceHelper.slug(undefined)
-            expect(slug).toBe('')
+            let actual = ServiceHelper.slug(undefined)
+            let expected = ''
+
+            expect(actual).toBe(expected)
         })
 
         it("should return '' for false", () => {
-            let slug = ServiceHelper.slug(false)
-            expect(slug).toBe('')
+            let actual = ServiceHelper.slug(false)
+            let expected = ''
+
+            expect(actual).toBe(expected)
         })
 
         it("should return '' for true", () => {
-            let slug = ServiceHelper.slug(true)
-            expect(slug).toBe('')
+            let actual = ServiceHelper.slug(true)
+            let expected = ''
+
+            expect(actual).toBe(expected)
         })
 
         it("should return '' for null", () => {
-            let slug = ServiceHelper.slug(null)
-            expect(slug).toBe('')
+            let actual = ServiceHelper.slug(null)
+            let expected = ''
+
+            expect(actual).toBe(expected)
         })
 
         it("should return '' for object", () => {
-            let slug = ServiceHelper.slug({})
-            expect(slug).toBe('')
+            let actual = ServiceHelper.slug({})
+            let expected = ''
+
+            expect(actual).toBe(expected)
+        })
+    })
+
+    describe("Check function logError", () => {
+        beforeEach(() => {
+            spyOn(console, 'error')
+        })
+
+        it("should execute console.error", () => {
+            let err = new Error('Something wrong happened!')
+            ServiceHelper.logError(err)
+
+            expect(console.error).toHaveBeenCalledWith(err)
         })
     })
 })

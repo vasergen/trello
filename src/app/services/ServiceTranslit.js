@@ -6,7 +6,7 @@ angular.module("trello")
     function ServiceTranslit() {
         //Public API
         return {
-            translit: translit //TODO: add test
+            translit: translit
         }
 
         //Function Declaration Section
@@ -23,7 +23,7 @@ angular.module("trello")
                 'У': 'U', 'у': 'u', 'Ф': 'F', 'ф': 'f', 'Х': 'Kh', 'х': 'kh', 'Ц': 'Ts', 'ц': 'ts',
                 'Ч': 'Ch', 'ч': 'ch', 'Ш': 'Sh', 'ш': 'sh', 'Щ': 'Sch', 'щ': 'sch', 'Ъ': '', 'ъ': '',
                 'Ы': 'Y', 'ы': 'y', 'Ь': "", 'ь': "", 'Э': 'E', 'э': 'e', 'Ю': 'Yu', 'ю': 'yu',
-                'Я': 'Ya', 'я': 'ya', ' ': '-', '_': '-',
+                'Я': 'Ya', 'я': 'ya', ' ': ' ', '_': '-',
                 'І': 'I', 'і': 'i',
                 '"': '', "'": '', '.': '', ',': '', '!': '', ':': '', ';': ''
             };
