@@ -8,8 +8,10 @@
       right 9px
       opacity 1
 
-  .card__input
-    cursor pointer
+.card__input
+  cursor pointer !important
+  &:hover
+    background $card_bgr + 15%
 
 .card--new
   position relative
@@ -19,6 +21,8 @@
 
 .card--edited
   position relative
+  .card__input
+    cursor auto !important
 
 .card__remove
   cursor pointer

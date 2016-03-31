@@ -69,8 +69,11 @@
   right: 9px;
   opacity: 1;
 }
-.card .card__input {
-  cursor: pointer;
+.card__input {
+  cursor: pointer !important;
+}
+.card__input:hover {
+  background: #fff;
 }
 .card--new {
   position: relative;
@@ -81,6 +84,9 @@
 }
 .card--edited {
   position: relative;
+}
+.card--edited .card__input {
+  cursor: auto !important;
 }
 .card__remove {
   cursor: pointer;

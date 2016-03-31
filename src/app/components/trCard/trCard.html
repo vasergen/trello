@@ -3,8 +3,20 @@
     <!--Card Not Edited State -->
     <div ng-if="!$ctrl.isEdited">
         <div class="form-group">
-            <tr-icon ng-click="$ctrl.isEdited = true" class="card__edit" icon="edit"></tr-icon>
-            <tr-icon ng-click="$ctrl.remove()" class="card__remove" icon="remove"></tr-icon>
+            <tr-icon
+                icon="edit"
+                ng-click="$ctrl.startEdit()"
+                event-focus="click" event-focus-id="{{$ctrl.cardKey}}"
+                class="card__edit"
+                >
+            </tr-icon>
+
+            <tr-icon
+                icon="remove"
+                ng-click="$ctrl.remove()"
+                class="card__remove"
+                >
+            </tr-icon>
             <input
                 ng-model="$ctrl.card.name"
                 class="form-control input-sm card__input"
@@ -20,6 +32,7 @@
             <input
                 ng-model="$ctrl.card.name"
                 class="form-control input-sm card__input"
+                id="{{$ctrl.cardKey}}"
                 type="text"
                 />
         </div>

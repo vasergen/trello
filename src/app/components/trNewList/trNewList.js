@@ -9,10 +9,15 @@ angular.module("trello")
 
             this.listName = ''
             this.isEdited = false
+            this.inputId = ServiceHelper.randomString()
 
             let resetState = () => {
                 this.listName = ''
                 this.isEdited = false
+            }
+
+            this.startEdit = () => {
+                this.isEdited = true
             }
 
             this.save = function() {

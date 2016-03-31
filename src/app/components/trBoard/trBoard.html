@@ -1,5 +1,5 @@
 <div class="col-xs-12 col-sm-6 col-md-4">
-    <div class="board" ng-click="$ctrl.goToBoard()" ng-class="{'board--starred': $ctrl.board.starred}">
+    <div class="board animated flipOutX" ng-class="{'board--starred': $ctrl.board.starred}" ng-click="$ctrl.goToBoard()">
         {{$ctrl.board.name}}
         <span ng-click="$ctrl.toggleStarred(); $event.stopPropagation();" class="board__star">
             <tr-icon ng-if="!$ctrl.board.starred" icon="star-o"></tr-icon>

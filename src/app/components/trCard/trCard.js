@@ -17,17 +17,17 @@ angular.module("trello")
                 this.isEdited = false
             }
 
+            this.startEdit = () => {
+                this.isEdited = true
+            }
+
             this.remove = function() {
                 return Card.remove()
             }
 
             this.save = function() {
-                let item = {
-                    name: this.card.name
-                }
-
                 return Card
-                    .update(item)
+                    .update(this.card)
                     .then(resetState)
                     .catch(ServiceHelper.logError)
             }

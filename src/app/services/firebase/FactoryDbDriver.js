@@ -22,6 +22,7 @@
 
             self._prepareForPush = (item) => {
                 let itemFields = {
+                    id: ServiceHelper.randomString(),
                     slug: ServiceHelper.slug(item.name),
                     updated: ServiceHelper.timestamp(),
                     timestamp: ServiceHelper.timestamp()
@@ -32,8 +33,7 @@
             self._prepareForUpdate = (item) => {
                 let itemFields = {
                     slug: ServiceHelper.slug(item.name),
-                    updated: ServiceHelper.timestamp(),
-                    timestamp: ServiceHelper.timestamp()
+                    updated: ServiceHelper.timestamp()
                 }
 
                 return Object.assign({}, item, itemFields)

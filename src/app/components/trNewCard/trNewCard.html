@@ -1,13 +1,18 @@
 <div>
     <!--Not Edited State-->
-    <div ng-click="$ctrl.isEdited = true" ng-if="!$ctrl.isEdited" class="card card--new">
+    <div
+        ng-click="$ctrl.startEdit()"
+        event-focus="click" event-focus-id="{{$ctrl.inputId}}"
+        ng-if="!$ctrl.isEdited"
+        class="card card--new"
+        >
         <div class="card__name">New Card...</div>
     </div>
 
     <!--Edited State-->
     <div ng-if="$ctrl.isEdited" class="card card--new">
         <div class="form-group">
-            <input ng-model="$ctrl.cardName" class="form-control input-sm" type="text" value=""/>
+            <input id="{{$ctrl.inputId}}" ng-model="$ctrl.cardName" class="form-control input-sm" type="text" value=""/>
         </div>
         <div class="form-group">
             <button ng-click="$ctrl.save()" class="btn btn-success btn-sm">Save</button>
