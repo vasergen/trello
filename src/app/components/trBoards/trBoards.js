@@ -3,10 +3,11 @@
 angular.module("trello")
     .component("trBoards", {
         bindings: {},
-        controller: function(ServiceBoard) {
+        controller: function(FactoryBoards) {
             this.boards = null
 
-            ServiceBoard.onValue((snapshot) => {
+            let Boards = FactoryBoards()
+            Boards.onValue((snapshot) => {
                 this.boards = snapshot.val()
             })
         },

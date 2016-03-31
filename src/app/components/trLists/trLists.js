@@ -4,11 +4,13 @@ angular.module("trello")
     .component("trLists", {
         bindings: {
         },
-        controller: function(ServiceList, $state) {
-            let list = new ServiceList($state.params.boardKey)
+        controller: function(FactoryLists, $state) {
+            let boardKey = $state.params.boardKey
+            let Lists = new FactoryLists(boardKey)
+
             this.lists = null
 
-            list.onValue((snapshot) => {
+            Lists.onValue((snapshot) => {
                 this.lists = snapshot.val()
             })
         },

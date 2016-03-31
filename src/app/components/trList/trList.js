@@ -6,19 +6,19 @@ angular.module("trello")
             list: '=',
             listKey: '<'
         },
-        controller: function(ServiceList, ServiceCard, $state) {
+        controller: function(FactoryList, FactoryCards, $state) {
             let boardKey = $state.params.boardKey
-            let listInstance = new ServiceList(boardKey)
-            let cardInstance = new ServiceCard(boardKey, this.listKey)
+            let List = new FactoryList(boardKey, this.listKey)
+            let Cards = new FactoryCards(boardKey, this.listKey)
 
             this.cards = null
 
-            cardInstance.onValue((snapshot) => {
+            Cards.onValue((snapshot) => {
                 this.cards = snapshot.val()
             })
 
             this.removeList = function() {
-                listInstance.remove(this.listKey)
+                List.remove()
             }
         },
         templateUrl: 'src/app/components/trList/trList.html'

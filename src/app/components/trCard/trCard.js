@@ -7,9 +7,9 @@ angular.module("trello")
             cardKey: '<',
             listKey: '<'
         },
-        controller: function(ServiceCard, ServiceHelper, $state) {
+        controller: function(FactoryCard, ServiceHelper, $state) {
             let boardKey = $state.params.boardKey
-            let cardInstance = new ServiceCard(boardKey, this.listKey)
+            let Card = new FactoryCard(boardKey, this.listKey, this.cardKey)
 
             this.isEdited = false
 
@@ -18,7 +18,7 @@ angular.module("trello")
             }
 
             this.remove = function() {
-                return cardInstance.remove(this.cardKey)
+                return Card.remove()
             }
 
             this.save = function() {
@@ -26,8 +26,8 @@ angular.module("trello")
                     name: this.card.name
                 }
 
-                return cardInstance
-                    .update(this.cardKey, item)
+                return Card
+                    .update(item)
                     .then(resetState)
                     .catch(ServiceHelper.logError)
             }

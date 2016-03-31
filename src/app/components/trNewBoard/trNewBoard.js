@@ -3,7 +3,9 @@
 angular.module("trello")
     .component("trNewBoard", {
         bindings: {},
-        controller: function(ServiceBoard, ServiceHelper) {
+        controller: function(FactoryBoards, ServiceHelper) {
+            let Boards = new FactoryBoards()
+
             this.isEdited = false
             this.boardName = ''
 
@@ -16,7 +18,7 @@ angular.module("trello")
                 let item = {
                     name: this.boardName
                 }
-                return ServiceBoard
+                return Boards
                     .push(item)
                     .then(resetState)
                     .catch(ServiceHelper.logError)

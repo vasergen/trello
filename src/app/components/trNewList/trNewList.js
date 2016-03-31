@@ -3,9 +3,9 @@
 angular.module("trello")
     .component("trNewList", {
         bindings: {},
-        controller: function(ServiceList, ServiceHelper, $state) {
+        controller: function(FactoryLists, ServiceHelper, $state) {
             let boardKey = $state.params.boardKey
-            let listInstance = new ServiceList(boardKey)
+            let Lists = new FactoryLists(boardKey)
 
             this.listName = ''
             this.isEdited = false
@@ -20,7 +20,7 @@ angular.module("trello")
                     name: this.listName
                 }
 
-                listInstance.push(item)
+                Lists.push(item)
                     .then(resetState)
                     .catch(ServiceHelper.logError)
             }

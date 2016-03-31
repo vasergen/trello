@@ -5,9 +5,9 @@ angular.module("trello")
         bindings: {
             listKey: '<'
         },
-        controller: function(ServiceCard, ServiceHelper, $state) {
+        controller: function(FactoryCards, ServiceHelper, $state) {
             let boardKey = $state.params.boardKey
-            let cardInstance = new ServiceCard(boardKey, this.listKey)
+            let Cards = new FactoryCards(boardKey, this.listKey)
 
             this.isEdited = false
             this.cardName = ''
@@ -22,7 +22,7 @@ angular.module("trello")
                     name: this.cardName
                 }
 
-                return cardInstance
+                return Cards
                         .push(item)
                         .then(resetState)
                         .catch(ServiceHelper.logError)
