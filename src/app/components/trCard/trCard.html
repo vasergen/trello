@@ -3,6 +3,14 @@
     <!--Card Not Edited State -->
     <div ng-if="!$ctrl.isEdited">
         <div class="form-group">
+
+            <tr-icon
+                icon="check"
+                ng-click="$ctrl.markDone()"
+                class="card__done"
+                >
+            </tr-icon>
+
             <tr-icon
                 icon="edit"
                 ng-click="$ctrl.startEdit()"
@@ -17,6 +25,7 @@
                 class="card__remove"
                 >
             </tr-icon>
+
             <input
                 ng-model="$ctrl.card.name"
                 class="form-control input-sm card__input"

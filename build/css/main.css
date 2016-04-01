@@ -76,6 +76,10 @@ tr-board.ng-leave .board {
 .card {
   position: relative;
 }
+.card:hover .card__done {
+  right: 42px;
+  opacity: 1;
+}
 .card:hover .card__edit {
   right: 24px;
   opacity: 1;
@@ -91,17 +95,47 @@ tr-board.ng-leave .board {
   background: #fff;
 }
 .card--new {
-  position: relative;
   cursor: pointer;
 }
 .card--new .card__name {
   color: #0bcb9a;
 }
-.card--edited {
-  position: relative;
-}
 .card--edited .card__input {
   cursor: auto !important;
+}
+.card__done {
+  cursor: pointer;
+  position: absolute;
+  margin: auto;
+  height: 21px;
+  font-size: 16px;
+  top: 0;
+  bottom: 0;
+  opacity: 0;
+  right: 30px;
+  color: #0bcb9a;
+  transition-property: right, opacity;
+  transition-duration: 0.3s, 0.3s;
+}
+.card__done:hover {
+  color: #09a27b;
+}
+.card__edit {
+  cursor: pointer;
+  position: absolute;
+  margin: auto;
+  height: 21px;
+  font-size: 16px;
+  top: 0;
+  bottom: 0;
+  opacity: 0;
+  right: 15px;
+  color: #808080;
+  transition-property: right, opacity;
+  transition-duration: 0.3s, 0.3s;
+}
+.card__edit:hover {
+  color: #666;
 }
 .card__remove {
   cursor: pointer;
@@ -111,30 +145,14 @@ tr-board.ng-leave .board {
   font-size: 16px;
   top: 0;
   bottom: 0;
-  right: 0;
   opacity: 0;
+  right: 0;
   color: #e43725;
   transition-property: right, opacity;
   transition-duration: 0.3s, 0.3s;
 }
 .card__remove:hover {
   color: #bd2717;
-}
-.card__edit {
-  cursor: pointer;
-  position: absolute;
-  margin: auto;
-  height: 20px;
-  top: 0;
-  bottom: 0;
-  right: 15px;
-  opacity: 0;
-  color: #808080;
-  transition-property: right, opacity;
-  transition-duration: 0.3s, 0.3s;
-}
-.card__edit:hover {
-  color: #666;
 }
 .footer {
   height: 50px;
