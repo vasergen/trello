@@ -10,7 +10,8 @@ function CardScheme(ServiceHelper) {
             timestamp: ServiceHelper.timestamp(),
             updated: ServiceHelper.timestamp(),
             name: '',
-            slug: ''
+            slug: '',
+            isDone: false
         }
     }
 

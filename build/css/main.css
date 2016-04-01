@@ -76,23 +76,29 @@ tr-board.ng-leave .board {
 .card {
   position: relative;
 }
-.card:hover .card__done {
+.card:hover .card__done-action {
   right: 42px;
   opacity: 1;
 }
-.card:hover .card__edit {
+.card:hover .card__edit-action {
   right: 24px;
   opacity: 1;
 }
-.card:hover .card__remove {
+.card:hover .card__remove-action {
   right: 9px;
   opacity: 1;
 }
-.card__input {
-  cursor: pointer !important;
+.card:hover .card__input {
+  background: #2e2e2e;
 }
-.card__input:hover {
-  background: #fff;
+.card .card__input {
+  cursor: pointer;
+  background: #333;
+  color: #fff;
+}
+.card--done {
+  text-decoration: line-through;
+  color: #999 !important;
 }
 .card--new {
   cursor: pointer;
@@ -103,7 +109,7 @@ tr-board.ng-leave .board {
 .card--edited .card__input {
   cursor: auto !important;
 }
-.card__done {
+.card__done-action {
   cursor: pointer;
   position: absolute;
   margin: auto;
@@ -117,10 +123,10 @@ tr-board.ng-leave .board {
   transition-property: right, opacity;
   transition-duration: 0.3s, 0.3s;
 }
-.card__done:hover {
-  color: #09a27b;
+.card__done-action:hover {
+  color: #088e6c;
 }
-.card__edit {
+.card__edit-action {
   cursor: pointer;
   position: absolute;
   margin: auto;
@@ -134,10 +140,10 @@ tr-board.ng-leave .board {
   transition-property: right, opacity;
   transition-duration: 0.3s, 0.3s;
 }
-.card__edit:hover {
-  color: #666;
+.card__edit-action:hover {
+  color: #5a5a5a;
 }
-.card__remove {
+.card__remove-action {
   cursor: pointer;
   position: absolute;
   margin: auto;
@@ -151,8 +157,8 @@ tr-board.ng-leave .board {
   transition-property: right, opacity;
   transition-duration: 0.3s, 0.3s;
 }
-.card__remove:hover {
-  color: #bd2717;
+.card__remove-action:hover {
+  color: #a52214;
 }
 .footer {
   height: 50px;

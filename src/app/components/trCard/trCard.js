@@ -32,6 +32,15 @@ angular.module("trello")
                 self.isEdited = false
             }
 
+            this.markDone = () => {
+                this.card.isDone = !this.card.isDone
+
+                Card
+                    .update(this.card)
+                    .then(this.resetState)
+                    .catch(ServiceHelper.logError)
+            }
+
             this.startEdit = () => {
                 this.isEdited = true
                 this.publishStartEdit()

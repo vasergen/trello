@@ -7,7 +7,7 @@
             <tr-icon
                 icon="check"
                 ng-click="$ctrl.markDone()"
-                class="card__done"
+                class="card__done-action"
                 >
             </tr-icon>
 
@@ -15,20 +15,21 @@
                 icon="edit"
                 ng-click="$ctrl.startEdit()"
                 event-focus="click" event-focus-id="{{$ctrl.cardKey}}"
-                class="card__edit"
+                class="card__edit-action"
                 >
             </tr-icon>
 
             <tr-icon
                 icon="remove"
                 ng-click="$ctrl.remove()"
-                class="card__remove"
+                class="card__remove-action"
                 >
             </tr-icon>
 
             <input
                 ng-model="$ctrl.card.name"
                 class="form-control input-sm card__input"
+                ng-class="{'card--done': $ctrl.card.isDone}"
                 type="text"
                 disabled
                 />
