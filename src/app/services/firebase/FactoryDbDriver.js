@@ -66,7 +66,7 @@
                 let _fn = fn || function() {}
                 let _fnError = fnErr || function(err) {console.error(err)}
 
-                self.ref.on("value", (snapshot) => {
+                return self.ref.on("value", (snapshot) => {
                     $timeout(() => _fn(snapshot), 0)
                 }, _fnError)
             }
