@@ -9,7 +9,7 @@ module.exports = function(config) {
 
     // frameworks to use
     // available frameworks: https://npmjs.org/browse/keyword/karma-adapter
-    frameworks: ['jasmine'],
+    frameworks: ['es6-shim', 'jasmine'],
 
     // list of files / patterns to load in the browser
     files: [
@@ -25,14 +25,14 @@ module.exports = function(config) {
 
     // list of files to exclude
     exclude: [
+
     ],
 
     // preprocess matching files before serving them to the browser
     // available preprocessors: https://npmjs.org/browse/keyword/karma-preprocessor
 
     preprocessors: {
-      'src/**/*.js': ['babel'],
-      'test/**/*.js': ['babel']
+      'src/**/*.js': ['babel']
     },
 
     babelPreprocessor: {
@@ -62,7 +62,8 @@ module.exports = function(config) {
         "karma-phantomjs-launcher",
         "karma-jasmine",
         "karma-babel-preprocessor",
-        "karma-spec-reporter"
+        "karma-spec-reporter",
+        "karma-es6-shim"
     ],
 
     // web server port
