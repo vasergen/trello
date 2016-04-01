@@ -98,7 +98,7 @@ tr-board.ng-leave .board {
 }
 .card--done {
   text-decoration: line-through;
-  color: #999 !important;
+  color: #555 !important;
 }
 .card--new {
   cursor: pointer;

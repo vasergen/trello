@@ -13,8 +13,29 @@ angular.module("trello")
 
             this.cards = null
 
+            this.getSortedCards = (snapshot) => {
+                let cards = snapshot.val()
+                let sortedCards = {}
+
+                for(let cardKey in cards) {
+                    let card = cards[cardKey]
+
+                    if(!card.isDone)
+                        sortedCards[cardKey] = card
+                }
+
+                for(let cardKey in cards) {
+                    let card = cards[cardKey]
+
+                    if(card.isDone)
+                        sortedCards[cardKey] = card
+                }
+
+                return sortedCards
+            }
+
             Cards.onValue((snapshot) => {
-                this.cards = snapshot.val()
+                this.cards = this.getSortedCards(snapshot)
             })
 
             this.removeList = function() {
