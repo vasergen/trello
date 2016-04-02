@@ -12,7 +12,13 @@
 <div ng-if="$ctrl.isEdited" class="list list--new">
     <div class="form-group">
         <label for="newListName" class="control-label">Title</label>
-        <input id="{{$ctrl.inputId}}" ng-model="$ctrl.listName" class="form-control input-sm" type="text" id="newListName"/>
+        <input
+            id="{{$ctrl.inputId}}"
+            ng-model="$ctrl.listName"
+            class="form-control input-sm list__input"
+            type="text"
+            id="newListName"
+            />
     </div>
     <div class="form-group">
         <button ng-click="$ctrl.save()" class="btn btn-success btn-sm">Save</button>

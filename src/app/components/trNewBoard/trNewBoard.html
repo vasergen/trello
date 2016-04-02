@@ -13,7 +13,14 @@
     <div ng-if="$ctrl.isEdited" class="board board--new board--editing">
         <div class="form-group">
             <label class="control-label" for="newBoardName">Title</label>
-            <input id="{{$ctrl.inputId}}" ng-model="$ctrl.boardName" class="form-control input-sm" type="text" id="newBoardName" value=""/>
+            <input
+                id="{{$ctrl.inputId}}"
+                ng-model="$ctrl.boardName"
+                class="form-control input-sm board_input"
+                type="text"
+                id="newBoardName"
+                value=""
+                />
         </div>
         <div class="form-group">
             <button ng-click="$ctrl.save()" class="btn btn-success btn-sm">Save</button>

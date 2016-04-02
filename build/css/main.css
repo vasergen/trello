@@ -22,6 +22,10 @@
   background: #303030;
   min-height: 100px;
 }
+.board--new .board_input {
+  background: #333;
+  color: #fff;
+}
 .board--new .board__name {
   color: #0bcb9a;
 }
@@ -200,6 +204,10 @@ tr-board.ng-leave .board {
 }
 .list--new {
   cursor: pointer;
+}
+.list--new .form-control.list__input {
+  background: #333;
+  color: #fff;
 }
 .list--new .list__header_new_name {
   color: #0bcb9a;
