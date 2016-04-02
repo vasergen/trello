@@ -1,23 +1,21 @@
-<div class="col-xs-12 col-sm-6 col-md-4">
-    <div class="list">
-        <!--List Header-->
-        <div class="list__header">
-            <span class="list__header_name">{{$ctrl.list.name}}</span>
-            <span class="list__delete" ng-click="$ctrl.removeList()">
-                <tr-icon icon="remove"></tr-icon>
-            </span>
-        </div>
-
-        <!--Cards-->
-        <tr-card
-            card="card"
-            card-key="cardKey"
-            list-key="$ctrl.listKey"
-            ng-repeat="(cardKey, card) in $ctrl.cards"
-            >
-        </tr-card>
-
-        <!--New Card-->
-        <tr-new-card list-key="$ctrl.listKey"></tr-new-card>
+<div class="list">
+    <!--List Header-->
+    <div class="list__header">
+        <span class="list__header_name">{{$ctrl.list.name}}</span>
+        <span class="list__delete" ng-click="$ctrl.removeList()">
+            <tr-icon icon="remove"></tr-icon>
+        </span>
     </div>
+
+    <!--Cards-->
+    <tr-card
+        card="card"
+        card-key="cardKey"
+        list-key="$ctrl.listKey"
+        ng-repeat="(cardKey, card) in $ctrl.cards"
+        >
+    </tr-card>
+
+    <!--New Card-->
+    <tr-new-card list-key="$ctrl.listKey"></tr-new-card>
 </div>

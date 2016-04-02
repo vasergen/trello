@@ -163,6 +163,33 @@ tr-board.ng-leave .board {
 .footer {
   height: 50px;
 }
+.lists {
+  -webkit-column-count: 3;
+  -moz-column-count: 3;
+  column-count: 3;
+  -webkit-column-gap: 10px;
+  -moz-column-gap: 10px;
+  column-gap: 10px;
+  margin: 0 auto;
+}
+@media (max-width: 992px) {
+  .lists {
+    -webkit-column-count: 2;
+    -moz-column-count: 2;
+    column-count: 2;
+  }
+}
+@media (max-width: 768px) {
+  .lists {
+    -webkit-column-count: 1;
+    -moz-column-count: 1;
+    column-count: 1;
+  }
+}
+.list {
+  display: inline-block;
+  width: 99%; /*when 100% Chrome show only 2 columns*/
+}
 .list {
   position: relative;
   margin: 20px 0 0 0;
