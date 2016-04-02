@@ -2,23 +2,41 @@
 
 angular.module("trello")
     .component("trTest", {
-        bindings: {
+        bindings: {},
+        controller: function($scope, $uibModal, $log) {
+            let self = this
 
-        },
-        controller: function(FactoryDbDriver, FactoryBoards) {
-            let Boards = new FactoryBoards()
+            self.open = function (size) {
+                var modalInstance = $uibModal.open({
+                    templateUrl: 'src/app/components/trTest/modal.html',
+                    controller: function($scope, $uibModalInstance) {
+                        $scope.items = [1111111,2222222,3333333333]
 
-            this.boards = null
+                        $scope.set = (item) => {
+                            $scope.selected = item
+                        }
 
-            //Boards.onValue((snapshot) => {
-            //    this.boards = snapshot.val()
-            //    console.log('this.boards', this.boards);
-            //})
+                        $scope.ok = function () {
+                            $uibModalInstance.close($scope.selected);
+                        };
 
-            this.test = function() {
-                Boards.push({name: 'test'})
-            }
+                        $scope.cancel = function () {
+                            $uibModalInstance.dismiss('cancel');
+                        };
+                    },
+                    size: size,
+                    resolve: {
+                        //items: ['item1', 'item2', 'item3']
+                    }
+                });
 
+                modalInstance.result.then(function (selectedItem) {
+                    self.selected = selectedItem;
+                    $log.info('selected', self.selected)
+                }, function () {
+                    $log.info('Modal dismissed at: ' + new Date());
+                });
+            };
         },
         templateUrl: "src/app/components/trTest/trTest.html"
     })

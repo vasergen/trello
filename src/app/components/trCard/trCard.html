@@ -4,13 +4,12 @@
     <div ng-if="!$ctrl.isEdited">
         <div
             class="form-group"
-             ng-click="$ctrl.startEdit()"
-             event-focus="click" event-focus-id="{{$ctrl.cardKey}}"
+            event-focus="click" event-focus-id="{{$ctrl.cardKey}}"
             >
             <!--Action Done-->
             <tr-icon
                 icon="check"
-                ng-click="$ctrl.markDone()"
+                ng-click="$ctrl.markDone(); $event.preventDefault()"
                 class="card__done-action"
                 >
             </tr-icon>
@@ -27,7 +26,7 @@
             <!--Action Remove-->
             <tr-icon
                 icon="remove"
-                ng-click="$ctrl.remove()"
+                ng-click="$ctrl.remove(); $event.preventDefault()"
                 class="card__remove-action"
                 >
             </tr-icon>

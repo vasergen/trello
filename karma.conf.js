@@ -16,6 +16,7 @@ module.exports = function(config) {
       'vendor/js/angular.min.js',
       'vendor/js/angular-ui-router.min.js',
       'vendor/js/angular-animate.min.js',
+      'vendor/js/ui-bootstrap-tpls-1.2.5.js',
       'vendor/js/lodash.min.js',
       'vendor/js/lodash-fp.min.js',
       'vendor/js/firebase.js',

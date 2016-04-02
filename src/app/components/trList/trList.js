@@ -16,6 +16,8 @@ angular.module("trello")
             this.cards = null
             this.inputId = ServiceHelper.randomString()
             this.isEdited = false
+            this.progress = 0
+
 
             ServiceEvents.subscribe('startEdit', (data) => {
                 if(data.id == self.listKey) {
@@ -74,9 +76,26 @@ angular.module("trello")
 
                 return sortedCards
             }
+            this.getProgress = (snapshot) => {
+                let progress = 0
+                let cards = snapshot.val()
+                let done = 0
+                let all = Object.keys(cards).length
+
+                for(let cardKey in cards) {
+                    let card = cards[cardKey]
+                    if(card.isDone) {
+                        done++
+                    }
+                }
+
+                progress = 100 * done / all
+                return progress
+            }
 
             Cards.onValue((snapshot) => {
                 this.cards = this.getSortedCards(snapshot)
+                this.progress = this.getProgress(snapshot)
             })
 
             this.removeList = function() {
