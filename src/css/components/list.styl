@@ -36,9 +36,13 @@ columnGap($gap)
   border-radius 5px
   background $board_bgr
 
+.list__header_name[disabled]
+  cursor pointer
+  background $list_input_name_bgr !important
+
 .list--new
   cursor pointer
-  .form-control.list__input
+  .list__input
     background $card_inp_bgr
     color white
   .list__header_new_name
@@ -47,6 +51,7 @@ columnGap($gap)
 .list__header_name
   font-size 22px
   color $yellow
+  background $list_input_name_bgr
 
 .list__header
   cursor pointer

@@ -2,8 +2,12 @@
 
     <!--Card Not Edited State -->
     <div ng-if="!$ctrl.isEdited">
-        <div class="form-group">
-
+        <div
+            class="form-group"
+             ng-click="$ctrl.startEdit()"
+             event-focus="click" event-focus-id="{{$ctrl.cardKey}}"
+            >
+            <!--Action Done-->
             <tr-icon
                 icon="check"
                 ng-click="$ctrl.markDone()"
@@ -11,6 +15,7 @@
                 >
             </tr-icon>
 
+            <!--Action Edit-->
             <tr-icon
                 icon="edit"
                 ng-click="$ctrl.startEdit()"
@@ -19,6 +24,7 @@
                 >
             </tr-icon>
 
+            <!--Action Remove-->
             <tr-icon
                 icon="remove"
                 ng-click="$ctrl.remove()"

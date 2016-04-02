@@ -1,7 +1,27 @@
-<div class="list">
+<div class="list" ng-class="{'list--edited': $ctrl.isEdited}">
     <!--List Header-->
-    <div class="list__header">
-        <span class="list__header_name">{{$ctrl.list.name}}</span>
+    <div class="list__header" >
+        <!--Not Edited State-->
+        <div class="form-group"
+             ng-if="!$ctrl.isEdited"
+             ng-click="$ctrl.startEdit()"
+             event-focus="click" event-focus-id="{{$ctrl.inputId}}"
+            >
+            <input type="text" class="list__header_name form-control" ng-model="$ctrl.list.name" disabled/>
+        </div>
+
+        <!--Edited State-->
+        <div ng-if="$ctrl.isEdited">
+            <div class="form-group" >
+                <input type="text" id="{{$ctrl.inputId}}" class="list__header_name form-control" ng-model="$ctrl.list.name">
+            </div>
+            <div class="form-group">
+                <button ng-click="$ctrl.save()" class="btn btn-success btn-sm">Save</button>
+                <button ng-click="$ctrl.cancel()" class="btn btn-default btn-sm">Cancel</button>
+            </div>
+        </div>
+
+        <!--List Delete-->
         <span class="list__delete" ng-click="$ctrl.removeList()">
             <tr-icon icon="remove"></tr-icon>
         </span>

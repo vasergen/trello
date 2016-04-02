@@ -202,10 +202,14 @@ tr-board.ng-leave .board {
   border-radius: 5px;
   background: #303030;
 }
+.list__header_name[disabled] {
+  cursor: pointer;
+  background: #303030 !important;
+}
 .list--new {
   cursor: pointer;
 }
-.list--new .form-control.list__input {
+.list--new .list__input {
   background: #333;
   color: #fff;
 }
@@ -215,6 +219,7 @@ tr-board.ng-leave .board {
 .list__header_name {
   font-size: 22px;
   color: #f39c12;
+  background: #303030;
 }
 .list__header {
   cursor: pointer;
