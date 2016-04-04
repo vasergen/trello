@@ -8,6 +8,8 @@
              event-focus="click" event-focus-id="{{$ctrl.inputId}}"
             >
             <input type="text" class="list__header_name form-control" ng-model="$ctrl.list.name" disabled/>
+            <!--TODO: MOve to component-->
+            <uib-progressbar class="progress" value="$ctrl.progress" type="success"></uib-progressbar>
         </div>
 
         <!--Edited State-->
