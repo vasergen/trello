@@ -4,5 +4,5 @@ import footerTemplate from './trFooter.html'
 export default {
     bindings: {},
     controller: footerController,
-    templateUrl: footerTemplate
+    template: footerTemplate
 }

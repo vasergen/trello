@@ -7,5 +7,5 @@ export default {
         listKey: '<'
     },
     controller: listController,
-    templateUrl: listHtml
+    template: listHtml
 }

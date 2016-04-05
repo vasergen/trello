@@ -3,11 +3,11 @@
 module.exports = {
     entry: "./src/app/app.js",
     output: {
-        path: __dirname + "/dist",
+        path: __dirname + "/public",
         filename: "app.js"
     },
     watch: true,
-    //devtool: "#inline-source-map" //too long
+    //devtool: "#inline-source-map" //works very slow
     module: {
         loaders: [
             {

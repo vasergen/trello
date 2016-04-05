@@ -4,3 +4,9 @@ WEBPACK
 - resetState should be method of controller
 - rewrite firebase factories on classes
 -
+
+Features
+- add comments to card
+- add due time to card
+- add ability to edit board name
+-
