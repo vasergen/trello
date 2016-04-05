@@ -1,9 +1,4 @@
-"use strict"
-
-angular.module("trello")
-    .factory("FactoryList", FactoryList)
-
-function FactoryList(FactoryLists) {
+export default function FactoryList(FactoryLists) {
     return function(boardKey, listKey) {
         if(!boardKey)
             throw new Error('Lists Error! Does not provided boardKey')

@@ -1,10 +1,7 @@
-    "use strict"
+import Firebase from 'firebase'
 
-    angular.module("trello")
-        .factory('FactoryDbDriver', FactoryDbDriver)
-
-    function FactoryDbDriver($timeout, ServiceConfig, Firebase, ServiceHelper, $q) {
-        return function() {
+export default function FactoryDbDriver($timeout, ServiceConfig, ServiceHelper, $q) {
+    return function() {
             let self = this
 
             /*Warning: need to redefine in child*/
@@ -96,4 +93,4 @@
 
             return self
         }
-    }
+}

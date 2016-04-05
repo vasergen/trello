@@ -1,9 +1,4 @@
-"use strict"
-
-angular.module("trello")
-    .service("ServiceTranslit", ServiceTranslit)
-
-    function ServiceTranslit() {
+export default function ServiceTranslit() {
         //Public API
         return {
             translit: translit

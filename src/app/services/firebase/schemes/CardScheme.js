@@ -1,9 +1,4 @@
-"use strict"
-
-angular.module("trello")
-    .service('CardScheme', CardScheme)
-
-function CardScheme(ServiceHelper) {
+export default function CardScheme(ServiceHelper) {
     this.getScheme = function() {
         return {
             id: ServiceHelper.randomString(),

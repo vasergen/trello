@@ -1,21 +1,16 @@
-"use strict"
+export default function FactoryCards(FactoryList, CardScheme) {
+    return function(boardKey, listKey) {
+        if(!boardKey)
+            throw new Error('Cards Error! Does not provided boardKey')
 
-angular.module("trello")
-    .factory("FactoryCards", FactoryCards)
+        if(!listKey)
+            throw new Error('Cards Error! Does not provided listKey')
 
-    function FactoryCards(FactoryList, CardScheme) {
-        return function(boardKey, listKey) {
-            if(!boardKey)
-                throw new Error('Cards Error! Does not provided boardKey')
+        let self = new FactoryList(boardKey, listKey)
+        self.ref = self.ref.child('cards')
+        self.getScheme = CardScheme.getScheme
+        self.validate = CardScheme.validate
 
-            if(!listKey)
-                throw new Error('Cards Error! Does not provided listKey')
-
-            let self = new FactoryList(boardKey, listKey)
-            self.ref = self.ref.child('cards')
-            self.getScheme = CardScheme.getScheme
-            self.validate = CardScheme.validate
-
-            return self
-        }
+        return self
     }
+}
