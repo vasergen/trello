@@ -52,137 +52,137 @@
 	    value: true
 	});
 
-	__webpack_require__(192);
+	__webpack_require__(1);
 
-	var _angular = __webpack_require__(1);
+	var _angular = __webpack_require__(5);
 
 	var _angular2 = _interopRequireDefault(_angular);
 
-	var _angularUiRouter = __webpack_require__(3);
+	var _angularUiRouter = __webpack_require__(7);
 
 	var _angularUiRouter2 = _interopRequireDefault(_angularUiRouter);
 
-	var _angularAnimate = __webpack_require__(4);
+	var _angularAnimate = __webpack_require__(8);
 
 	var _angularAnimate2 = _interopRequireDefault(_angularAnimate);
 
-	var _angularUiBootstrap = __webpack_require__(6);
+	var _angularUiBootstrap = __webpack_require__(10);
 
 	var _angularUiBootstrap2 = _interopRequireDefault(_angularUiBootstrap);
 
-	var _routes = __webpack_require__(8);
+	var _routes = __webpack_require__(12);
 
 	var _routes2 = _interopRequireDefault(_routes);
 
-	var _BoardScheme = __webpack_require__(12);
+	var _BoardScheme = __webpack_require__(16);
 
 	var _BoardScheme2 = _interopRequireDefault(_BoardScheme);
 
-	var _CardScheme = __webpack_require__(13);
+	var _CardScheme = __webpack_require__(17);
 
 	var _CardScheme2 = _interopRequireDefault(_CardScheme);
 
-	var _ListScheme = __webpack_require__(14);
+	var _ListScheme = __webpack_require__(18);
 
 	var _ListScheme2 = _interopRequireDefault(_ListScheme);
 
-	var _FactoryBoard = __webpack_require__(15);
+	var _FactoryBoard = __webpack_require__(19);
 
 	var _FactoryBoard2 = _interopRequireDefault(_FactoryBoard);
 
-	var _FactoryBoards = __webpack_require__(16);
+	var _FactoryBoards = __webpack_require__(20);
 
 	var _FactoryBoards2 = _interopRequireDefault(_FactoryBoards);
 
-	var _FactoryCard = __webpack_require__(17);
+	var _FactoryCard = __webpack_require__(21);
 
 	var _FactoryCard2 = _interopRequireDefault(_FactoryCard);
 
-	var _FactoryCards = __webpack_require__(18);
+	var _FactoryCards = __webpack_require__(22);
 
 	var _FactoryCards2 = _interopRequireDefault(_FactoryCards);
 
-	var _FactoryDbDriver = __webpack_require__(19);
+	var _FactoryDbDriver = __webpack_require__(23);
 
 	var _FactoryDbDriver2 = _interopRequireDefault(_FactoryDbDriver);
 
-	var _FactoryList = __webpack_require__(21);
+	var _FactoryList = __webpack_require__(25);
 
 	var _FactoryList2 = _interopRequireDefault(_FactoryList);
 
-	var _FactoryLists = __webpack_require__(22);
+	var _FactoryLists = __webpack_require__(26);
 
 	var _FactoryLists2 = _interopRequireDefault(_FactoryLists);
 
-	var _ServiceConfig = __webpack_require__(23);
+	var _ServiceConfig = __webpack_require__(27);
 
 	var _ServiceConfig2 = _interopRequireDefault(_ServiceConfig);
 
-	var _ServiceEvents = __webpack_require__(24);
+	var _ServiceEvents = __webpack_require__(28);
 
 	var _ServiceEvents2 = _interopRequireDefault(_ServiceEvents);
 
-	var _ServiceHelper = __webpack_require__(25);
+	var _ServiceHelper = __webpack_require__(29);
 
 	var _ServiceHelper2 = _interopRequireDefault(_ServiceHelper);
 
-	var _ServiceTranslit = __webpack_require__(146);
+	var _ServiceTranslit = __webpack_require__(150);
 
 	var _ServiceTranslit2 = _interopRequireDefault(_ServiceTranslit);
 
-	var _eventFocus = __webpack_require__(147);
+	var _eventFocus = __webpack_require__(151);
 
 	var _eventFocus2 = _interopRequireDefault(_eventFocus);
 
-	var _trTest = __webpack_require__(148);
+	var _trTest = __webpack_require__(152);
 
 	var _trTest2 = _interopRequireDefault(_trTest);
 
-	var _trBoard = __webpack_require__(151);
+	var _trBoard = __webpack_require__(155);
 
 	var _trBoard2 = _interopRequireDefault(_trBoard);
 
-	var _trBoardHeader = __webpack_require__(154);
+	var _trBoardHeader = __webpack_require__(158);
 
 	var _trBoardHeader2 = _interopRequireDefault(_trBoardHeader);
 
-	var _trBoards = __webpack_require__(157);
+	var _trBoards = __webpack_require__(161);
 
 	var _trBoards2 = _interopRequireDefault(_trBoards);
 
-	var _trCard = __webpack_require__(160);
+	var _trCard = __webpack_require__(164);
 
 	var _trCard2 = _interopRequireDefault(_trCard);
 
-	var _trFooter = __webpack_require__(163);
+	var _trFooter = __webpack_require__(167);
 
 	var _trFooter2 = _interopRequireDefault(_trFooter);
 
-	var _trHeader = __webpack_require__(166);
+	var _trHeader = __webpack_require__(170);
 
 	var _trHeader2 = _interopRequireDefault(_trHeader);
 
-	var _trIcon = __webpack_require__(169);
+	var _trIcon = __webpack_require__(173);
 
 	var _trIcon2 = _interopRequireDefault(_trIcon);
 
-	var _trList = __webpack_require__(172);
+	var _trList = __webpack_require__(176);
 
 	var _trList2 = _interopRequireDefault(_trList);
 
-	var _trLists = __webpack_require__(175);
+	var _trLists = __webpack_require__(179);
 
 	var _trLists2 = _interopRequireDefault(_trLists);
 
-	var _trNewBoard = __webpack_require__(178);
+	var _trNewBoard = __webpack_require__(182);
 
 	var _trNewBoard2 = _interopRequireDefault(_trNewBoard);
 
-	var _trNewCard = __webpack_require__(181);
+	var _trNewCard = __webpack_require__(185);
 
 	var _trNewCard2 = _interopRequireDefault(_trNewCard);
 
-	var _trNewList = __webpack_require__(184);
+	var _trNewList = __webpack_require__(188);
 
 	var _trNewList2 = _interopRequireDefault(_trNewList);
 
@@ -220,14 +220,23 @@
 
 /***/ },
 /* 1 */
+/***/ function(module, exports) {
+
+	// removed by extract-text-webpack-plugin
+
+/***/ },
+/* 2 */,
+/* 3 */,
+/* 4 */,
+/* 5 */
 /***/ function(module, exports, __webpack_require__) {
 
-	__webpack_require__(2);
+	__webpack_require__(6);
 	module.exports = angular;
 
 
 /***/ },
-/* 2 */
+/* 6 */
 /***/ function(module, exports) {
 
 	/**
@@ -30946,7 +30955,7 @@
 	!window.angular.$$csp().noInlineStyle && window.angular.element(document.head).prepend('<style type="text/css">@charset "UTF-8";[ng\\:cloak],[ng-cloak],[data-ng-cloak],[x-ng-cloak],.ng-cloak,.x-ng-cloak,.ng-hide:not(.ng-hide-animate){display:none !important;}ng\\:form{display:block;}.ng-animate-shim{visibility:hidden;}.ng-anchor{position:absolute;}</style>');
 
 /***/ },
-/* 3 */
+/* 7 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/*!
@@ -38583,15 +38592,15 @@
 	//# sourceMappingURL=angular-ui-router.js.map
 
 /***/ },
-/* 4 */
+/* 8 */
 /***/ function(module, exports, __webpack_require__) {
 
-	__webpack_require__(5);
+	__webpack_require__(9);
 	module.exports = 'ngAnimate';
 
 
 /***/ },
-/* 5 */
+/* 9 */
 /***/ function(module, exports) {
 
 	/**
@@ -42712,16 +42721,16 @@
 
 
 /***/ },
-/* 6 */
+/* 10 */
 /***/ function(module, exports, __webpack_require__) {
 
-	__webpack_require__(7);
+	__webpack_require__(11);
 
 	module.exports = 'ui.bootstrap';
 
 
 /***/ },
-/* 7 */
+/* 11 */
 /***/ function(module, exports) {
 
 	/*
@@ -50122,7 +50131,7 @@
 	angular.module('ui.bootstrap.typeahead').run(function() {!angular.$$csp().noInlineStyle && !angular.$$uibTypeaheadCss && angular.element(document).find('head').prepend('<style type="text/css">[uib-typeahead-popup].dropdown-menu{display:block;}</style>'); angular.$$uibTypeaheadCss = true; });
 
 /***/ },
-/* 8 */
+/* 12 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -50147,40 +50156,40 @@
 	    });
 	};
 
-	var _boards = __webpack_require__(9);
+	var _boards = __webpack_require__(13);
 
 	var _boards2 = _interopRequireDefault(_boards);
 
-	var _board = __webpack_require__(10);
+	var _board = __webpack_require__(14);
 
 	var _board2 = _interopRequireDefault(_board);
 
-	var _test = __webpack_require__(11);
+	var _test = __webpack_require__(15);
 
 	var _test2 = _interopRequireDefault(_test);
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 /***/ },
-/* 9 */
+/* 13 */
 /***/ function(module, exports) {
 
 	module.exports = "<!--State Boards-->\n\n<tr-header></tr-header>\n<div class=\"container\">\n    <tr-boards></tr-boards>\n</div>\n<tr-footer></tr-footer>"
 
 /***/ },
-/* 10 */
+/* 14 */
 /***/ function(module, exports) {
 
 	module.exports = "<!--State Board-->\n<tr-header></tr-header>\n\n<div class=\"container\">\n    <tr-board-header></tr-board-header>\n    <tr-lists></tr-lists>\n</div>\n<tr-footer></tr-footer>"
 
 /***/ },
-/* 11 */
+/* 15 */
 /***/ function(module, exports) {
 
 	module.exports = "<h3>Test Page!!!!</h3>\n\n<tr-test></tr-test>\n\n\n\n"
 
 /***/ },
-/* 12 */
+/* 16 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -50209,7 +50218,7 @@
 	}
 
 /***/ },
-/* 13 */
+/* 17 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -50238,7 +50247,7 @@
 	}
 
 /***/ },
-/* 14 */
+/* 18 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -50266,7 +50275,7 @@
 	}
 
 /***/ },
-/* 15 */
+/* 19 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -50286,7 +50295,7 @@
 	}
 
 /***/ },
-/* 16 */
+/* 20 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -50306,7 +50315,7 @@
 	}
 
 /***/ },
-/* 17 */
+/* 21 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -50331,7 +50340,7 @@
 	}
 
 /***/ },
-/* 18 */
+/* 22 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -50356,7 +50365,7 @@
 	}
 
 /***/ },
-/* 19 */
+/* 23 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -50366,7 +50375,7 @@
 	});
 	exports.default = FactoryDbDriver;
 
-	var _firebase = __webpack_require__(20);
+	var _firebase = __webpack_require__(24);
 
 	var _firebase2 = _interopRequireDefault(_firebase);
 
@@ -50470,7 +50479,7 @@
 	}
 
 /***/ },
-/* 20 */
+/* 24 */
 /***/ function(module, exports) {
 
 	/*! @license Firebase v2.4.2
@@ -50756,7 +50765,7 @@
 
 
 /***/ },
-/* 21 */
+/* 25 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -50779,7 +50788,7 @@
 	}
 
 /***/ },
-/* 22 */
+/* 26 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -50802,7 +50811,7 @@
 	}
 
 /***/ },
-/* 23 */
+/* 27 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -50823,7 +50832,7 @@
 	}
 
 /***/ },
-/* 24 */
+/* 28 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -50859,7 +50868,7 @@
 	}
 
 /***/ },
-/* 25 */
+/* 29 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -50869,7 +50878,7 @@
 	});
 	exports.default = ServiceHelper;
 
-	var _lodashFp = __webpack_require__(26);
+	var _lodashFp = __webpack_require__(30);
 
 	var _lodashFp2 = _interopRequireDefault(_lodashFp);
 
@@ -50927,18 +50936,18 @@
 	}
 
 /***/ },
-/* 26 */
+/* 30 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__(27)(__webpack_require__(144).runInContext());
+	module.exports = __webpack_require__(31)(__webpack_require__(148).runInContext());
 
 
 /***/ },
-/* 27 */
+/* 31 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var listing = __webpack_require__(28),
-	    mapping = __webpack_require__(29);
+	var listing = __webpack_require__(32),
+	    mapping = __webpack_require__(33);
 
 	/*----------------------------------------------------------------------------*/
 
@@ -50962,13 +50971,13 @@
 	  var isLib = typeof func.VERSION == 'string';
 
 	  var _ = isLib ? func : {
-	    'ary': __webpack_require__(30),
-	    'callback': __webpack_require__(74),
-	    'curry': __webpack_require__(114),
-	    'each': __webpack_require__(88),
-	    'isFunction': __webpack_require__(37),
-	    'keys': __webpack_require__(84),
-	    'rearg': __webpack_require__(116)
+	    'ary': __webpack_require__(34),
+	    'callback': __webpack_require__(78),
+	    'curry': __webpack_require__(118),
+	    'each': __webpack_require__(92),
+	    'isFunction': __webpack_require__(41),
+	    'keys': __webpack_require__(88),
+	    'rearg': __webpack_require__(120)
 	  };
 
 	  var ary = _.ary,
@@ -51068,15 +51077,15 @@
 	  }
 	  // Disable custom `_.indexOf` use by these methods.
 	  _.mixin({
-	    'difference': __webpack_require__(120),
-	    'includes': __webpack_require__(128),
-	    'intersection': __webpack_require__(131),
-	    'omit': __webpack_require__(132),
-	    'pull': __webpack_require__(137),
-	    'union': __webpack_require__(138),
-	    'uniq': __webpack_require__(140),
-	    'without': __webpack_require__(142),
-	    'xor': __webpack_require__(143)
+	    'difference': __webpack_require__(124),
+	    'includes': __webpack_require__(132),
+	    'intersection': __webpack_require__(135),
+	    'omit': __webpack_require__(136),
+	    'pull': __webpack_require__(141),
+	    'union': __webpack_require__(142),
+	    'uniq': __webpack_require__(144),
+	    'without': __webpack_require__(146),
+	    'xor': __webpack_require__(147)
 	  });
 
 	  var pairs = [];
@@ -51107,7 +51116,7 @@
 
 
 /***/ },
-/* 28 */
+/* 32 */
 /***/ function(module, exports) {
 
 	/** Used to iterate `mapping.aryMethodMap` keys. */
@@ -51115,7 +51124,7 @@
 
 
 /***/ },
-/* 29 */
+/* 33 */
 /***/ function(module, exports) {
 
 	module.exports = {
@@ -51191,11 +51200,11 @@
 
 
 /***/ },
-/* 30 */
+/* 34 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var createWrapper = __webpack_require__(31),
-	    isIterateeCall = __webpack_require__(67);
+	var createWrapper = __webpack_require__(35),
+	    isIterateeCall = __webpack_require__(71);
 
 	/** Used to compose bitmasks for wrapper metadata. */
 	var ARY_FLAG = 128;
@@ -51231,16 +51240,16 @@
 
 
 /***/ },
-/* 31 */
+/* 35 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var baseSetData = __webpack_require__(32),
-	    createBindWrapper = __webpack_require__(41),
-	    createHybridWrapper = __webpack_require__(44),
-	    createPartialWrapper = __webpack_require__(65),
-	    getData = __webpack_require__(51),
-	    mergeData = __webpack_require__(66),
-	    setData = __webpack_require__(63);
+	var baseSetData = __webpack_require__(36),
+	    createBindWrapper = __webpack_require__(45),
+	    createHybridWrapper = __webpack_require__(48),
+	    createPartialWrapper = __webpack_require__(69),
+	    getData = __webpack_require__(55),
+	    mergeData = __webpack_require__(70),
+	    setData = __webpack_require__(67);
 
 	/** Used to compose bitmasks for wrapper metadata. */
 	var BIND_FLAG = 1,
@@ -51323,11 +51332,11 @@
 
 
 /***/ },
-/* 32 */
+/* 36 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var identity = __webpack_require__(33),
-	    metaMap = __webpack_require__(34);
+	var identity = __webpack_require__(37),
+	    metaMap = __webpack_require__(38);
 
 	/**
 	 * The base implementation of `setData` without support for hot loop detection.
@@ -51346,7 +51355,7 @@
 
 
 /***/ },
-/* 33 */
+/* 37 */
 /***/ function(module, exports) {
 
 	/**
@@ -51372,10 +51381,10 @@
 
 
 /***/ },
-/* 34 */
+/* 38 */
 /***/ function(module, exports, __webpack_require__) {
 
-	/* WEBPACK VAR INJECTION */(function(global) {var getNative = __webpack_require__(35);
+	/* WEBPACK VAR INJECTION */(function(global) {var getNative = __webpack_require__(39);
 
 	/** Native method references. */
 	var WeakMap = getNative(global, 'WeakMap');
@@ -51388,10 +51397,10 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, (function() { return this; }())))
 
 /***/ },
-/* 35 */
+/* 39 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var isNative = __webpack_require__(36);
+	var isNative = __webpack_require__(40);
 
 	/**
 	 * Gets the native function at `key` of `object`.
@@ -51410,12 +51419,12 @@
 
 
 /***/ },
-/* 36 */
+/* 40 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var isFunction = __webpack_require__(37),
-	    isHostObject = __webpack_require__(39),
-	    isObjectLike = __webpack_require__(40);
+	var isFunction = __webpack_require__(41),
+	    isHostObject = __webpack_require__(43),
+	    isObjectLike = __webpack_require__(44);
 
 	/** Used to detect host constructors (Safari > 5). */
 	var reIsHostCtor = /^\[object .+?Constructor\]$/;
@@ -51465,10 +51474,10 @@
 
 
 /***/ },
-/* 37 */
+/* 41 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var isObject = __webpack_require__(38);
+	var isObject = __webpack_require__(42);
 
 	/** `Object#toString` result references. */
 	var funcTag = '[object Function]';
@@ -51509,7 +51518,7 @@
 
 
 /***/ },
-/* 38 */
+/* 42 */
 /***/ function(module, exports) {
 
 	/**
@@ -51543,7 +51552,7 @@
 
 
 /***/ },
-/* 39 */
+/* 43 */
 /***/ function(module, exports) {
 
 	/**
@@ -51570,7 +51579,7 @@
 
 
 /***/ },
-/* 40 */
+/* 44 */
 /***/ function(module, exports) {
 
 	/**
@@ -51588,10 +51597,10 @@
 
 
 /***/ },
-/* 41 */
+/* 45 */
 /***/ function(module, exports, __webpack_require__) {
 
-	/* WEBPACK VAR INJECTION */(function(global) {var createCtorWrapper = __webpack_require__(42);
+	/* WEBPACK VAR INJECTION */(function(global) {var createCtorWrapper = __webpack_require__(46);
 
 	/**
 	 * Creates a function that wraps `func` and invokes it with the `this`
@@ -51617,11 +51626,11 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, (function() { return this; }())))
 
 /***/ },
-/* 42 */
+/* 46 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var baseCreate = __webpack_require__(43),
-	    isObject = __webpack_require__(38);
+	var baseCreate = __webpack_require__(47),
+	    isObject = __webpack_require__(42);
 
 	/**
 	 * Creates a function that produces an instance of `Ctor` regardless of
@@ -51660,10 +51669,10 @@
 
 
 /***/ },
-/* 43 */
+/* 47 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var isObject = __webpack_require__(38);
+	var isObject = __webpack_require__(42);
 
 	/**
 	 * The base implementation of `_.create` without support for assigning
@@ -51689,17 +51698,17 @@
 
 
 /***/ },
-/* 44 */
+/* 48 */
 /***/ function(module, exports, __webpack_require__) {
 
-	/* WEBPACK VAR INJECTION */(function(global) {var arrayCopy = __webpack_require__(45),
-	    composeArgs = __webpack_require__(46),
-	    composeArgsRight = __webpack_require__(47),
-	    createCtorWrapper = __webpack_require__(42),
-	    isLaziable = __webpack_require__(48),
-	    reorder = __webpack_require__(60),
-	    replaceHolders = __webpack_require__(62),
-	    setData = __webpack_require__(63);
+	/* WEBPACK VAR INJECTION */(function(global) {var arrayCopy = __webpack_require__(49),
+	    composeArgs = __webpack_require__(50),
+	    composeArgsRight = __webpack_require__(51),
+	    createCtorWrapper = __webpack_require__(46),
+	    isLaziable = __webpack_require__(52),
+	    reorder = __webpack_require__(64),
+	    replaceHolders = __webpack_require__(66),
+	    setData = __webpack_require__(67);
 
 	/** Used to compose bitmasks for wrapper metadata. */
 	var BIND_FLAG = 1,
@@ -51807,7 +51816,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, (function() { return this; }())))
 
 /***/ },
-/* 45 */
+/* 49 */
 /***/ function(module, exports) {
 
 	/**
@@ -51833,7 +51842,7 @@
 
 
 /***/ },
-/* 46 */
+/* 50 */
 /***/ function(module, exports) {
 
 	/* Native method references for those with the same name as other `lodash` methods. */
@@ -51873,7 +51882,7 @@
 
 
 /***/ },
-/* 47 */
+/* 51 */
 /***/ function(module, exports) {
 
 	/* Native method references for those with the same name as other `lodash` methods. */
@@ -51915,13 +51924,13 @@
 
 
 /***/ },
-/* 48 */
+/* 52 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var LazyWrapper = __webpack_require__(49),
-	    getData = __webpack_require__(51),
-	    getFuncName = __webpack_require__(53),
-	    lodash = __webpack_require__(55);
+	var LazyWrapper = __webpack_require__(53),
+	    getData = __webpack_require__(55),
+	    getFuncName = __webpack_require__(57),
+	    lodash = __webpack_require__(59);
 
 	/**
 	 * Checks if `func` has a lazy counterpart.
@@ -51948,11 +51957,11 @@
 
 
 /***/ },
-/* 49 */
+/* 53 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var baseCreate = __webpack_require__(43),
-	    baseLodash = __webpack_require__(50);
+	var baseCreate = __webpack_require__(47),
+	    baseLodash = __webpack_require__(54);
 
 	/** Used as references for `-Infinity` and `Infinity`. */
 	var POSITIVE_INFINITY = Number.POSITIVE_INFINITY;
@@ -51980,7 +51989,7 @@
 
 
 /***/ },
-/* 50 */
+/* 54 */
 /***/ function(module, exports) {
 
 	/**
@@ -51996,11 +52005,11 @@
 
 
 /***/ },
-/* 51 */
+/* 55 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var metaMap = __webpack_require__(34),
-	    noop = __webpack_require__(52);
+	var metaMap = __webpack_require__(38),
+	    noop = __webpack_require__(56);
 
 	/**
 	 * Gets metadata for `func`.
@@ -52017,7 +52026,7 @@
 
 
 /***/ },
-/* 52 */
+/* 56 */
 /***/ function(module, exports) {
 
 	/**
@@ -52042,10 +52051,10 @@
 
 
 /***/ },
-/* 53 */
+/* 57 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var realNames = __webpack_require__(54);
+	var realNames = __webpack_require__(58);
 
 	/**
 	 * Gets the name of `func`.
@@ -52073,7 +52082,7 @@
 
 
 /***/ },
-/* 54 */
+/* 58 */
 /***/ function(module, exports) {
 
 	/** Used to lookup unminified function names. */
@@ -52083,15 +52092,15 @@
 
 
 /***/ },
-/* 55 */
+/* 59 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var LazyWrapper = __webpack_require__(49),
-	    LodashWrapper = __webpack_require__(56),
-	    baseLodash = __webpack_require__(50),
-	    isArray = __webpack_require__(57),
-	    isObjectLike = __webpack_require__(40),
-	    wrapperClone = __webpack_require__(59);
+	var LazyWrapper = __webpack_require__(53),
+	    LodashWrapper = __webpack_require__(60),
+	    baseLodash = __webpack_require__(54),
+	    isArray = __webpack_require__(61),
+	    isObjectLike = __webpack_require__(44),
+	    wrapperClone = __webpack_require__(63);
 
 	/** Used for native method references. */
 	var objectProto = Object.prototype;
@@ -52214,11 +52223,11 @@
 
 
 /***/ },
-/* 56 */
+/* 60 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var baseCreate = __webpack_require__(43),
-	    baseLodash = __webpack_require__(50);
+	var baseCreate = __webpack_require__(47),
+	    baseLodash = __webpack_require__(54);
 
 	/**
 	 * The base constructor for creating `lodash` wrapper objects.
@@ -52241,12 +52250,12 @@
 
 
 /***/ },
-/* 57 */
+/* 61 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var getNative = __webpack_require__(35),
-	    isLength = __webpack_require__(58),
-	    isObjectLike = __webpack_require__(40);
+	var getNative = __webpack_require__(39),
+	    isLength = __webpack_require__(62),
+	    isObjectLike = __webpack_require__(44);
 
 	/** `Object#toString` result references. */
 	var arrayTag = '[object Array]';
@@ -52287,7 +52296,7 @@
 
 
 /***/ },
-/* 58 */
+/* 62 */
 /***/ function(module, exports) {
 
 	/**
@@ -52313,12 +52322,12 @@
 
 
 /***/ },
-/* 59 */
+/* 63 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var LazyWrapper = __webpack_require__(49),
-	    LodashWrapper = __webpack_require__(56),
-	    arrayCopy = __webpack_require__(45);
+	var LazyWrapper = __webpack_require__(53),
+	    LodashWrapper = __webpack_require__(60),
+	    arrayCopy = __webpack_require__(49);
 
 	/**
 	 * Creates a clone of `wrapper`.
@@ -52337,11 +52346,11 @@
 
 
 /***/ },
-/* 60 */
+/* 64 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var arrayCopy = __webpack_require__(45),
-	    isIndex = __webpack_require__(61);
+	var arrayCopy = __webpack_require__(49),
+	    isIndex = __webpack_require__(65);
 
 	/* Native method references for those with the same name as other `lodash` methods. */
 	var nativeMin = Math.min;
@@ -52372,7 +52381,7 @@
 
 
 /***/ },
-/* 61 */
+/* 65 */
 /***/ function(module, exports) {
 
 	/** Used to detect unsigned integer values. */
@@ -52402,7 +52411,7 @@
 
 
 /***/ },
-/* 62 */
+/* 66 */
 /***/ function(module, exports) {
 
 	/** Used as the internal argument placeholder. */
@@ -52436,11 +52445,11 @@
 
 
 /***/ },
-/* 63 */
+/* 67 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var baseSetData = __webpack_require__(32),
-	    now = __webpack_require__(64);
+	var baseSetData = __webpack_require__(36),
+	    now = __webpack_require__(68);
 
 	/** Used to detect when a function becomes hot. */
 	var HOT_COUNT = 150,
@@ -52483,10 +52492,10 @@
 
 
 /***/ },
-/* 64 */
+/* 68 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var getNative = __webpack_require__(35);
+	var getNative = __webpack_require__(39);
 
 	/* Native method references for those with the same name as other `lodash` methods. */
 	var nativeNow = getNative(Date, 'now');
@@ -52513,10 +52522,10 @@
 
 
 /***/ },
-/* 65 */
+/* 69 */
 /***/ function(module, exports, __webpack_require__) {
 
-	/* WEBPACK VAR INJECTION */(function(global) {var createCtorWrapper = __webpack_require__(42);
+	/* WEBPACK VAR INJECTION */(function(global) {var createCtorWrapper = __webpack_require__(46);
 
 	/** Used to compose bitmasks for wrapper metadata. */
 	var BIND_FLAG = 1;
@@ -52563,13 +52572,13 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, (function() { return this; }())))
 
 /***/ },
-/* 66 */
+/* 70 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var arrayCopy = __webpack_require__(45),
-	    composeArgs = __webpack_require__(46),
-	    composeArgsRight = __webpack_require__(47),
-	    replaceHolders = __webpack_require__(62);
+	var arrayCopy = __webpack_require__(49),
+	    composeArgs = __webpack_require__(50),
+	    composeArgsRight = __webpack_require__(51),
+	    replaceHolders = __webpack_require__(66);
 
 	/** Used to compose bitmasks for wrapper metadata. */
 	var BIND_FLAG = 1,
@@ -52658,12 +52667,12 @@
 
 
 /***/ },
-/* 67 */
+/* 71 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var isArrayLike = __webpack_require__(68),
-	    isIndex = __webpack_require__(61),
-	    isObject = __webpack_require__(38);
+	var isArrayLike = __webpack_require__(72),
+	    isIndex = __webpack_require__(65),
+	    isObject = __webpack_require__(42);
 
 	/**
 	 * Checks if the provided arguments are from an iteratee call.
@@ -52692,11 +52701,11 @@
 
 
 /***/ },
-/* 68 */
+/* 72 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var getLength = __webpack_require__(69),
-	    isLength = __webpack_require__(58);
+	var getLength = __webpack_require__(73),
+	    isLength = __webpack_require__(62);
 
 	/**
 	 * Checks if `value` is array-like.
@@ -52713,10 +52722,10 @@
 
 
 /***/ },
-/* 69 */
+/* 73 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var baseProperty = __webpack_require__(70);
+	var baseProperty = __webpack_require__(74);
 
 	/**
 	 * Gets the "length" property value of `object`.
@@ -52734,10 +52743,10 @@
 
 
 /***/ },
-/* 70 */
+/* 74 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var toObject = __webpack_require__(71);
+	var toObject = __webpack_require__(75);
 
 	/**
 	 * The base implementation of `_.property` without support for deep paths.
@@ -52756,12 +52765,12 @@
 
 
 /***/ },
-/* 71 */
+/* 75 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var isObject = __webpack_require__(38),
-	    isString = __webpack_require__(72),
-	    support = __webpack_require__(73);
+	var isObject = __webpack_require__(42),
+	    isString = __webpack_require__(76),
+	    support = __webpack_require__(77);
 
 	/**
 	 * Converts `value` to an object if it's not one.
@@ -52788,10 +52797,10 @@
 
 
 /***/ },
-/* 72 */
+/* 76 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var isObjectLike = __webpack_require__(40);
+	var isObjectLike = __webpack_require__(44);
 
 	/** `Object#toString` result references. */
 	var stringTag = '[object String]';
@@ -52829,7 +52838,7 @@
 
 
 /***/ },
-/* 73 */
+/* 77 */
 /***/ function(module, exports) {
 
 	/** Used for native method references. */
@@ -52931,13 +52940,13 @@
 
 
 /***/ },
-/* 74 */
+/* 78 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var baseCallback = __webpack_require__(75),
-	    isIterateeCall = __webpack_require__(67),
-	    isObjectLike = __webpack_require__(40),
-	    matches = __webpack_require__(103);
+	var baseCallback = __webpack_require__(79),
+	    isIterateeCall = __webpack_require__(71),
+	    isObjectLike = __webpack_require__(44),
+	    matches = __webpack_require__(107);
 
 	/**
 	 * Creates a function that invokes `func` with the `this` binding of `thisArg`
@@ -52990,14 +52999,14 @@
 
 
 /***/ },
-/* 75 */
+/* 79 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var baseMatches = __webpack_require__(76),
-	    baseMatchesProperty = __webpack_require__(93),
-	    bindCallback = __webpack_require__(100),
-	    identity = __webpack_require__(33),
-	    property = __webpack_require__(101);
+	var baseMatches = __webpack_require__(80),
+	    baseMatchesProperty = __webpack_require__(97),
+	    bindCallback = __webpack_require__(104),
+	    identity = __webpack_require__(37),
+	    property = __webpack_require__(105);
 
 	/**
 	 * The base implementation of `_.callback` which supports specifying the
@@ -53031,12 +53040,12 @@
 
 
 /***/ },
-/* 76 */
+/* 80 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var baseIsMatch = __webpack_require__(77),
-	    getMatchData = __webpack_require__(90),
-	    toObject = __webpack_require__(71);
+	var baseIsMatch = __webpack_require__(81),
+	    getMatchData = __webpack_require__(94),
+	    toObject = __webpack_require__(75);
 
 	/**
 	 * The base implementation of `_.matches` which does not clone `source`.
@@ -53068,11 +53077,11 @@
 
 
 /***/ },
-/* 77 */
+/* 81 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var baseIsEqual = __webpack_require__(78),
-	    toObject = __webpack_require__(71);
+	var baseIsEqual = __webpack_require__(82),
+	    toObject = __webpack_require__(75);
 
 	/**
 	 * The base implementation of `_.isMatch` without support for callback
@@ -53126,12 +53135,12 @@
 
 
 /***/ },
-/* 78 */
+/* 82 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var baseIsEqualDeep = __webpack_require__(79),
-	    isObject = __webpack_require__(38),
-	    isObjectLike = __webpack_require__(40);
+	var baseIsEqualDeep = __webpack_require__(83),
+	    isObject = __webpack_require__(42),
+	    isObjectLike = __webpack_require__(44);
 
 	/**
 	 * The base implementation of `_.isEqual` without support for `this` binding
@@ -53160,15 +53169,15 @@
 
 
 /***/ },
-/* 79 */
+/* 83 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var equalArrays = __webpack_require__(80),
-	    equalByTag = __webpack_require__(82),
-	    equalObjects = __webpack_require__(83),
-	    isArray = __webpack_require__(57),
-	    isHostObject = __webpack_require__(39),
-	    isTypedArray = __webpack_require__(89);
+	var equalArrays = __webpack_require__(84),
+	    equalByTag = __webpack_require__(86),
+	    equalObjects = __webpack_require__(87),
+	    isArray = __webpack_require__(61),
+	    isHostObject = __webpack_require__(43),
+	    isTypedArray = __webpack_require__(93);
 
 	/** `Object#toString` result references. */
 	var argsTag = '[object Arguments]',
@@ -53269,10 +53278,10 @@
 
 
 /***/ },
-/* 80 */
+/* 84 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var arraySome = __webpack_require__(81);
+	var arraySome = __webpack_require__(85);
 
 	/**
 	 * A specialized version of `baseIsEqualDeep` for arrays with support for
@@ -53326,7 +53335,7 @@
 
 
 /***/ },
-/* 81 */
+/* 85 */
 /***/ function(module, exports) {
 
 	/**
@@ -53355,7 +53364,7 @@
 
 
 /***/ },
-/* 82 */
+/* 86 */
 /***/ function(module, exports) {
 
 	/** `Object#toString` result references. */
@@ -53409,10 +53418,10 @@
 
 
 /***/ },
-/* 83 */
+/* 87 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var keys = __webpack_require__(84);
+	var keys = __webpack_require__(88);
 
 	/** Used for native method references. */
 	var objectProto = Object.prototype;
@@ -53482,14 +53491,14 @@
 
 
 /***/ },
-/* 84 */
+/* 88 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var getNative = __webpack_require__(35),
-	    isArrayLike = __webpack_require__(68),
-	    isObject = __webpack_require__(38),
-	    shimKeys = __webpack_require__(85),
-	    support = __webpack_require__(73);
+	var getNative = __webpack_require__(39),
+	    isArrayLike = __webpack_require__(72),
+	    isObject = __webpack_require__(42),
+	    shimKeys = __webpack_require__(89),
+	    support = __webpack_require__(77);
 
 	/* Native method references for those with the same name as other `lodash` methods. */
 	var nativeKeys = getNative(Object, 'keys');
@@ -53534,15 +53543,15 @@
 
 
 /***/ },
-/* 85 */
+/* 89 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var isArguments = __webpack_require__(86),
-	    isArray = __webpack_require__(57),
-	    isIndex = __webpack_require__(61),
-	    isLength = __webpack_require__(58),
-	    isString = __webpack_require__(72),
-	    keysIn = __webpack_require__(87);
+	var isArguments = __webpack_require__(90),
+	    isArray = __webpack_require__(61),
+	    isIndex = __webpack_require__(65),
+	    isLength = __webpack_require__(62),
+	    isString = __webpack_require__(76),
+	    keysIn = __webpack_require__(91);
 
 	/** Used for native method references. */
 	var objectProto = Object.prototype;
@@ -53582,11 +53591,11 @@
 
 
 /***/ },
-/* 86 */
+/* 90 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var isArrayLike = __webpack_require__(68),
-	    isObjectLike = __webpack_require__(40);
+	var isArrayLike = __webpack_require__(72),
+	    isObjectLike = __webpack_require__(44);
 
 	/** Used for native method references. */
 	var objectProto = Object.prototype;
@@ -53622,18 +53631,18 @@
 
 
 /***/ },
-/* 87 */
+/* 91 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var arrayEach = __webpack_require__(88),
-	    isArguments = __webpack_require__(86),
-	    isArray = __webpack_require__(57),
-	    isFunction = __webpack_require__(37),
-	    isIndex = __webpack_require__(61),
-	    isLength = __webpack_require__(58),
-	    isObject = __webpack_require__(38),
-	    isString = __webpack_require__(72),
-	    support = __webpack_require__(73);
+	var arrayEach = __webpack_require__(92),
+	    isArguments = __webpack_require__(90),
+	    isArray = __webpack_require__(61),
+	    isFunction = __webpack_require__(41),
+	    isIndex = __webpack_require__(65),
+	    isLength = __webpack_require__(62),
+	    isObject = __webpack_require__(42),
+	    isString = __webpack_require__(76),
+	    support = __webpack_require__(77);
 
 	/** `Object#toString` result references. */
 	var arrayTag = '[object Array]',
@@ -53764,7 +53773,7 @@
 
 
 /***/ },
-/* 88 */
+/* 92 */
 /***/ function(module, exports) {
 
 	/**
@@ -53792,11 +53801,11 @@
 
 
 /***/ },
-/* 89 */
+/* 93 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var isLength = __webpack_require__(58),
-	    isObjectLike = __webpack_require__(40);
+	var isLength = __webpack_require__(62),
+	    isObjectLike = __webpack_require__(44);
 
 	/** `Object#toString` result references. */
 	var argsTag = '[object Arguments]',
@@ -53872,11 +53881,11 @@
 
 
 /***/ },
-/* 90 */
+/* 94 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var isStrictComparable = __webpack_require__(91),
-	    pairs = __webpack_require__(92);
+	var isStrictComparable = __webpack_require__(95),
+	    pairs = __webpack_require__(96);
 
 	/**
 	 * Gets the propery names, values, and compare flags of `object`.
@@ -53899,10 +53908,10 @@
 
 
 /***/ },
-/* 91 */
+/* 95 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var isObject = __webpack_require__(38);
+	var isObject = __webpack_require__(42);
 
 	/**
 	 * Checks if `value` is suitable for strict equality comparisons, i.e. `===`.
@@ -53920,11 +53929,11 @@
 
 
 /***/ },
-/* 92 */
+/* 96 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var keys = __webpack_require__(84),
-	    toObject = __webpack_require__(71);
+	var keys = __webpack_require__(88),
+	    toObject = __webpack_require__(75);
 
 	/**
 	 * Creates a two dimensional array of the key-value pairs for `object`,
@@ -53959,18 +53968,18 @@
 
 
 /***/ },
-/* 93 */
+/* 97 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var baseGet = __webpack_require__(94),
-	    baseIsEqual = __webpack_require__(78),
-	    baseSlice = __webpack_require__(95),
-	    isArray = __webpack_require__(57),
-	    isKey = __webpack_require__(96),
-	    isStrictComparable = __webpack_require__(91),
-	    last = __webpack_require__(97),
-	    toObject = __webpack_require__(71),
-	    toPath = __webpack_require__(98);
+	var baseGet = __webpack_require__(98),
+	    baseIsEqual = __webpack_require__(82),
+	    baseSlice = __webpack_require__(99),
+	    isArray = __webpack_require__(61),
+	    isKey = __webpack_require__(100),
+	    isStrictComparable = __webpack_require__(95),
+	    last = __webpack_require__(101),
+	    toObject = __webpack_require__(75),
+	    toPath = __webpack_require__(102);
 
 	/**
 	 * The base implementation of `_.matchesProperty` which does not clone `srcValue`.
@@ -54010,10 +54019,10 @@
 
 
 /***/ },
-/* 94 */
+/* 98 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var toObject = __webpack_require__(71);
+	var toObject = __webpack_require__(75);
 
 	/**
 	 * The base implementation of `get` without support for string paths
@@ -54046,7 +54055,7 @@
 
 
 /***/ },
-/* 95 */
+/* 99 */
 /***/ function(module, exports) {
 
 	/**
@@ -54084,11 +54093,11 @@
 
 
 /***/ },
-/* 96 */
+/* 100 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var isArray = __webpack_require__(57),
-	    toObject = __webpack_require__(71);
+	var isArray = __webpack_require__(61),
+	    toObject = __webpack_require__(75);
 
 	/** Used to match property names within property paths. */
 	var reIsDeepProp = /\.|\[(?:[^[\]]*|(["'])(?:(?!\1)[^\n\\]|\\.)*?\1)\]/,
@@ -54118,7 +54127,7 @@
 
 
 /***/ },
-/* 97 */
+/* 101 */
 /***/ function(module, exports) {
 
 	/**
@@ -54143,11 +54152,11 @@
 
 
 /***/ },
-/* 98 */
+/* 102 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var baseToString = __webpack_require__(99),
-	    isArray = __webpack_require__(57);
+	var baseToString = __webpack_require__(103),
+	    isArray = __webpack_require__(61);
 
 	/** Used to match property names within property paths. */
 	var rePropName = /[^.[\]]+|\[(?:(-?\d+(?:\.\d+)?)|(["'])((?:(?!\2)[^\n\\]|\\.)*?)\2)\]/g;
@@ -54177,7 +54186,7 @@
 
 
 /***/ },
-/* 99 */
+/* 103 */
 /***/ function(module, exports) {
 
 	/**
@@ -54196,10 +54205,10 @@
 
 
 /***/ },
-/* 100 */
+/* 104 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var identity = __webpack_require__(33);
+	var identity = __webpack_require__(37);
 
 	/**
 	 * A specialized version of `baseCallback` which only supports `this` binding
@@ -54241,12 +54250,12 @@
 
 
 /***/ },
-/* 101 */
+/* 105 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var baseProperty = __webpack_require__(70),
-	    basePropertyDeep = __webpack_require__(102),
-	    isKey = __webpack_require__(96);
+	var baseProperty = __webpack_require__(74),
+	    basePropertyDeep = __webpack_require__(106),
+	    isKey = __webpack_require__(100);
 
 	/**
 	 * Creates a function that returns the property value at `path` on a
@@ -54278,11 +54287,11 @@
 
 
 /***/ },
-/* 102 */
+/* 106 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var baseGet = __webpack_require__(94),
-	    toPath = __webpack_require__(98);
+	var baseGet = __webpack_require__(98),
+	    toPath = __webpack_require__(102);
 
 	/**
 	 * A specialized version of `baseProperty` which supports deep paths.
@@ -54303,11 +54312,11 @@
 
 
 /***/ },
-/* 103 */
+/* 107 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var baseClone = __webpack_require__(104),
-	    baseMatches = __webpack_require__(76);
+	var baseClone = __webpack_require__(108),
+	    baseMatches = __webpack_require__(80);
 
 	/**
 	 * Creates a function that performs a deep comparison between a given object
@@ -54342,19 +54351,19 @@
 
 
 /***/ },
-/* 104 */
+/* 108 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var arrayCopy = __webpack_require__(45),
-	    arrayEach = __webpack_require__(88),
-	    baseAssign = __webpack_require__(105),
-	    baseForOwn = __webpack_require__(107),
-	    initCloneArray = __webpack_require__(110),
-	    initCloneByTag = __webpack_require__(111),
-	    initCloneObject = __webpack_require__(113),
-	    isArray = __webpack_require__(57),
-	    isHostObject = __webpack_require__(39),
-	    isObject = __webpack_require__(38);
+	var arrayCopy = __webpack_require__(49),
+	    arrayEach = __webpack_require__(92),
+	    baseAssign = __webpack_require__(109),
+	    baseForOwn = __webpack_require__(111),
+	    initCloneArray = __webpack_require__(114),
+	    initCloneByTag = __webpack_require__(115),
+	    initCloneObject = __webpack_require__(117),
+	    isArray = __webpack_require__(61),
+	    isHostObject = __webpack_require__(43),
+	    isObject = __webpack_require__(42);
 
 	/** `Object#toString` result references. */
 	var argsTag = '[object Arguments]',
@@ -54480,11 +54489,11 @@
 
 
 /***/ },
-/* 105 */
+/* 109 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var baseCopy = __webpack_require__(106),
-	    keys = __webpack_require__(84);
+	var baseCopy = __webpack_require__(110),
+	    keys = __webpack_require__(88);
 
 	/**
 	 * The base implementation of `_.assign` without support for argument juggling,
@@ -54505,7 +54514,7 @@
 
 
 /***/ },
-/* 106 */
+/* 110 */
 /***/ function(module, exports) {
 
 	/**
@@ -54534,11 +54543,11 @@
 
 
 /***/ },
-/* 107 */
+/* 111 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var baseFor = __webpack_require__(108),
-	    keys = __webpack_require__(84);
+	var baseFor = __webpack_require__(112),
+	    keys = __webpack_require__(88);
 
 	/**
 	 * The base implementation of `_.forOwn` without support for callback
@@ -54557,10 +54566,10 @@
 
 
 /***/ },
-/* 108 */
+/* 112 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var createBaseFor = __webpack_require__(109);
+	var createBaseFor = __webpack_require__(113);
 
 	/**
 	 * The base implementation of `baseForIn` and `baseForOwn` which iterates
@@ -54580,10 +54589,10 @@
 
 
 /***/ },
-/* 109 */
+/* 113 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var toObject = __webpack_require__(71);
+	var toObject = __webpack_require__(75);
 
 	/**
 	 * Creates a base function for `_.forIn` or `_.forInRight`.
@@ -54613,7 +54622,7 @@
 
 
 /***/ },
-/* 110 */
+/* 114 */
 /***/ function(module, exports) {
 
 	/** Used for native method references. */
@@ -54645,10 +54654,10 @@
 
 
 /***/ },
-/* 111 */
+/* 115 */
 /***/ function(module, exports, __webpack_require__) {
 
-	/* WEBPACK VAR INJECTION */(function(global) {var bufferClone = __webpack_require__(112);
+	/* WEBPACK VAR INJECTION */(function(global) {var bufferClone = __webpack_require__(116);
 
 	/** `Object#toString` result references. */
 	var boolTag = '[object Boolean]',
@@ -54734,7 +54743,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, (function() { return this; }())))
 
 /***/ },
-/* 112 */
+/* 116 */
 /***/ function(module, exports) {
 
 	/* WEBPACK VAR INJECTION */(function(global) {/** Native method references. */
@@ -54761,7 +54770,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, (function() { return this; }())))
 
 /***/ },
-/* 113 */
+/* 117 */
 /***/ function(module, exports) {
 
 	/**
@@ -54783,10 +54792,10 @@
 
 
 /***/ },
-/* 114 */
+/* 118 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var createCurry = __webpack_require__(115);
+	var createCurry = __webpack_require__(119);
 
 	/** Used to compose bitmasks for wrapper metadata. */
 	var CURRY_FLAG = 8;
@@ -54840,11 +54849,11 @@
 
 
 /***/ },
-/* 115 */
+/* 119 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var createWrapper = __webpack_require__(31),
-	    isIterateeCall = __webpack_require__(67);
+	var createWrapper = __webpack_require__(35),
+	    isIterateeCall = __webpack_require__(71);
 
 	/**
 	 * Creates a `_.curry` or `_.curryRight` function.
@@ -54869,12 +54878,12 @@
 
 
 /***/ },
-/* 116 */
+/* 120 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var baseFlatten = __webpack_require__(117),
-	    createWrapper = __webpack_require__(31),
-	    restParam = __webpack_require__(119);
+	var baseFlatten = __webpack_require__(121),
+	    createWrapper = __webpack_require__(35),
+	    restParam = __webpack_require__(123);
 
 	/** Used to compose bitmasks for wrapper metadata. */
 	var REARG_FLAG = 256;
@@ -54915,14 +54924,14 @@
 
 
 /***/ },
-/* 117 */
+/* 121 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var arrayPush = __webpack_require__(118),
-	    isArguments = __webpack_require__(86),
-	    isArray = __webpack_require__(57),
-	    isArrayLike = __webpack_require__(68),
-	    isObjectLike = __webpack_require__(40);
+	var arrayPush = __webpack_require__(122),
+	    isArguments = __webpack_require__(90),
+	    isArray = __webpack_require__(61),
+	    isArrayLike = __webpack_require__(72),
+	    isObjectLike = __webpack_require__(44);
 
 	/**
 	 * The base implementation of `_.flatten` with added support for restricting
@@ -54962,7 +54971,7 @@
 
 
 /***/ },
-/* 118 */
+/* 122 */
 /***/ function(module, exports) {
 
 	/**
@@ -54988,7 +54997,7 @@
 
 
 /***/ },
-/* 119 */
+/* 123 */
 /***/ function(module, exports) {
 
 	/** Used as the `TypeError` message for "Functions" methods. */
@@ -55052,14 +55061,14 @@
 
 
 /***/ },
-/* 120 */
+/* 124 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var baseDifference = __webpack_require__(121),
-	    baseFlatten = __webpack_require__(117),
-	    isArrayLike = __webpack_require__(68),
-	    isObjectLike = __webpack_require__(40),
-	    restParam = __webpack_require__(119);
+	var baseDifference = __webpack_require__(125),
+	    baseFlatten = __webpack_require__(121),
+	    isArrayLike = __webpack_require__(72),
+	    isObjectLike = __webpack_require__(44),
+	    restParam = __webpack_require__(123);
 
 	/**
 	 * Creates an array of unique `array` values not included in the other
@@ -55087,12 +55096,12 @@
 
 
 /***/ },
-/* 121 */
+/* 125 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var baseIndexOf = __webpack_require__(122),
-	    cacheIndexOf = __webpack_require__(124),
-	    createCache = __webpack_require__(125);
+	var baseIndexOf = __webpack_require__(126),
+	    cacheIndexOf = __webpack_require__(128),
+	    createCache = __webpack_require__(129);
 
 	/** Used as the size to enable large array optimizations. */
 	var LARGE_ARRAY_SIZE = 200;
@@ -55148,10 +55157,10 @@
 
 
 /***/ },
-/* 122 */
+/* 126 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var indexOfNaN = __webpack_require__(123);
+	var indexOfNaN = __webpack_require__(127);
 
 	/**
 	 * The base implementation of `_.indexOf` without support for binary searches.
@@ -55181,7 +55190,7 @@
 
 
 /***/ },
-/* 123 */
+/* 127 */
 /***/ function(module, exports) {
 
 	/**
@@ -55210,10 +55219,10 @@
 
 
 /***/ },
-/* 124 */
+/* 128 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var isObject = __webpack_require__(38);
+	var isObject = __webpack_require__(42);
 
 	/**
 	 * Checks if `value` is in `cache` mimicking the return signature of
@@ -55235,11 +55244,11 @@
 
 
 /***/ },
-/* 125 */
+/* 129 */
 /***/ function(module, exports, __webpack_require__) {
 
-	/* WEBPACK VAR INJECTION */(function(global) {var SetCache = __webpack_require__(126),
-	    getNative = __webpack_require__(35);
+	/* WEBPACK VAR INJECTION */(function(global) {var SetCache = __webpack_require__(130),
+	    getNative = __webpack_require__(39);
 
 	/** Native method references. */
 	var Set = getNative(global, 'Set');
@@ -55263,11 +55272,11 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, (function() { return this; }())))
 
 /***/ },
-/* 126 */
+/* 130 */
 /***/ function(module, exports, __webpack_require__) {
 
-	/* WEBPACK VAR INJECTION */(function(global) {var cachePush = __webpack_require__(127),
-	    getNative = __webpack_require__(35);
+	/* WEBPACK VAR INJECTION */(function(global) {var cachePush = __webpack_require__(131),
+	    getNative = __webpack_require__(39);
 
 	/** Native method references. */
 	var Set = getNative(global, 'Set');
@@ -55299,10 +55308,10 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, (function() { return this; }())))
 
 /***/ },
-/* 127 */
+/* 131 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var isObject = __webpack_require__(38);
+	var isObject = __webpack_require__(42);
 
 	/**
 	 * Adds `value` to the cache.
@@ -55325,16 +55334,16 @@
 
 
 /***/ },
-/* 128 */
+/* 132 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var baseIndexOf = __webpack_require__(122),
-	    getLength = __webpack_require__(69),
-	    isArray = __webpack_require__(57),
-	    isIterateeCall = __webpack_require__(67),
-	    isLength = __webpack_require__(58),
-	    isString = __webpack_require__(72),
-	    values = __webpack_require__(129);
+	var baseIndexOf = __webpack_require__(126),
+	    getLength = __webpack_require__(73),
+	    isArray = __webpack_require__(61),
+	    isIterateeCall = __webpack_require__(71),
+	    isLength = __webpack_require__(62),
+	    isString = __webpack_require__(76),
+	    values = __webpack_require__(133);
 
 	/* Native method references for those with the same name as other `lodash` methods. */
 	var nativeMax = Math.max;
@@ -55388,11 +55397,11 @@
 
 
 /***/ },
-/* 129 */
+/* 133 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var baseValues = __webpack_require__(130),
-	    keys = __webpack_require__(84);
+	var baseValues = __webpack_require__(134),
+	    keys = __webpack_require__(88);
 
 	/**
 	 * Creates an array of the own enumerable property values of `object`.
@@ -55427,7 +55436,7 @@
 
 
 /***/ },
-/* 130 */
+/* 134 */
 /***/ function(module, exports) {
 
 	/**
@@ -55455,14 +55464,14 @@
 
 
 /***/ },
-/* 131 */
+/* 135 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var baseIndexOf = __webpack_require__(122),
-	    cacheIndexOf = __webpack_require__(124),
-	    createCache = __webpack_require__(125),
-	    isArrayLike = __webpack_require__(68),
-	    restParam = __webpack_require__(119);
+	var baseIndexOf = __webpack_require__(126),
+	    cacheIndexOf = __webpack_require__(128),
+	    createCache = __webpack_require__(129),
+	    isArrayLike = __webpack_require__(72),
+	    restParam = __webpack_require__(123);
 
 	/**
 	 * Creates an array of unique values that are included in all of the provided
@@ -55519,17 +55528,17 @@
 
 
 /***/ },
-/* 132 */
+/* 136 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var arrayMap = __webpack_require__(133),
-	    baseDifference = __webpack_require__(121),
-	    baseFlatten = __webpack_require__(117),
-	    bindCallback = __webpack_require__(100),
-	    keysIn = __webpack_require__(87),
-	    pickByArray = __webpack_require__(134),
-	    pickByCallback = __webpack_require__(135),
-	    restParam = __webpack_require__(119);
+	var arrayMap = __webpack_require__(137),
+	    baseDifference = __webpack_require__(125),
+	    baseFlatten = __webpack_require__(121),
+	    bindCallback = __webpack_require__(104),
+	    keysIn = __webpack_require__(91),
+	    pickByArray = __webpack_require__(138),
+	    pickByCallback = __webpack_require__(139),
+	    restParam = __webpack_require__(123);
 
 	/**
 	 * The opposite of `_.pick`; this method creates an object composed of the
@@ -55572,7 +55581,7 @@
 
 
 /***/ },
-/* 133 */
+/* 137 */
 /***/ function(module, exports) {
 
 	/**
@@ -55599,10 +55608,10 @@
 
 
 /***/ },
-/* 134 */
+/* 138 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var toObject = __webpack_require__(71);
+	var toObject = __webpack_require__(75);
 
 	/**
 	 * A specialized version of `_.pick` which picks `object` properties specified
@@ -55633,10 +55642,10 @@
 
 
 /***/ },
-/* 135 */
+/* 139 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var baseForIn = __webpack_require__(136);
+	var baseForIn = __webpack_require__(140);
 
 	/**
 	 * A specialized version of `_.pick` which picks `object` properties `predicate`
@@ -55661,11 +55670,11 @@
 
 
 /***/ },
-/* 136 */
+/* 140 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var baseFor = __webpack_require__(108),
-	    keysIn = __webpack_require__(87);
+	var baseFor = __webpack_require__(112),
+	    keysIn = __webpack_require__(91);
 
 	/**
 	 * The base implementation of `_.forIn` without support for callback
@@ -55684,10 +55693,10 @@
 
 
 /***/ },
-/* 137 */
+/* 141 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var baseIndexOf = __webpack_require__(122);
+	var baseIndexOf = __webpack_require__(126);
 
 	/** Used for native method references. */
 	var arrayProto = Array.prototype;
@@ -55742,12 +55751,12 @@
 
 
 /***/ },
-/* 138 */
+/* 142 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var baseFlatten = __webpack_require__(117),
-	    baseUniq = __webpack_require__(139),
-	    restParam = __webpack_require__(119);
+	var baseFlatten = __webpack_require__(121),
+	    baseUniq = __webpack_require__(143),
+	    restParam = __webpack_require__(123);
 
 	/**
 	 * Creates an array of unique values, in order, from all of the provided arrays
@@ -55772,12 +55781,12 @@
 
 
 /***/ },
-/* 139 */
+/* 143 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var baseIndexOf = __webpack_require__(122),
-	    cacheIndexOf = __webpack_require__(124),
-	    createCache = __webpack_require__(125);
+	var baseIndexOf = __webpack_require__(126),
+	    cacheIndexOf = __webpack_require__(128),
+	    createCache = __webpack_require__(129);
 
 	/** Used as the size to enable large array optimizations. */
 	var LARGE_ARRAY_SIZE = 200;
@@ -55838,13 +55847,13 @@
 
 
 /***/ },
-/* 140 */
+/* 144 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var baseCallback = __webpack_require__(75),
-	    baseUniq = __webpack_require__(139),
-	    isIterateeCall = __webpack_require__(67),
-	    sortedUniq = __webpack_require__(141);
+	var baseCallback = __webpack_require__(79),
+	    baseUniq = __webpack_require__(143),
+	    isIterateeCall = __webpack_require__(71),
+	    sortedUniq = __webpack_require__(145);
 
 	/**
 	 * Creates a duplicate-free version of an array, using
@@ -55915,7 +55924,7 @@
 
 
 /***/ },
-/* 141 */
+/* 145 */
 /***/ function(module, exports) {
 
 	/**
@@ -55950,12 +55959,12 @@
 
 
 /***/ },
-/* 142 */
+/* 146 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var baseDifference = __webpack_require__(121),
-	    isArrayLike = __webpack_require__(68),
-	    restParam = __webpack_require__(119);
+	var baseDifference = __webpack_require__(125),
+	    isArrayLike = __webpack_require__(72),
+	    restParam = __webpack_require__(123);
 
 	/**
 	 * Creates an array excluding all provided values using
@@ -55983,13 +55992,13 @@
 
 
 /***/ },
-/* 143 */
+/* 147 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var arrayPush = __webpack_require__(118),
-	    baseDifference = __webpack_require__(121),
-	    baseUniq = __webpack_require__(139),
-	    isArrayLike = __webpack_require__(68);
+	var arrayPush = __webpack_require__(122),
+	    baseDifference = __webpack_require__(125),
+	    baseUniq = __webpack_require__(143),
+	    isArrayLike = __webpack_require__(72);
 
 	/**
 	 * Creates an array of unique values that is the [symmetric difference](https://en.wikipedia.org/wiki/Symmetric_difference)
@@ -56024,7 +56033,7 @@
 
 
 /***/ },
-/* 144 */
+/* 148 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __WEBPACK_AMD_DEFINE_RESULT__;/* WEBPACK VAR INJECTION */(function(module, global) {/**
@@ -68585,10 +68594,10 @@
 	  }
 	}.call(this));
 
-	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(145)(module), (function() { return this; }())))
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(149)(module), (function() { return this; }())))
 
 /***/ },
-/* 145 */
+/* 149 */
 /***/ function(module, exports) {
 
 	module.exports = function(module) {
@@ -68604,7 +68613,7 @@
 
 
 /***/ },
-/* 146 */
+/* 150 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -68664,7 +68673,7 @@
 	}
 
 /***/ },
-/* 147 */
+/* 151 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -68703,7 +68712,7 @@
 	}
 
 /***/ },
-/* 148 */
+/* 152 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -68712,11 +68721,11 @@
 	    value: true
 	});
 
-	var _testController = __webpack_require__(218);
+	var _testController = __webpack_require__(153);
 
 	var _testController2 = _interopRequireDefault(_testController);
 
-	var _test = __webpack_require__(217);
+	var _test = __webpack_require__(154);
 
 	var _test2 = _interopRequireDefault(_test);
 
@@ -68729,9 +68738,43 @@
 	};
 
 /***/ },
-/* 149 */,
-/* 150 */,
-/* 151 */
+/* 153 */
+/***/ function(module, exports) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	    value: true
+	});
+
+	exports.default = function (ServiceHelper, FactoryBoards) {
+	    var obj = {
+	        name: '   Vasyl   '
+	    };
+
+	    var Boards = new FactoryBoards();
+
+	    this.newBoard = function () {
+	        Boards.push({
+	            name: 'MyNew Board'
+	        });
+	    };
+
+	    this.trimName = function () {
+	        console.log('trim name');
+	        var res = ServiceHelper.trimName(obj);
+	        console.log('res:' + res);
+	    };
+	};
+
+/***/ },
+/* 154 */
+/***/ function(module, exports) {
+
+	module.exports = "<div>I am a test Component</div>\n<hr/>\n<button ng-click=\"$ctrl.trimName()\">TrimName</button>\n<br/>\n<button ng-click=\"$ctrl.newBoard()\">New Board</button>"
+
+/***/ },
+/* 155 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -68740,11 +68783,11 @@
 	    value: true
 	});
 
-	var _boardController = __webpack_require__(194);
+	var _boardController = __webpack_require__(156);
 
 	var _boardController2 = _interopRequireDefault(_boardController);
 
-	var _board = __webpack_require__(191);
+	var _board = __webpack_require__(157);
 
 	var _board2 = _interopRequireDefault(_board);
 
@@ -68760,344 +68803,7 @@
 	};
 
 /***/ },
-/* 152 */,
-/* 153 */,
-/* 154 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-
-	Object.defineProperty(exports, "__esModule", {
-	    value: true
-	});
-
-	var _boardHeaderController = __webpack_require__(196);
-
-	var _boardHeaderController2 = _interopRequireDefault(_boardHeaderController);
-
-	var _boardHeader = __webpack_require__(195);
-
-	var _boardHeader2 = _interopRequireDefault(_boardHeader);
-
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-	exports.default = {
-	    bindings: {},
-	    controller: _boardHeaderController2.default,
-	    template: _boardHeader2.default
-	};
-
-/***/ },
-/* 155 */,
-/* 156 */,
-/* 157 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-
-	Object.defineProperty(exports, "__esModule", {
-	    value: true
-	});
-
-	var _boardsController = __webpack_require__(198);
-
-	var _boardsController2 = _interopRequireDefault(_boardsController);
-
-	var _boards = __webpack_require__(197);
-
-	var _boards2 = _interopRequireDefault(_boards);
-
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-	exports.default = {
-	    bindings: {},
-	    controller: _boardsController2.default,
-	    template: _boards2.default
-	};
-
-/***/ },
-/* 158 */,
-/* 159 */,
-/* 160 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-
-	Object.defineProperty(exports, "__esModule", {
-	    value: true
-	});
-
-	var _cardController = __webpack_require__(200);
-
-	var _cardController2 = _interopRequireDefault(_cardController);
-
-	var _card = __webpack_require__(199);
-
-	var _card2 = _interopRequireDefault(_card);
-
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-	exports.default = {
-	    bindings: {
-	        card: '=',
-	        cardKey: '<',
-	        listKey: '<'
-	    },
-	    controller: _cardController2.default,
-	    template: _card2.default
-	};
-
-/***/ },
-/* 161 */,
-/* 162 */,
-/* 163 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-
-	Object.defineProperty(exports, "__esModule", {
-	    value: true
-	});
-
-	var _footerController = __webpack_require__(202);
-
-	var _footerController2 = _interopRequireDefault(_footerController);
-
-	var _footer = __webpack_require__(201);
-
-	var _footer2 = _interopRequireDefault(_footer);
-
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-	exports.default = {
-	    bindings: {},
-	    controller: _footerController2.default,
-	    template: _footer2.default
-	};
-
-/***/ },
-/* 164 */,
-/* 165 */,
-/* 166 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-
-	Object.defineProperty(exports, "__esModule", {
-	    value: true
-	});
-
-	var _header = __webpack_require__(203);
-
-	var _header2 = _interopRequireDefault(_header);
-
-	var _headerController = __webpack_require__(204);
-
-	var _headerController2 = _interopRequireDefault(_headerController);
-
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-	exports.default = {
-	    controller: _headerController2.default,
-	    template: _header2.default
-	};
-
-/***/ },
-/* 167 */,
-/* 168 */,
-/* 169 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-
-	Object.defineProperty(exports, "__esModule", {
-	    value: true
-	});
-
-	var _iconController = __webpack_require__(206);
-
-	var _iconController2 = _interopRequireDefault(_iconController);
-
-	var _icon = __webpack_require__(205);
-
-	var _icon2 = _interopRequireDefault(_icon);
-
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-	exports.default = {
-	    bindings: {
-	        icon: '@'
-	    },
-	    controller: _iconController2.default,
-	    template: _icon2.default
-	};
-
-/***/ },
-/* 170 */,
-/* 171 */,
-/* 172 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-
-	Object.defineProperty(exports, "__esModule", {
-	    value: true
-	});
-
-	var _listController = __webpack_require__(208);
-
-	var _listController2 = _interopRequireDefault(_listController);
-
-	var _list = __webpack_require__(207);
-
-	var _list2 = _interopRequireDefault(_list);
-
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-	exports.default = {
-	    bindings: {
-	        list: '=',
-	        listKey: '<'
-	    },
-	    controller: _listController2.default,
-	    template: _list2.default
-	};
-
-/***/ },
-/* 173 */,
-/* 174 */,
-/* 175 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-
-	Object.defineProperty(exports, "__esModule", {
-	    value: true
-	});
-
-	var _listsController = __webpack_require__(210);
-
-	var _listsController2 = _interopRequireDefault(_listsController);
-
-	var _lists = __webpack_require__(209);
-
-	var _lists2 = _interopRequireDefault(_lists);
-
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-	exports.default = {
-	    bindings: {},
-	    controller: _listsController2.default,
-	    template: _lists2.default
-	};
-
-/***/ },
-/* 176 */,
-/* 177 */,
-/* 178 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-
-	Object.defineProperty(exports, "__esModule", {
-	    value: true
-	});
-
-	var _newBoardController = __webpack_require__(212);
-
-	var _newBoardController2 = _interopRequireDefault(_newBoardController);
-
-	var _newBoard = __webpack_require__(211);
-
-	var _newBoard2 = _interopRequireDefault(_newBoard);
-
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-	exports.default = {
-	    bindings: {},
-	    controller: _newBoardController2.default,
-	    template: _newBoard2.default
-	};
-
-/***/ },
-/* 179 */,
-/* 180 */,
-/* 181 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-
-	Object.defineProperty(exports, "__esModule", {
-	    value: true
-	});
-
-	var _newCard = __webpack_require__(213);
-
-	var _newCard2 = _interopRequireDefault(_newCard);
-
-	var _newCardController = __webpack_require__(214);
-
-	var _newCardController2 = _interopRequireDefault(_newCardController);
-
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-	exports.default = {
-	    bindings: {
-	        listKey: '<'
-	    },
-	    controller: _newCardController2.default,
-	    template: _newCard2.default
-	};
-
-/***/ },
-/* 182 */,
-/* 183 */,
-/* 184 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-
-	Object.defineProperty(exports, "__esModule", {
-	    value: true
-	});
-
-	var _newList = __webpack_require__(215);
-
-	var _newList2 = _interopRequireDefault(_newList);
-
-	var _newListController = __webpack_require__(216);
-
-	var _newListController2 = _interopRequireDefault(_newListController);
-
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-	exports.default = {
-	    bindings: {},
-	    controller: _newListController2.default,
-	    template: _newList2.default
-	};
-
-/***/ },
-/* 185 */,
-/* 186 */,
-/* 187 */,
-/* 188 */,
-/* 189 */,
-/* 190 */,
-/* 191 */
-/***/ function(module, exports) {
-
-	module.exports = "<div class=\"col-xs-12 col-sm-6 col-md-4\">\n    <div class=\"board\"\n         ng-class=\"{'board--starred': $ctrl.board.starred}\"\n         ng-click=\"$ctrl.goToBoard()\"\n        >\n        {{$ctrl.board.name}}\n\n        <!--Toggle starred btn-->\n        <span ng-click=\"$ctrl.toggleStarred(); $event.stopPropagation();\" class=\"board__star\">\n            <tr-icon ng-if=\"!$ctrl.board.starred\" icon=\"star-o\"></tr-icon>\n            <tr-icon ng-if=\"$ctrl.board.starred\" icon=\"star\"></tr-icon>\n        </span>\n\n        <!--Remove btn-->\n        <span ng-click=\"$ctrl.remove(); $event.stopPropagation();\" class=\"board__delete\">\n            <tr-icon icon=\"remove\"></tr-icon>\n        </span>\n    </div>\n</div>"
-
-/***/ },
-/* 192 */
-/***/ function(module, exports) {
-
-	// removed by extract-text-webpack-plugin
-
-/***/ },
-/* 193 */,
-/* 194 */
+/* 156 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -69127,13 +68833,39 @@
 	}
 
 /***/ },
-/* 195 */
+/* 157 */
 /***/ function(module, exports) {
 
-	module.exports = "<div class=\"row\">\n    <div class=\"col-xs-12\">\n        <button class=\"btn btn-sm btn-default\">{{$ctrl.board.name}}</button>\n    </div>\n</div>"
+	module.exports = "<div class=\"col-xs-12 col-sm-6 col-md-4\">\n    <div class=\"board\"\n         ng-class=\"{'board--starred': $ctrl.board.starred}\"\n         ng-click=\"$ctrl.goToBoard()\"\n        >\n        {{$ctrl.board.name}}\n\n        <!--Toggle starred btn-->\n        <span ng-click=\"$ctrl.toggleStarred(); $event.stopPropagation();\" class=\"board__star\">\n            <tr-icon ng-if=\"!$ctrl.board.starred\" icon=\"star-o\"></tr-icon>\n            <tr-icon ng-if=\"$ctrl.board.starred\" icon=\"star\"></tr-icon>\n        </span>\n\n        <!--Remove btn-->\n        <span ng-click=\"$ctrl.remove(); $event.stopPropagation();\" class=\"board__delete\">\n            <tr-icon icon=\"remove\"></tr-icon>\n        </span>\n    </div>\n</div>"
 
 /***/ },
-/* 196 */
+/* 158 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	    value: true
+	});
+
+	var _boardHeaderController = __webpack_require__(159);
+
+	var _boardHeaderController2 = _interopRequireDefault(_boardHeaderController);
+
+	var _boardHeader = __webpack_require__(160);
+
+	var _boardHeader2 = _interopRequireDefault(_boardHeader);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	exports.default = {
+	    bindings: {},
+	    controller: _boardHeaderController2.default,
+	    template: _boardHeader2.default
+	};
+
+/***/ },
+/* 159 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -69155,13 +68887,39 @@
 	}
 
 /***/ },
-/* 197 */
+/* 160 */
 /***/ function(module, exports) {
 
-	module.exports = "<!--Starred Board-->\n<div class=\"row\">\n    <div class=\"col-xs-12\">\n        <h3> <tr-icon icon=\"star\"></tr-icon> Starred Boards</h3>\n    </div>\n</div>\n<div class=\"row\">\n    <tr-board\n        ng-if=\"board.starred\"\n        ng-repeat=\"(boardKey, board) in $ctrl.boards\"\n        board=\"board\"\n        board-key=\"boardKey\"\n        >\n    </tr-board>\n</div>\n\n<!--My Boards-->\n<div class=\"row\">\n    <div class=\"col-xs-12\">\n        <h3> <tr-icon icon=\"user\"></tr-icon> My Boards</h3>\n    </div>\n</div>\n\n<div class=\"row\">\n    <tr-board\n        ng-repeat=\"(boardKey, board) in $ctrl.boards\"\n        board=\"board\"\n        board-key=\"boardKey\"\n        >\n    </tr-board>\n    <tr-new-board></tr-new-board>\n</div>"
+	module.exports = "<div class=\"row\">\n    <div class=\"col-xs-12\">\n        <button class=\"btn btn-sm btn-default\">{{$ctrl.board.name}}</button>\n    </div>\n</div>"
 
 /***/ },
-/* 198 */
+/* 161 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	    value: true
+	});
+
+	var _boardsController = __webpack_require__(162);
+
+	var _boardsController2 = _interopRequireDefault(_boardsController);
+
+	var _boards = __webpack_require__(163);
+
+	var _boards2 = _interopRequireDefault(_boards);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	exports.default = {
+	    bindings: {},
+	    controller: _boardsController2.default,
+	    template: _boards2.default
+	};
+
+/***/ },
+/* 162 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -69182,80 +68940,139 @@
 	}
 
 /***/ },
-/* 199 */
+/* 163 */
 /***/ function(module, exports) {
 
-	module.exports = "<div class=\"card\" ng-class=\"{'card--edited': $ctrl.isEdited}\">\n\n    <!--Card Not Edited State -->\n    <div ng-if=\"!$ctrl.isEdited\">\n        <div\n            class=\"form-group\"\n            event-focus=\"click\" event-focus-id=\"{{$ctrl.cardKey}}\"\n            >\n            <!--Action Done-->\n            <tr-icon\n                icon=\"check\"\n                ng-click=\"$ctrl.markDone(); $event.preventDefault()\"\n                class=\"card__done-action\"\n                >\n            </tr-icon>\n\n            <!--Action Edit-->\n            <tr-icon\n                icon=\"edit\"\n                ng-click=\"$ctrl.startEdit()\"\n                event-focus=\"click\" event-focus-id=\"{{$ctrl.cardKey}}\"\n                class=\"card__edit-action\"\n                >\n            </tr-icon>\n\n            <!--Action Remove-->\n            <tr-icon\n                icon=\"remove\"\n                ng-click=\"$ctrl.remove(); $event.preventDefault()\"\n                class=\"card__remove-action\"\n                >\n            </tr-icon>\n\n            <input\n                ng-model=\"$ctrl.card.name\"\n                class=\"form-control input-sm card__input\"\n                ng-class=\"{'card--done': $ctrl.card.isDone}\"\n                type=\"text\"\n                disabled\n                />\n        </div>\n    </div>\n\n    <!--Card Edited State-->\n    <div ng-if=\"$ctrl.isEdited\">\n        <div class=\"form-group\">\n            <input\n                ng-model=\"$ctrl.card.name\"\n                class=\"form-control input-sm card__input\"\n                id=\"{{$ctrl.cardKey}}\"\n                type=\"text\"\n                />\n        </div>\n        <div class=\"form-group\">\n            <button ng-click=\"$ctrl.save()\" class=\"btn btn-success btn-sm\">Save</button>\n            <button ng-click=\"$ctrl.cancel()\" class=\"btn btn-default btn-sm\">Cancel</button>\n        </div>\n    </div>\n</div>"
+	module.exports = "<!--Starred Board-->\n<div class=\"row\">\n    <div class=\"col-xs-12\">\n        <h3> <tr-icon icon=\"star\"></tr-icon> Starred Boards</h3>\n    </div>\n</div>\n<div class=\"row\">\n    <tr-board\n        ng-if=\"board.starred\"\n        ng-repeat=\"(boardKey, board) in $ctrl.boards\"\n        board=\"board\"\n        board-key=\"boardKey\"\n        >\n    </tr-board>\n</div>\n\n<!--My Boards-->\n<div class=\"row\">\n    <div class=\"col-xs-12\">\n        <h3> <tr-icon icon=\"user\"></tr-icon> My Boards</h3>\n    </div>\n</div>\n\n<div class=\"row\">\n    <tr-board\n        ng-repeat=\"(boardKey, board) in $ctrl.boards\"\n        board=\"board\"\n        board-key=\"boardKey\"\n        >\n    </tr-board>\n    <tr-new-board></tr-new-board>\n</div>"
 
 /***/ },
-/* 200 */
-/***/ function(module, exports) {
+/* 164 */
+/***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
 	Object.defineProperty(exports, "__esModule", {
 	    value: true
 	});
-	exports.default = CardController;
-	function CardController(FactoryCard, ServiceHelper, ServiceEvents, $state) {
-	    var _this = this;
 
-	    var self = this;
-	    var boardKey = $state.params.boardKey;
-	    var Card = new FactoryCard(boardKey, this.listKey, this.cardKey);
+	var _cardController = __webpack_require__(165);
 
-	    this.isEdited = false;
+	var _cardController2 = _interopRequireDefault(_cardController);
 
-	    ServiceEvents.subscribe('startEdit', function (data) {
-	        if (data.id == self.cardKey) {
-	            return null;
-	        }
+	var _card = __webpack_require__(166);
 
-	        self.resetState();
-	    });
+	var _card2 = _interopRequireDefault(_card);
 
-	    this.publishStartEdit = function () {
-	        ServiceEvents.publish('startEdit', {
-	            id: _this.cardKey
-	        });
-	    };
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-	    this.resetState = function () {
-	        self.isEdited = false;
-	    };
-
-	    this.markDone = function () {
-	        _this.card.isDone = !_this.card.isDone;
-
-	        Card.update(_this.card).then(_this.resetState).catch(ServiceHelper.logError);
-	    };
-
-	    this.startEdit = function () {
-	        _this.isEdited = true;
-	        _this.publishStartEdit();
-	    };
-
-	    this.remove = function () {
-	        return Card.remove();
-	    };
-
-	    this.save = function () {
-	        return Card.update(this.card).then(this.resetState).catch(ServiceHelper.logError);
-	    };
-
-	    this.cancel = function () {
-	        this.resetState();
-	    };
-	}
+	exports.default = {
+	    bindings: {
+	        card: '=',
+	        cardKey: '<',
+	        listKey: '<'
+	    },
+	    controller: _cardController2.default,
+	    template: _card2.default
+	};
 
 /***/ },
-/* 201 */
+/* 165 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	    value: true
+	});
+
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	var _EditedElementController = __webpack_require__(191);
+
+	var _EditedElementController2 = _interopRequireDefault(_EditedElementController);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+	var Card = null;
+
+	var CardController = function (_EditedElementControl) {
+	    _inherits(CardController, _EditedElementControl);
+
+	    function CardController(ServiceEvents, ServiceHelper, FactoryCard, $state) {
+	        _classCallCheck(this, CardController);
+
+	        var _this = _possibleConstructorReturn(this, Object.getPrototypeOf(CardController).call(this, ServiceEvents, ServiceHelper));
+
+	        _this.boardKey = $state.params.boardKey;
+	        _this.elementId = _this.cardKey;
+	        Card = new FactoryCard(_this.boardKey, _this.listKey, _this.cardKey);
+	        return _this;
+	    }
+
+	    _createClass(CardController, [{
+	        key: 'markDone',
+	        value: function markDone() {
+	            this.card.isDone = !this.card.isDone;
+
+	            Card.update(this.card).then(this.resetState.bind(this)).catch(this.ServiceHelper.logError);
+	        }
+	    }, {
+	        key: 'remove',
+	        value: function remove() {
+	            return Card.remove();
+	        }
+	    }, {
+	        key: 'save',
+	        value: function save() {
+	            return Card.update(this.card).then(this.resetState.bind(this)).catch(this.ServiceHelper.logError);
+	        }
+	    }]);
+
+	    return CardController;
+	}(_EditedElementController2.default);
+
+	exports.default = CardController;
+
+/***/ },
+/* 166 */
 /***/ function(module, exports) {
 
-	module.exports = "<div class=\"footer\">\n\n</div>"
+	module.exports = "<div class=\"card\" ng-class=\"{'card--edited': $ctrl.isEdited}\">\n\n    <!--Card Not Edited State -->\n    <div ng-if=\"!$ctrl.isEdited\">\n        <div\n            class=\"form-group\"\n            event-focus=\"click\" event-focus-id=\"{{$ctrl.cardKey}}\"\n            >\n            <!--Action Done-->\n            <tr-icon\n                icon=\"check\"\n                ng-click=\"$ctrl.markDone(); $event.preventDefault()\"\n                class=\"card__done-action\"\n                >\n            </tr-icon>\n\n            <!--Action Edit-->\n            <tr-icon\n                icon=\"edit\"\n                ng-click=\"$ctrl.startEdit()\"\n                event-focus=\"click\" event-focus-id=\"{{$ctrl.cardKey}}\"\n                class=\"card__edit-action\"\n                >\n            </tr-icon>\n\n            <!--Action Remove-->\n            <tr-icon\n                icon=\"remove\"\n                ng-click=\"$ctrl.remove(); $event.preventDefault()\"\n                class=\"card__remove-action\"\n                >\n            </tr-icon>\n\n            <input\n                ng-model=\"$ctrl.card.name\"\n                class=\"form-control input-sm card__input\"\n                ng-class=\"{'card--done': $ctrl.card.isDone}\"\n                type=\"text\"\n                disabled\n                />\n        </div>\n    </div>\n\n    <!--Card Edited State-->\n    <div ng-if=\"$ctrl.isEdited\">\n        <div class=\"form-group\">\n            <input\n                ng-model=\"$ctrl.card.name\"\n                class=\"form-control input-sm card__input\"\n                id=\"{{$ctrl.cardKey}}\"\n                type=\"text\"\n                />\n        </div>\n        <div class=\"form-group\">\n            <button ng-click=\"$ctrl.save()\" class=\"btn btn-success btn-sm\">Save</button>\n            <button ng-click=\"$ctrl.cancel()\" class=\"btn btn-default btn-sm\">Cancel</button>\n        </div>\n    </div>\n</div>"
 
 /***/ },
-/* 202 */
+/* 167 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	    value: true
+	});
+
+	var _footerController = __webpack_require__(168);
+
+	var _footerController2 = _interopRequireDefault(_footerController);
+
+	var _footer = __webpack_require__(169);
+
+	var _footer2 = _interopRequireDefault(_footer);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	exports.default = {
+	    bindings: {},
+	    controller: _footerController2.default,
+	    template: _footer2.default
+	};
+
+/***/ },
+/* 168 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -69267,13 +69084,44 @@
 	function FooterController() {}
 
 /***/ },
-/* 203 */
+/* 169 */
+/***/ function(module, exports) {
+
+	module.exports = "<div class=\"footer\">\n\n</div>"
+
+/***/ },
+/* 170 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	    value: true
+	});
+
+	var _header = __webpack_require__(171);
+
+	var _header2 = _interopRequireDefault(_header);
+
+	var _headerController = __webpack_require__(172);
+
+	var _headerController2 = _interopRequireDefault(_headerController);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	exports.default = {
+	    controller: _headerController2.default,
+	    template: _header2.default
+	};
+
+/***/ },
+/* 171 */
 /***/ function(module, exports) {
 
 	module.exports = "<nav class=\"navbar navbar-default navbar-static-top\">\n    <div class=\"container\">\n        <div class=\"navbar-header\">\n            <a class=\"navbar-brand\" href=\"#\">Trello</a>\n        </div>\n        <div id=\"navbar\" class=\"navbar-collapse collapse\">\n            <ul class=\"nav navbar-nav\">\n                <li><a href=\"#\">Boards</a></li>\n            </ul>\n            <ul class=\"nav navbar-nav navbar-right\">\n            </ul>\n        </div>\n    </div>\n</nav>"
 
 /***/ },
-/* 204 */
+/* 172 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -69285,13 +69133,35 @@
 	function HeaderController() {}
 
 /***/ },
-/* 205 */
-/***/ function(module, exports) {
+/* 173 */
+/***/ function(module, exports, __webpack_require__) {
 
-	module.exports = "<i class=\"fa fa-{{$ctrl.icon}}\"></i>"
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	    value: true
+	});
+
+	var _iconController = __webpack_require__(174);
+
+	var _iconController2 = _interopRequireDefault(_iconController);
+
+	var _icon = __webpack_require__(175);
+
+	var _icon2 = _interopRequireDefault(_icon);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	exports.default = {
+	    bindings: {
+	        icon: '@'
+	    },
+	    controller: _iconController2.default,
+	    template: _icon2.default
+	};
 
 /***/ },
-/* 206 */
+/* 174 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -69303,13 +69173,42 @@
 	function IconController() {}
 
 /***/ },
-/* 207 */
+/* 175 */
 /***/ function(module, exports) {
 
-	module.exports = "<div class=\"list\" ng-class=\"{'list--edited': $ctrl.isEdited}\">\n    <!--List Header-->\n    <div class=\"list__header\" >\n        <!--Not Edited State-->\n        <div class=\"form-group\"\n             ng-if=\"!$ctrl.isEdited\"\n             ng-click=\"$ctrl.startEdit()\"\n             event-focus=\"click\" event-focus-id=\"{{$ctrl.inputId}}\"\n            >\n            <input type=\"text\" class=\"list__header_name form-control\" ng-model=\"$ctrl.list.name\" disabled/>\n            <!--TODO: MOve to component-->\n            <uib-progressbar class=\"progress\" value=\"$ctrl.progress\" type=\"success\"></uib-progressbar>\n        </div>\n\n        <!--Edited State-->\n        <div ng-if=\"$ctrl.isEdited\">\n            <div class=\"form-group\" >\n                <input type=\"text\" id=\"{{$ctrl.inputId}}\" class=\"list__header_name form-control\" ng-model=\"$ctrl.list.name\">\n            </div>\n            <div class=\"form-group\">\n                <button ng-click=\"$ctrl.save()\" class=\"btn btn-success btn-sm\">Save</button>\n                <button ng-click=\"$ctrl.cancel()\" class=\"btn btn-default btn-sm\">Cancel</button>\n            </div>\n        </div>\n\n        <!--List Delete-->\n        <span class=\"list__delete\" ng-click=\"$ctrl.removeList()\">\n            <tr-icon icon=\"remove\"></tr-icon>\n        </span>\n    </div>\n\n    <!--Cards-->\n    <tr-card\n        card=\"card\"\n        card-key=\"cardKey\"\n        list-key=\"$ctrl.listKey\"\n        ng-repeat=\"(cardKey, card) in $ctrl.cards\"\n        >\n    </tr-card>\n\n    <!--New Card-->\n    <tr-new-card list-key=\"$ctrl.listKey\"></tr-new-card>\n</div>"
+	module.exports = "<i class=\"fa fa-{{$ctrl.icon}}\"></i>"
 
 /***/ },
-/* 208 */
+/* 176 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	    value: true
+	});
+
+	var _listController = __webpack_require__(177);
+
+	var _listController2 = _interopRequireDefault(_listController);
+
+	var _list = __webpack_require__(178);
+
+	var _list2 = _interopRequireDefault(_list);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	exports.default = {
+	    bindings: {
+	        list: '=',
+	        listKey: '<'
+	    },
+	    controller: _listController2.default,
+	    template: _list2.default
+	};
+
+/***/ },
+/* 177 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -69412,13 +69311,39 @@
 	}
 
 /***/ },
-/* 209 */
+/* 178 */
 /***/ function(module, exports) {
 
-	module.exports = "<div class=\"lists\">\n    <tr-list\n            ng-repeat=\"(listKey, list) in $ctrl.lists\"\n            list=\"list\"\n            list-key=\"listKey\"\n            >\n    </tr-list>\n    <tr-new-list></tr-new-list>\n</div>"
+	module.exports = "<div class=\"list\" ng-class=\"{'list--edited': $ctrl.isEdited}\">\n    <!--List Header-->\n    <div class=\"list__header\" >\n        <!--Not Edited State-->\n        <div class=\"form-group\"\n             ng-if=\"!$ctrl.isEdited\"\n             ng-click=\"$ctrl.startEdit()\"\n             event-focus=\"click\" event-focus-id=\"{{$ctrl.inputId}}\"\n            >\n            <input type=\"text\" class=\"list__header_name form-control\" ng-model=\"$ctrl.list.name\" disabled/>\n            <!--TODO: MOve to component-->\n            <uib-progressbar class=\"progress\" value=\"$ctrl.progress\" type=\"success\"></uib-progressbar>\n        </div>\n\n        <!--Edited State-->\n        <div ng-if=\"$ctrl.isEdited\">\n            <div class=\"form-group\" >\n                <input type=\"text\" id=\"{{$ctrl.inputId}}\" class=\"list__header_name form-control\" ng-model=\"$ctrl.list.name\">\n            </div>\n            <div class=\"form-group\">\n                <button ng-click=\"$ctrl.save()\" class=\"btn btn-success btn-sm\">Save</button>\n                <button ng-click=\"$ctrl.cancel()\" class=\"btn btn-default btn-sm\">Cancel</button>\n            </div>\n        </div>\n\n        <!--List Delete-->\n        <span class=\"list__delete\" ng-click=\"$ctrl.removeList()\">\n            <tr-icon icon=\"remove\"></tr-icon>\n        </span>\n    </div>\n\n    <!--Cards-->\n    <tr-card\n        card=\"card\"\n        card-key=\"cardKey\"\n        list-key=\"$ctrl.listKey\"\n        ng-repeat=\"(cardKey, card) in $ctrl.cards\"\n        >\n    </tr-card>\n\n    <!--New Card-->\n    <tr-new-card list-key=\"$ctrl.listKey\"></tr-new-card>\n</div>"
 
 /***/ },
-/* 210 */
+/* 179 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	    value: true
+	});
+
+	var _listsController = __webpack_require__(180);
+
+	var _listsController2 = _interopRequireDefault(_listsController);
+
+	var _lists = __webpack_require__(181);
+
+	var _lists2 = _interopRequireDefault(_lists);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	exports.default = {
+	    bindings: {},
+	    controller: _listsController2.default,
+	    template: _lists2.default
+	};
+
+/***/ },
+/* 180 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -69441,13 +69366,39 @@
 	}
 
 /***/ },
-/* 211 */
+/* 181 */
 /***/ function(module, exports) {
 
-	module.exports = "<div class=\"col-xs-12 col-sm-6 col-md-4\">\n    <!--Not Editable State-->\n    <div\n        class=\"board board--new board--notediting\"\n        ng-click=\"$ctrl.startEdit()\"\n        event-focus=\"click\" event-focus-id=\"{{$ctrl.inputId}}\"\n        ng-if=\"!$ctrl.isEdited\"\n        >\n        <span class=\"board__name\">New Board</span>\n    </div>\n\n    <!--Editable State-->\n    <div ng-if=\"$ctrl.isEdited\" class=\"board board--new board--editing\">\n        <div class=\"form-group\">\n            <label class=\"control-label\" for=\"newBoardName\">Title</label>\n            <input\n                id=\"{{$ctrl.inputId}}\"\n                ng-model=\"$ctrl.boardName\"\n                class=\"form-control input-sm board_input\"\n                type=\"text\"\n                id=\"newBoardName\"\n                value=\"\"\n                />\n        </div>\n        <div class=\"form-group\">\n            <button ng-click=\"$ctrl.save()\" class=\"btn btn-success btn-sm\">Save</button>\n            <button ng-click=\"$ctrl.cancel()\" class=\"btn btn-default btn-sm\">Cancel</button>\n        </div>\n    </div>\n</div>"
+	module.exports = "<div class=\"lists\">\n    <tr-list\n            ng-repeat=\"(listKey, list) in $ctrl.lists\"\n            list=\"list\"\n            list-key=\"listKey\"\n            >\n    </tr-list>\n    <tr-new-list></tr-new-list>\n</div>"
 
 /***/ },
-/* 212 */
+/* 182 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	    value: true
+	});
+
+	var _newBoardController = __webpack_require__(183);
+
+	var _newBoardController2 = _interopRequireDefault(_newBoardController);
+
+	var _newBoard = __webpack_require__(184);
+
+	var _newBoard2 = _interopRequireDefault(_newBoard);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	exports.default = {
+	    bindings: {},
+	    controller: _newBoardController2.default,
+	    template: _newBoard2.default
+	};
+
+/***/ },
+/* 183 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -69487,13 +69438,47 @@
 	}
 
 /***/ },
-/* 213 */
+/* 184 */
+/***/ function(module, exports) {
+
+	module.exports = "<div class=\"col-xs-12 col-sm-6 col-md-4\">\n    <!--Not Editable State-->\n    <div\n        class=\"board board--new board--notediting\"\n        ng-click=\"$ctrl.startEdit()\"\n        event-focus=\"click\" event-focus-id=\"{{$ctrl.inputId}}\"\n        ng-if=\"!$ctrl.isEdited\"\n        >\n        <span class=\"board__name\">New Board</span>\n    </div>\n\n    <!--Editable State-->\n    <div ng-if=\"$ctrl.isEdited\" class=\"board board--new board--editing\">\n        <div class=\"form-group\">\n            <label class=\"control-label\" for=\"newBoardName\">Title</label>\n            <input\n                id=\"{{$ctrl.inputId}}\"\n                ng-model=\"$ctrl.boardName\"\n                class=\"form-control input-sm board_input\"\n                type=\"text\"\n                id=\"newBoardName\"\n                value=\"\"\n                />\n        </div>\n        <div class=\"form-group\">\n            <button ng-click=\"$ctrl.save()\" class=\"btn btn-success btn-sm\">Save</button>\n            <button ng-click=\"$ctrl.cancel()\" class=\"btn btn-default btn-sm\">Cancel</button>\n        </div>\n    </div>\n</div>"
+
+/***/ },
+/* 185 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	    value: true
+	});
+
+	var _newCard = __webpack_require__(186);
+
+	var _newCard2 = _interopRequireDefault(_newCard);
+
+	var _newCardController = __webpack_require__(187);
+
+	var _newCardController2 = _interopRequireDefault(_newCardController);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	exports.default = {
+	    bindings: {
+	        listKey: '<'
+	    },
+	    controller: _newCardController2.default,
+	    template: _newCard2.default
+	};
+
+/***/ },
+/* 186 */
 /***/ function(module, exports) {
 
 	module.exports = "<div>\n    <!--Not Edited State-->\n    <div\n        ng-click=\"$ctrl.startEdit()\"\n        event-focus=\"click\" event-focus-id=\"{{$ctrl.inputId}}\"\n        ng-if=\"!$ctrl.isEdited\"\n        class=\"card card--new\"\n        >\n        <div class=\"card__name\">New Card...</div>\n    </div>\n\n    <!--Edited State-->\n    <div ng-if=\"$ctrl.isEdited\" class=\"card card--new\">\n        <div class=\"form-group\">\n            <input id=\"{{$ctrl.inputId}}\" ng-model=\"$ctrl.cardName\" class=\"form-control input-sm card__input\" type=\"text\" value=\"\"/>\n        </div>\n        <div class=\"form-group\">\n            <button ng-click=\"$ctrl.save()\" class=\"btn btn-success btn-sm\">Save</button>\n            <button ng-click=\"$ctrl.cancel()\" class=\"btn btn-default btn-sm\">Cancel</button>\n        </div>\n    </div>\n</div>"
 
 /***/ },
-/* 214 */
+/* 187 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -69552,13 +69537,39 @@
 	}
 
 /***/ },
-/* 215 */
+/* 188 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	    value: true
+	});
+
+	var _newList = __webpack_require__(189);
+
+	var _newList2 = _interopRequireDefault(_newList);
+
+	var _newListController = __webpack_require__(190);
+
+	var _newListController2 = _interopRequireDefault(_newListController);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	exports.default = {
+	    bindings: {},
+	    controller: _newListController2.default,
+	    template: _newList2.default
+	};
+
+/***/ },
+/* 189 */
 /***/ function(module, exports) {
 
 	module.exports = "<!--Not Edited State-->\n<div\n    ng-click=\"$ctrl.startEdit()\"\n    event-focus=\"click\" event-focus-id=\"{{$ctrl.inputId}}\"\n    ng-if=\"!$ctrl.isEdited\"\n    class=\"list list--new\"\n    >\n    <span class=\"list__header_new_name\">New List</span>\n</div>\n\n<!--Edited State-->\n<div ng-if=\"$ctrl.isEdited\" class=\"list list--new\">\n    <div class=\"form-group\">\n        <label for=\"newListName\" class=\"control-label\">Title</label>\n        <input\n            id=\"{{$ctrl.inputId}}\"\n            ng-model=\"$ctrl.listName\"\n            class=\"form-control input-sm list__input\"\n            type=\"text\"\n            id=\"newListName\"\n            />\n    </div>\n    <div class=\"form-group\">\n        <button ng-click=\"$ctrl.save()\" class=\"btn btn-success btn-sm\">Save</button>\n        <button ng-click=\"$ctrl.cancel()\" class=\"btn btn-default btn-sm\">Cancel</button>\n    </div>\n</div>\n\n"
 
 /***/ },
-/* 216 */
+/* 190 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -69617,13 +69628,7 @@
 	};
 
 /***/ },
-/* 217 */
-/***/ function(module, exports) {
-
-	module.exports = "<div>I am a test Component</div>\n<hr/>\n<button ng-click=\"$ctrl.trimName()\">TrimName</button>\n<br/>\n<button ng-click=\"$ctrl.newBoard()\">New Board</button>"
-
-/***/ },
-/* 218 */
+/* 191 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -69632,25 +69637,70 @@
 	    value: true
 	});
 
-	exports.default = function (ServiceHelper, FactoryBoards) {
-	    var obj = {
-	        name: '   Vasyl   '
-	    };
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-	    var Boards = new FactoryBoards();
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
-	    this.newBoard = function () {
-	        Boards.push({
-	            name: 'MyNew Board'
-	        });
-	    };
+	var EditedElementController = function () {
+	    function EditedElementController(ServiceEvents, ServiceHelper) {
+	        _classCallCheck(this, EditedElementController);
 
-	    this.trimName = function () {
-	        console.log('trim name');
-	        var res = ServiceHelper.trimName(obj);
-	        console.log('res:' + res);
-	    };
-	};
+	        this.ServiceEvents = ServiceEvents;
+	        this.ServiceHelper = ServiceHelper;
+	        this.elementId = null; /*Warning: should be defined in child*/
+	        this.isEdited = false;
+
+	        this.activate();
+	    }
+
+	    _createClass(EditedElementController, [{
+	        key: 'publishStartEdit',
+	        value: function publishStartEdit() {
+	            var self = this;
+	            this.ServiceEvents.publish('startEdit', {
+	                id: self.elementId
+	            });
+	        }
+	    }, {
+	        key: 'startEdit',
+	        value: function startEdit() {
+	            this.isEdited = true;
+	            this.publishStartEdit();
+	        }
+	    }, {
+	        key: 'resetState',
+	        value: function resetState() {
+	            this.isEdited = false;
+	        }
+	    }, {
+	        key: 'save',
+	        value: function save() {
+	            /*Warning: should be defined in child*/
+	            throw new Error('should be defined in child');
+	        }
+	    }, {
+	        key: 'cancel',
+	        value: function cancel() {
+	            this.resetState();
+	        }
+	    }, {
+	        key: 'activate',
+	        value: function activate() {
+	            var self = this;
+	            this.ServiceEvents.subscribe('startEdit', function (data) {
+	                if (data.id == self.elementId) {
+	                    return null;
+	                }
+
+	                self.resetState();
+	            });
+	        }
+	    }]);
+
+	    return EditedElementController;
+	}();
+
+	exports.default = EditedElementController;
 
 /***/ }
 /******/ ]);

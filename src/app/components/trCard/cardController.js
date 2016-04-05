@@ -1,54 +1,33 @@
-export default function CardController(FactoryCard, ServiceHelper, ServiceEvents, $state) {
-    let self = this
-    let boardKey = $state.params.boardKey
-    let Card = new FactoryCard(boardKey, this.listKey, this.cardKey)
+import EditedElementController from './../../_jsShared/EditedElementController.js'
 
-    this.isEdited = false
+let Card = null
 
-    ServiceEvents.subscribe('startEdit', (data) => {
-        if(data.id == self.cardKey) {
-            return null
-        }
+export default class CardController extends EditedElementController{
+    constructor(ServiceEvents, ServiceHelper, FactoryCard, $state) {
+        super(ServiceEvents, ServiceHelper)
 
-        self.resetState()
-    })
-
-    this.publishStartEdit = () => {
-        ServiceEvents.publish('startEdit', {
-            id: this.cardKey
-        })
+        this.boardKey = $state.params.boardKey
+        this.elementId = this.cardKey
+        Card = new FactoryCard(this.boardKey, this.listKey, this.cardKey)
     }
 
-    this.resetState = () => {
-        self.isEdited = false
-    }
-
-    this.markDone = () => {
+    markDone () {
         this.card.isDone = !this.card.isDone
 
         Card
             .update(this.card)
-            .then(this.resetState)
-            .catch(ServiceHelper.logError)
+            .then(this.resetState.bind(this))
+            .catch(this.ServiceHelper.logError)
     }
 
-    this.startEdit = () => {
-        this.isEdited = true
-        this.publishStartEdit()
-    }
-
-    this.remove = function() {
+    remove() {
         return Card.remove()
     }
 
-    this.save = function() {
+    save() {
         return Card
             .update(this.card)
-            .then(this.resetState)
-            .catch(ServiceHelper.logError)
-    }
-
-    this.cancel = function() {
-        this.resetState()
+            .then(this.resetState.bind(this))
+            .catch(this.ServiceHelper.logError)
     }
 }
