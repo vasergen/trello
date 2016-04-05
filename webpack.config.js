@@ -7,7 +7,7 @@ module.exports = {
         filename: "app.js"
     },
     watch: true,
-    devtool: "#inline-source-map",
+    //devtool: "#inline-source-map" //too long
     module: {
         loaders: [
             {
@@ -17,8 +17,11 @@ module.exports = {
                 query: {
                     presets: ['es2015']
                 }
+            },
+            {
+                test: /\.html$/,
+                loader: 'raw'
             }
         ]
     }
-
 }

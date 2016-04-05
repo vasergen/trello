@@ -1,2 +1,7 @@
 WEBPACK
-
+- lodash-fp
+- firebase
+- ngAnnotate or ngInject
+- write script to load components
+- add context to webpack config
+- resetState should be method of controller

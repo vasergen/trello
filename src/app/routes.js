@@ -1,23 +1,22 @@
-(function() {
-    "use strict"
+import boardsView from './views/boards.html'
+import boardView from './views/board.html'
+import testView from './views/test.html'
 
-    angular.module("trello")
-        .config(($stateProvider, $urlRouterProvider) => {
+export default function ($stateProvider, $urlRouterProvider) {
 
-            $urlRouterProvider.otherwise('/')
+    $urlRouterProvider.otherwise('/')
 
-            $stateProvider
-                .state('boards', {
-                    url: '/',
-                    templateUrl: 'src/app/states/state.boards.html'
-                })
-                .state('board', {
-                    url: '/board:boardKey/:slug',
-                    templateUrl: 'src/app/states/state.board.html'
-                })
-                .state('test', {
-                    url: '/test',
-                    templateUrl: 'src/app/states/state.test.html'
-                })
+    $stateProvider
+        .state('boards', {
+            url: '/',
+            template: boardsView
         })
-})()
+        .state('board', {
+            url: '/board:boardKey/:slug',
+            template: boardView
+        })
+        .state('test', {
+            url: '/test',
+            template: testView
+        })
+}
