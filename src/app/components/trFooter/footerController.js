@@ -1,3 +1,5 @@
-export default function FooterController() {
+export default class FooterController {
+    constructor() {
 
+    }
 }

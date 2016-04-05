@@ -1,8 +1,13 @@
-export default function BoardsController(FactoryBoards) {
-    this.boards = null
+export default class BoardsController {
+    constructor(FactoryBoards) {
+        this.boards = null
+        this.BoardsDB = FactoryBoards()
 
-    let Boards = FactoryBoards()
-    Boards.onValue((snapshot) => {
-        this.boards = snapshot.val()
-    })
+        this.activate()
+    }
+    activate() {
+        this.BoardsDB.onValue((snapshot) => {
+            this.boards = snapshot.val()
+        })
+    }
 }

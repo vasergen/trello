@@ -1,30 +1,28 @@
-export default function NewBoardController(FactoryBoards, ServiceHelper) {
-    let Boards = new FactoryBoards()
+import EditedElementController from './../_shared/EditedElementController.js'
 
-    this.isEdited = false
-    this.boardName = ''
-    this.inputId = ServiceHelper.randomString()
+export default class NewBoardController extends EditedElementController {
+    constructor(ServiceEvents, ServiceHelper, FactoryBoards) {
+        super(ServiceEvents, ServiceHelper)
 
-    let resetState = () => {
+        this.BoardsDB = new FactoryBoards()
+        this.elementId = ServiceHelper.randomString()
+        this.inputId = ServiceHelper.randomString()
         this.isEdited = false
         this.boardName = ''
     }
 
-    this.startEdit = () => {
-        this.isEdited = true
+    resetState() {
+        super.resetState()
+        this.boardName = ''
     }
 
-    this.save = function() {
+    save() {
         let item = {
             name: this.boardName
         }
-        return Boards
+        return this.BoardsDB
             .push(item)
-            .then(resetState)
-            .catch(ServiceHelper.logError)
-    }
-
-    this.cancel = function() {
-        resetState()
+            .then(this.resetState.bind(this))
+            .catch(this.ServiceHelper.logError)
     }
 }

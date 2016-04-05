@@ -1,3 +1,5 @@
-export default function HeaderController() {
+export default class HeaderController {
+    constructor() {
 
+    }
 }

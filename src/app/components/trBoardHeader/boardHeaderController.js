@@ -1,9 +1,15 @@
-export default function BoardHeaderController($state, FactoryBoard) {
-    let boardKey = $state.params.boardKey
-    let Board = new FactoryBoard(boardKey)
+export default class BoardHeaderController {
+    constructor($state, FactoryBoard) {
+        this.boardKey = $state.params.boardKey
+        this.board = null
+        this.BoardDB = new FactoryBoard(this.boardKey)
 
-    this.board = null
-    Board.onValue((snapshot) => {
-        this.board = snapshot.val()
-    })
+        this.activate()
+    }
+
+    activate() {
+        this.BoardDB.onValue((snapshot) => {
+            this.board = snapshot.val()
+        })
+    }
 }

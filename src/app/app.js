@@ -3,12 +3,6 @@
 /*Css*/
 import './_cssShared/app.styl'
 
-/*Main Angular Files*/
-import angular from 'angular'
-import uirouter from 'angular-ui-router'
-import ngAnimate from 'angular-animate'
-import uiBootstrap from 'angular-ui-bootstrap'
-
     /*Routes*/
 import routes from './routes.js'
     /*Schemes Firebase*/
@@ -46,7 +40,7 @@ import trNewCard from './components/trNewCard'
 import trNewList from './components/trNewList'
 
 export default angular
-    .module("trello", [uirouter, ngAnimate, uiBootstrap])
+    .module("trello", ['ui.router', 'ngAnimate', 'ui.bootstrap'])
     .config(routes)
     /*Schemes Firebase*/
     .service('BoardScheme', BoardScheme)

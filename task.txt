@@ -1,13 +1,21 @@
 WEBPACK
-- ngAnnotate or ngInject
-- add context to webpack config
-- resetState should be method of controller
+- rewrite components on classes
+- rewrite services on classes
 - rewrite firebase factories on classes
+- ngAnnotate or ngInject
 - add dev server
-- delete gulp task
+- add context to webpack config
 
 Features
+- show validate error or other on page (under header)
+- if bad url (boardKey) than say it to user
+- remove dependency from lodash or rewrite to import only needed functions
 - add comments to card
 - add due time to card
 - add ability to edit board name
 - check and fix unit tests!
+
+NPM
+- remove modules that doesnt used
+- try to install project on windows (check if all is ok)
+-

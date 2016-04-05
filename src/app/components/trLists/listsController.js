@@ -1,10 +1,15 @@
-export default function ListsController(FactoryLists, $state) {
-    let boardKey = $state.params.boardKey
-    let Lists = new FactoryLists(boardKey)
+export default class ListsController {
+    constructor(FactoryLists, $state) {
+        this.boardKey = $state.params.boardKey
+        this.ListsDB = new FactoryLists(this.boardKey)
+        this.lists = null
 
-    this.lists = null
+        this.activate()
+    }
 
-    Lists.onValue((snapshot) => {
-        this.lists = snapshot.val()
-    })
+    activate() {
+        this.ListsDB.onValue((snapshot) => {
+            this.lists = snapshot.val()
+        })
+    }
 }

@@ -12,7 +12,7 @@ module.exports = {
         filename: "[name].js"
     },
     watch: true,
-    //devtool: "#inline-source-map" //works very slow
+    //devtool: "#inline-source-map",
     module: {
         loaders: [
             {

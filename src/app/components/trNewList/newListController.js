@@ -1,48 +1,30 @@
-export default function(FactoryLists, ServiceHelper, ServiceEvents, $state) {
-    let self = this
-    let boardKey = $state.params.boardKey
-    let Lists = new FactoryLists(boardKey)
+import EditedElementController from './../_shared/EditedElementController.js'
 
-    this.listName = ''
-    this.isEdited = false
-    this.inputId = ServiceHelper.randomString()
-    this.listKey = ServiceHelper.randomString()
+export default class NewListController extends EditedElementController {
+    constructor(ServiceEvents, ServiceHelper, FactoryLists, $state) {
+        super(ServiceEvents, ServiceHelper)
 
-    this.resetState = () => {
-        self.listName = ''
-        self.isEdited = false
+        this.boardKey = $state.params.boardKey
+        this.ListsDB = new FactoryLists(this.boardKey)
+        this.elementId = ServiceHelper.randomString()
+        this.inputId = ServiceHelper.randomString()
+        this.isEdited = false
+        this.listName = ''
     }
 
-    ServiceEvents.subscribe('startEdit', (data) => {
-        if(data.id == self.listKey) {
-            return null
-        }
-
-        self.resetState()
-    })
-
-    this.publishStartEdit = () => {
-        ServiceEvents.publish('startEdit', {
-            id: this.listKey
-        })
+    resetState() {
+        super.resetState()
+        this.listName = ''
     }
 
-    this.startEdit = () => {
-        this.isEdited = true
-        this.publishStartEdit()
-    }
-
-    this.save = function() {
+    save() {
         let item = {
             name: this.listName
         }
 
-        Lists.push(item)
-            .then(this.resetState)
-            .catch(ServiceHelper.logError)
-    }
-
-    this.cancel = function() {
-        this.resetState()
+        this.ListsDB
+            .push(item)
+            .then(this.resetState.bind(this))
+            .catch(this.ServiceHelper.logError)
     }
 }

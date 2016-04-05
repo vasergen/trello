@@ -1,3 +1,5 @@
-export default function IconController() {
+export default class IconController {
+    constructor() {
 
+    }
 }
