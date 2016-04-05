@@ -1,5 +1,5 @@
-import newListTemplate from './trNewList.html'
-import newListController from './trNewListController.js'
+import newListTemplate from './newList.html'
+import newListController from './newListController.js'
 
 export default {
     bindings: {},

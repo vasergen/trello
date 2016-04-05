@@ -1,5 +1,5 @@
-import newBoardController from './trNewBoardController.js'
-import newBoardTemplate from './trNewBoard.html'
+import newBoardController from './newBoardController.js'
+import newBoardTemplate from './newBoard.html'
 
 export default {
     bindings: {},

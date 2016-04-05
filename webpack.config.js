@@ -1,10 +1,15 @@
 "use strict"
+let webpack = require('webpack')
+let ExtractTextPlugin = require('extract-text-webpack-plugin')
+let stylusLoader = ExtractTextPlugin.extract("style-loader", "css-loader!stylus-loader");
 
 module.exports = {
-    entry: "./src/app/app.js",
+    entry: {
+        app: "./src/app/app.js"
+    },
     output: {
         path: __dirname + "/public",
-        filename: "app.js"
+        filename: "[name].js"
     },
     watch: true,
     //devtool: "#inline-source-map" //works very slow
@@ -19,9 +24,18 @@ module.exports = {
                 }
             },
             {
+                exclude: /node_modules/,
                 test: /\.html$/,
                 loader: 'raw'
+            },
+            {
+                exclude: /node_modules/,
+                test: /\.styl$/,
+                loader: stylusLoader
             }
         ]
-    }
+    },
+    plugins: [
+        new ExtractTextPlugin("[name].css")
+    ]
 }

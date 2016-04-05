@@ -46,9 +46,13 @@
 
 	"use strict";
 
+	/*Css*/
+
 	Object.defineProperty(exports, "__esModule", {
 	    value: true
 	});
+
+	__webpack_require__(192);
 
 	var _angular = __webpack_require__(1);
 
@@ -206,6 +210,9 @@
 
 
 	/*Routes*/
+
+
+	/*Main Angular Files*/
 
 	window.addEventListener('load', function () {
 	    _angular2.default.bootstrap(document, ["trello"]);
@@ -68705,59 +68712,25 @@
 	    value: true
 	});
 
-	var _trTestController = __webpack_require__(149);
+	var _testController = __webpack_require__(218);
 
-	var _trTestController2 = _interopRequireDefault(_trTestController);
+	var _testController2 = _interopRequireDefault(_testController);
 
-	var _trTest = __webpack_require__(150);
+	var _test = __webpack_require__(217);
 
-	var _trTest2 = _interopRequireDefault(_trTest);
+	var _test2 = _interopRequireDefault(_test);
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 	exports.default = {
 	    bindings: {},
-	    controller: _trTestController2.default,
-	    template: _trTest2.default
+	    controller: _testController2.default,
+	    template: _test2.default
 	};
 
 /***/ },
-/* 149 */
-/***/ function(module, exports) {
-
-	'use strict';
-
-	Object.defineProperty(exports, "__esModule", {
-	    value: true
-	});
-
-	exports.default = function (ServiceHelper, FactoryBoards) {
-	    var obj = {
-	        name: '   Vasyl   '
-	    };
-
-	    var Boards = new FactoryBoards();
-
-	    this.newBoard = function () {
-	        Boards.push({
-	            name: 'MyNew Board'
-	        });
-	    };
-
-	    this.trimName = function () {
-	        console.log('trim name');
-	        var res = ServiceHelper.trimName(obj);
-	        console.log('res:' + res);
-	    };
-	};
-
-/***/ },
-/* 150 */
-/***/ function(module, exports) {
-
-	module.exports = "<div>I am a test Component</div>\n<hr/>\n<button ng-click=\"$ctrl.trimName()\">TrimName</button>\n<br/>\n<button ng-click=\"$ctrl.newBoard()\">New Board</button>"
-
-/***/ },
+/* 149 */,
+/* 150 */,
 /* 151 */
 /***/ function(module, exports, __webpack_require__) {
 
@@ -68767,13 +68740,13 @@
 	    value: true
 	});
 
-	var _trBoardController = __webpack_require__(152);
+	var _boardController = __webpack_require__(194);
 
-	var _trBoardController2 = _interopRequireDefault(_trBoardController);
+	var _boardController2 = _interopRequireDefault(_boardController);
 
-	var _trBoard = __webpack_require__(153);
+	var _board = __webpack_require__(191);
 
-	var _trBoard2 = _interopRequireDefault(_trBoard);
+	var _board2 = _interopRequireDefault(_board);
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -68782,12 +68755,349 @@
 	        board: '=',
 	        boardKey: '<'
 	    },
-	    controller: _trBoardController2.default,
-	    template: _trBoard2.default
+	    controller: _boardController2.default,
+	    template: _board2.default
 	};
 
 /***/ },
-/* 152 */
+/* 152 */,
+/* 153 */,
+/* 154 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	    value: true
+	});
+
+	var _boardHeaderController = __webpack_require__(196);
+
+	var _boardHeaderController2 = _interopRequireDefault(_boardHeaderController);
+
+	var _boardHeader = __webpack_require__(195);
+
+	var _boardHeader2 = _interopRequireDefault(_boardHeader);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	exports.default = {
+	    bindings: {},
+	    controller: _boardHeaderController2.default,
+	    template: _boardHeader2.default
+	};
+
+/***/ },
+/* 155 */,
+/* 156 */,
+/* 157 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	    value: true
+	});
+
+	var _boardsController = __webpack_require__(198);
+
+	var _boardsController2 = _interopRequireDefault(_boardsController);
+
+	var _boards = __webpack_require__(197);
+
+	var _boards2 = _interopRequireDefault(_boards);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	exports.default = {
+	    bindings: {},
+	    controller: _boardsController2.default,
+	    template: _boards2.default
+	};
+
+/***/ },
+/* 158 */,
+/* 159 */,
+/* 160 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	    value: true
+	});
+
+	var _cardController = __webpack_require__(200);
+
+	var _cardController2 = _interopRequireDefault(_cardController);
+
+	var _card = __webpack_require__(199);
+
+	var _card2 = _interopRequireDefault(_card);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	exports.default = {
+	    bindings: {
+	        card: '=',
+	        cardKey: '<',
+	        listKey: '<'
+	    },
+	    controller: _cardController2.default,
+	    template: _card2.default
+	};
+
+/***/ },
+/* 161 */,
+/* 162 */,
+/* 163 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	    value: true
+	});
+
+	var _footerController = __webpack_require__(202);
+
+	var _footerController2 = _interopRequireDefault(_footerController);
+
+	var _footer = __webpack_require__(201);
+
+	var _footer2 = _interopRequireDefault(_footer);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	exports.default = {
+	    bindings: {},
+	    controller: _footerController2.default,
+	    template: _footer2.default
+	};
+
+/***/ },
+/* 164 */,
+/* 165 */,
+/* 166 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	    value: true
+	});
+
+	var _header = __webpack_require__(203);
+
+	var _header2 = _interopRequireDefault(_header);
+
+	var _headerController = __webpack_require__(204);
+
+	var _headerController2 = _interopRequireDefault(_headerController);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	exports.default = {
+	    controller: _headerController2.default,
+	    template: _header2.default
+	};
+
+/***/ },
+/* 167 */,
+/* 168 */,
+/* 169 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	    value: true
+	});
+
+	var _iconController = __webpack_require__(206);
+
+	var _iconController2 = _interopRequireDefault(_iconController);
+
+	var _icon = __webpack_require__(205);
+
+	var _icon2 = _interopRequireDefault(_icon);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	exports.default = {
+	    bindings: {
+	        icon: '@'
+	    },
+	    controller: _iconController2.default,
+	    template: _icon2.default
+	};
+
+/***/ },
+/* 170 */,
+/* 171 */,
+/* 172 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	    value: true
+	});
+
+	var _listController = __webpack_require__(208);
+
+	var _listController2 = _interopRequireDefault(_listController);
+
+	var _list = __webpack_require__(207);
+
+	var _list2 = _interopRequireDefault(_list);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	exports.default = {
+	    bindings: {
+	        list: '=',
+	        listKey: '<'
+	    },
+	    controller: _listController2.default,
+	    template: _list2.default
+	};
+
+/***/ },
+/* 173 */,
+/* 174 */,
+/* 175 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	    value: true
+	});
+
+	var _listsController = __webpack_require__(210);
+
+	var _listsController2 = _interopRequireDefault(_listsController);
+
+	var _lists = __webpack_require__(209);
+
+	var _lists2 = _interopRequireDefault(_lists);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	exports.default = {
+	    bindings: {},
+	    controller: _listsController2.default,
+	    template: _lists2.default
+	};
+
+/***/ },
+/* 176 */,
+/* 177 */,
+/* 178 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	    value: true
+	});
+
+	var _newBoardController = __webpack_require__(212);
+
+	var _newBoardController2 = _interopRequireDefault(_newBoardController);
+
+	var _newBoard = __webpack_require__(211);
+
+	var _newBoard2 = _interopRequireDefault(_newBoard);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	exports.default = {
+	    bindings: {},
+	    controller: _newBoardController2.default,
+	    template: _newBoard2.default
+	};
+
+/***/ },
+/* 179 */,
+/* 180 */,
+/* 181 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	    value: true
+	});
+
+	var _newCard = __webpack_require__(213);
+
+	var _newCard2 = _interopRequireDefault(_newCard);
+
+	var _newCardController = __webpack_require__(214);
+
+	var _newCardController2 = _interopRequireDefault(_newCardController);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	exports.default = {
+	    bindings: {
+	        listKey: '<'
+	    },
+	    controller: _newCardController2.default,
+	    template: _newCard2.default
+	};
+
+/***/ },
+/* 182 */,
+/* 183 */,
+/* 184 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	    value: true
+	});
+
+	var _newList = __webpack_require__(215);
+
+	var _newList2 = _interopRequireDefault(_newList);
+
+	var _newListController = __webpack_require__(216);
+
+	var _newListController2 = _interopRequireDefault(_newListController);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	exports.default = {
+	    bindings: {},
+	    controller: _newListController2.default,
+	    template: _newList2.default
+	};
+
+/***/ },
+/* 185 */,
+/* 186 */,
+/* 187 */,
+/* 188 */,
+/* 189 */,
+/* 190 */,
+/* 191 */
+/***/ function(module, exports) {
+
+	module.exports = "<div class=\"col-xs-12 col-sm-6 col-md-4\">\n    <div class=\"board\"\n         ng-class=\"{'board--starred': $ctrl.board.starred}\"\n         ng-click=\"$ctrl.goToBoard()\"\n        >\n        {{$ctrl.board.name}}\n\n        <!--Toggle starred btn-->\n        <span ng-click=\"$ctrl.toggleStarred(); $event.stopPropagation();\" class=\"board__star\">\n            <tr-icon ng-if=\"!$ctrl.board.starred\" icon=\"star-o\"></tr-icon>\n            <tr-icon ng-if=\"$ctrl.board.starred\" icon=\"star\"></tr-icon>\n        </span>\n\n        <!--Remove btn-->\n        <span ng-click=\"$ctrl.remove(); $event.stopPropagation();\" class=\"board__delete\">\n            <tr-icon icon=\"remove\"></tr-icon>\n        </span>\n    </div>\n</div>"
+
+/***/ },
+/* 192 */
+/***/ function(module, exports) {
+
+	// removed by extract-text-webpack-plugin
+
+/***/ },
+/* 193 */,
+/* 194 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -68817,39 +69127,13 @@
 	}
 
 /***/ },
-/* 153 */
+/* 195 */
 /***/ function(module, exports) {
 
-	module.exports = "<div class=\"col-xs-12 col-sm-6 col-md-4\">\n    <div class=\"board\"\n         ng-class=\"{'board--starred': $ctrl.board.starred}\"\n         ng-click=\"$ctrl.goToBoard()\"\n        >\n        {{$ctrl.board.name}}\n\n        <!--Toggle starred btn-->\n        <span ng-click=\"$ctrl.toggleStarred(); $event.stopPropagation();\" class=\"board__star\">\n            <tr-icon ng-if=\"!$ctrl.board.starred\" icon=\"star-o\"></tr-icon>\n            <tr-icon ng-if=\"$ctrl.board.starred\" icon=\"star\"></tr-icon>\n        </span>\n\n        <!--Remove btn-->\n        <span ng-click=\"$ctrl.remove(); $event.stopPropagation();\" class=\"board__delete\">\n            <tr-icon icon=\"remove\"></tr-icon>\n        </span>\n    </div>\n</div>"
+	module.exports = "<div class=\"row\">\n    <div class=\"col-xs-12\">\n        <button class=\"btn btn-sm btn-default\">{{$ctrl.board.name}}</button>\n    </div>\n</div>"
 
 /***/ },
-/* 154 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-
-	Object.defineProperty(exports, "__esModule", {
-	    value: true
-	});
-
-	var _trBoardHeaderController = __webpack_require__(155);
-
-	var _trBoardHeaderController2 = _interopRequireDefault(_trBoardHeaderController);
-
-	var _trBoardHeader = __webpack_require__(156);
-
-	var _trBoardHeader2 = _interopRequireDefault(_trBoardHeader);
-
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-	exports.default = {
-	    bindings: {},
-	    controller: _trBoardHeaderController2.default,
-	    template: _trBoardHeader2.default
-	};
-
-/***/ },
-/* 155 */
+/* 196 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -68871,39 +69155,13 @@
 	}
 
 /***/ },
-/* 156 */
+/* 197 */
 /***/ function(module, exports) {
 
-	module.exports = "<div class=\"row\">\n    <div class=\"col-xs-12\">\n        <button class=\"btn btn-sm btn-default\">{{$ctrl.board.name}}</button>\n    </div>\n</div>"
+	module.exports = "<!--Starred Board-->\n<div class=\"row\">\n    <div class=\"col-xs-12\">\n        <h3> <tr-icon icon=\"star\"></tr-icon> Starred Boards</h3>\n    </div>\n</div>\n<div class=\"row\">\n    <tr-board\n        ng-if=\"board.starred\"\n        ng-repeat=\"(boardKey, board) in $ctrl.boards\"\n        board=\"board\"\n        board-key=\"boardKey\"\n        >\n    </tr-board>\n</div>\n\n<!--My Boards-->\n<div class=\"row\">\n    <div class=\"col-xs-12\">\n        <h3> <tr-icon icon=\"user\"></tr-icon> My Boards</h3>\n    </div>\n</div>\n\n<div class=\"row\">\n    <tr-board\n        ng-repeat=\"(boardKey, board) in $ctrl.boards\"\n        board=\"board\"\n        board-key=\"boardKey\"\n        >\n    </tr-board>\n    <tr-new-board></tr-new-board>\n</div>"
 
 /***/ },
-/* 157 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-
-	Object.defineProperty(exports, "__esModule", {
-	    value: true
-	});
-
-	var _trBoardsController = __webpack_require__(158);
-
-	var _trBoardsController2 = _interopRequireDefault(_trBoardsController);
-
-	var _trBoards = __webpack_require__(159);
-
-	var _trBoards2 = _interopRequireDefault(_trBoards);
-
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-	exports.default = {
-	    bindings: {},
-	    controller: _trBoardsController2.default,
-	    template: _trBoards2.default
-	};
-
-/***/ },
-/* 158 */
+/* 198 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -68924,43 +69182,13 @@
 	}
 
 /***/ },
-/* 159 */
+/* 199 */
 /***/ function(module, exports) {
 
-	module.exports = "<!--Starred Board-->\n<div class=\"row\">\n    <div class=\"col-xs-12\">\n        <h3> <tr-icon icon=\"star\"></tr-icon> Starred Boards</h3>\n    </div>\n</div>\n<div class=\"row\">\n    <tr-board\n        ng-if=\"board.starred\"\n        ng-repeat=\"(boardKey, board) in $ctrl.boards\"\n        board=\"board\"\n        board-key=\"boardKey\"\n        >\n    </tr-board>\n</div>\n\n<!--My Boards-->\n<div class=\"row\">\n    <div class=\"col-xs-12\">\n        <h3> <tr-icon icon=\"user\"></tr-icon> My Boards</h3>\n    </div>\n</div>\n\n<div class=\"row\">\n    <tr-board\n        ng-repeat=\"(boardKey, board) in $ctrl.boards\"\n        board=\"board\"\n        board-key=\"boardKey\"\n        >\n    </tr-board>\n    <tr-new-board></tr-new-board>\n</div>"
+	module.exports = "<div class=\"card\" ng-class=\"{'card--edited': $ctrl.isEdited}\">\n\n    <!--Card Not Edited State -->\n    <div ng-if=\"!$ctrl.isEdited\">\n        <div\n            class=\"form-group\"\n            event-focus=\"click\" event-focus-id=\"{{$ctrl.cardKey}}\"\n            >\n            <!--Action Done-->\n            <tr-icon\n                icon=\"check\"\n                ng-click=\"$ctrl.markDone(); $event.preventDefault()\"\n                class=\"card__done-action\"\n                >\n            </tr-icon>\n\n            <!--Action Edit-->\n            <tr-icon\n                icon=\"edit\"\n                ng-click=\"$ctrl.startEdit()\"\n                event-focus=\"click\" event-focus-id=\"{{$ctrl.cardKey}}\"\n                class=\"card__edit-action\"\n                >\n            </tr-icon>\n\n            <!--Action Remove-->\n            <tr-icon\n                icon=\"remove\"\n                ng-click=\"$ctrl.remove(); $event.preventDefault()\"\n                class=\"card__remove-action\"\n                >\n            </tr-icon>\n\n            <input\n                ng-model=\"$ctrl.card.name\"\n                class=\"form-control input-sm card__input\"\n                ng-class=\"{'card--done': $ctrl.card.isDone}\"\n                type=\"text\"\n                disabled\n                />\n        </div>\n    </div>\n\n    <!--Card Edited State-->\n    <div ng-if=\"$ctrl.isEdited\">\n        <div class=\"form-group\">\n            <input\n                ng-model=\"$ctrl.card.name\"\n                class=\"form-control input-sm card__input\"\n                id=\"{{$ctrl.cardKey}}\"\n                type=\"text\"\n                />\n        </div>\n        <div class=\"form-group\">\n            <button ng-click=\"$ctrl.save()\" class=\"btn btn-success btn-sm\">Save</button>\n            <button ng-click=\"$ctrl.cancel()\" class=\"btn btn-default btn-sm\">Cancel</button>\n        </div>\n    </div>\n</div>"
 
 /***/ },
-/* 160 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-
-	Object.defineProperty(exports, "__esModule", {
-	    value: true
-	});
-
-	var _trCardController = __webpack_require__(161);
-
-	var _trCardController2 = _interopRequireDefault(_trCardController);
-
-	var _trCard = __webpack_require__(162);
-
-	var _trCard2 = _interopRequireDefault(_trCard);
-
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-	exports.default = {
-	    bindings: {
-	        card: '=',
-	        cardKey: '<',
-	        listKey: '<'
-	    },
-	    controller: _trCardController2.default,
-	    template: _trCard2.default
-	};
-
-/***/ },
-/* 161 */
+/* 200 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -69021,39 +69249,13 @@
 	}
 
 /***/ },
-/* 162 */
+/* 201 */
 /***/ function(module, exports) {
 
-	module.exports = "<div class=\"card\" ng-class=\"{'card--edited': $ctrl.isEdited}\">\n\n    <!--Card Not Edited State -->\n    <div ng-if=\"!$ctrl.isEdited\">\n        <div\n            class=\"form-group\"\n            event-focus=\"click\" event-focus-id=\"{{$ctrl.cardKey}}\"\n            >\n            <!--Action Done-->\n            <tr-icon\n                icon=\"check\"\n                ng-click=\"$ctrl.markDone(); $event.preventDefault()\"\n                class=\"card__done-action\"\n                >\n            </tr-icon>\n\n            <!--Action Edit-->\n            <tr-icon\n                icon=\"edit\"\n                ng-click=\"$ctrl.startEdit()\"\n                event-focus=\"click\" event-focus-id=\"{{$ctrl.cardKey}}\"\n                class=\"card__edit-action\"\n                >\n            </tr-icon>\n\n            <!--Action Remove-->\n            <tr-icon\n                icon=\"remove\"\n                ng-click=\"$ctrl.remove(); $event.preventDefault()\"\n                class=\"card__remove-action\"\n                >\n            </tr-icon>\n\n            <input\n                ng-model=\"$ctrl.card.name\"\n                class=\"form-control input-sm card__input\"\n                ng-class=\"{'card--done': $ctrl.card.isDone}\"\n                type=\"text\"\n                disabled\n                />\n        </div>\n    </div>\n\n    <!--Card Edited State-->\n    <div ng-if=\"$ctrl.isEdited\">\n        <div class=\"form-group\">\n            <input\n                ng-model=\"$ctrl.card.name\"\n                class=\"form-control input-sm card__input\"\n                id=\"{{$ctrl.cardKey}}\"\n                type=\"text\"\n                />\n        </div>\n        <div class=\"form-group\">\n            <button ng-click=\"$ctrl.save()\" class=\"btn btn-success btn-sm\">Save</button>\n            <button ng-click=\"$ctrl.cancel()\" class=\"btn btn-default btn-sm\">Cancel</button>\n        </div>\n    </div>\n</div>"
+	module.exports = "<div class=\"footer\">\n\n</div>"
 
 /***/ },
-/* 163 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-
-	Object.defineProperty(exports, "__esModule", {
-	    value: true
-	});
-
-	var _trFooterController = __webpack_require__(164);
-
-	var _trFooterController2 = _interopRequireDefault(_trFooterController);
-
-	var _trFooter = __webpack_require__(165);
-
-	var _trFooter2 = _interopRequireDefault(_trFooter);
-
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-	exports.default = {
-	    bindings: {},
-	    controller: _trFooterController2.default,
-	    template: _trFooter2.default
-	};
-
-/***/ },
-/* 164 */
+/* 202 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -69065,44 +69267,13 @@
 	function FooterController() {}
 
 /***/ },
-/* 165 */
-/***/ function(module, exports) {
-
-	module.exports = "<div class=\"footer\">\n\n</div>"
-
-/***/ },
-/* 166 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-
-	Object.defineProperty(exports, "__esModule", {
-	    value: true
-	});
-
-	var _trHeader = __webpack_require__(167);
-
-	var _trHeader2 = _interopRequireDefault(_trHeader);
-
-	var _trHeaderController = __webpack_require__(168);
-
-	var _trHeaderController2 = _interopRequireDefault(_trHeaderController);
-
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-	exports.default = {
-	    controller: _trHeaderController2.default,
-	    template: _trHeader2.default
-	};
-
-/***/ },
-/* 167 */
+/* 203 */
 /***/ function(module, exports) {
 
 	module.exports = "<nav class=\"navbar navbar-default navbar-static-top\">\n    <div class=\"container\">\n        <div class=\"navbar-header\">\n            <a class=\"navbar-brand\" href=\"#\">Trello</a>\n        </div>\n        <div id=\"navbar\" class=\"navbar-collapse collapse\">\n            <ul class=\"nav navbar-nav\">\n                <li><a href=\"#\">Boards</a></li>\n            </ul>\n            <ul class=\"nav navbar-nav navbar-right\">\n            </ul>\n        </div>\n    </div>\n</nav>"
 
 /***/ },
-/* 168 */
+/* 204 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -69114,35 +69285,13 @@
 	function HeaderController() {}
 
 /***/ },
-/* 169 */
-/***/ function(module, exports, __webpack_require__) {
+/* 205 */
+/***/ function(module, exports) {
 
-	'use strict';
-
-	Object.defineProperty(exports, "__esModule", {
-	    value: true
-	});
-
-	var _trIconController = __webpack_require__(170);
-
-	var _trIconController2 = _interopRequireDefault(_trIconController);
-
-	var _trIcon = __webpack_require__(171);
-
-	var _trIcon2 = _interopRequireDefault(_trIcon);
-
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-	exports.default = {
-	    bindings: {
-	        icon: '@'
-	    },
-	    controller: _trIconController2.default,
-	    template: _trIcon2.default
-	};
+	module.exports = "<i class=\"fa fa-{{$ctrl.icon}}\"></i>"
 
 /***/ },
-/* 170 */
+/* 206 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -69154,42 +69303,13 @@
 	function IconController() {}
 
 /***/ },
-/* 171 */
+/* 207 */
 /***/ function(module, exports) {
 
-	module.exports = "<i class=\"fa fa-{{$ctrl.icon}}\"></i>"
+	module.exports = "<div class=\"list\" ng-class=\"{'list--edited': $ctrl.isEdited}\">\n    <!--List Header-->\n    <div class=\"list__header\" >\n        <!--Not Edited State-->\n        <div class=\"form-group\"\n             ng-if=\"!$ctrl.isEdited\"\n             ng-click=\"$ctrl.startEdit()\"\n             event-focus=\"click\" event-focus-id=\"{{$ctrl.inputId}}\"\n            >\n            <input type=\"text\" class=\"list__header_name form-control\" ng-model=\"$ctrl.list.name\" disabled/>\n            <!--TODO: MOve to component-->\n            <uib-progressbar class=\"progress\" value=\"$ctrl.progress\" type=\"success\"></uib-progressbar>\n        </div>\n\n        <!--Edited State-->\n        <div ng-if=\"$ctrl.isEdited\">\n            <div class=\"form-group\" >\n                <input type=\"text\" id=\"{{$ctrl.inputId}}\" class=\"list__header_name form-control\" ng-model=\"$ctrl.list.name\">\n            </div>\n            <div class=\"form-group\">\n                <button ng-click=\"$ctrl.save()\" class=\"btn btn-success btn-sm\">Save</button>\n                <button ng-click=\"$ctrl.cancel()\" class=\"btn btn-default btn-sm\">Cancel</button>\n            </div>\n        </div>\n\n        <!--List Delete-->\n        <span class=\"list__delete\" ng-click=\"$ctrl.removeList()\">\n            <tr-icon icon=\"remove\"></tr-icon>\n        </span>\n    </div>\n\n    <!--Cards-->\n    <tr-card\n        card=\"card\"\n        card-key=\"cardKey\"\n        list-key=\"$ctrl.listKey\"\n        ng-repeat=\"(cardKey, card) in $ctrl.cards\"\n        >\n    </tr-card>\n\n    <!--New Card-->\n    <tr-new-card list-key=\"$ctrl.listKey\"></tr-new-card>\n</div>"
 
 /***/ },
-/* 172 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-
-	Object.defineProperty(exports, "__esModule", {
-	    value: true
-	});
-
-	var _trListController = __webpack_require__(173);
-
-	var _trListController2 = _interopRequireDefault(_trListController);
-
-	var _trList = __webpack_require__(174);
-
-	var _trList2 = _interopRequireDefault(_trList);
-
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-	exports.default = {
-	    bindings: {
-	        list: '=',
-	        listKey: '<'
-	    },
-	    controller: _trListController2.default,
-	    template: _trList2.default
-	};
-
-/***/ },
-/* 173 */
+/* 208 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -69292,39 +69412,13 @@
 	}
 
 /***/ },
-/* 174 */
+/* 209 */
 /***/ function(module, exports) {
 
-	module.exports = "<div class=\"list\" ng-class=\"{'list--edited': $ctrl.isEdited}\">\n    <!--List Header-->\n    <div class=\"list__header\" >\n        <!--Not Edited State-->\n        <div class=\"form-group\"\n             ng-if=\"!$ctrl.isEdited\"\n             ng-click=\"$ctrl.startEdit()\"\n             event-focus=\"click\" event-focus-id=\"{{$ctrl.inputId}}\"\n            >\n            <input type=\"text\" class=\"list__header_name form-control\" ng-model=\"$ctrl.list.name\" disabled/>\n            <!--TODO: MOve to component-->\n            <uib-progressbar class=\"progress\" value=\"$ctrl.progress\" type=\"success\"></uib-progressbar>\n        </div>\n\n        <!--Edited State-->\n        <div ng-if=\"$ctrl.isEdited\">\n            <div class=\"form-group\" >\n                <input type=\"text\" id=\"{{$ctrl.inputId}}\" class=\"list__header_name form-control\" ng-model=\"$ctrl.list.name\">\n            </div>\n            <div class=\"form-group\">\n                <button ng-click=\"$ctrl.save()\" class=\"btn btn-success btn-sm\">Save</button>\n                <button ng-click=\"$ctrl.cancel()\" class=\"btn btn-default btn-sm\">Cancel</button>\n            </div>\n        </div>\n\n        <!--List Delete-->\n        <span class=\"list__delete\" ng-click=\"$ctrl.removeList()\">\n            <tr-icon icon=\"remove\"></tr-icon>\n        </span>\n    </div>\n\n    <!--Cards-->\n    <tr-card\n        card=\"card\"\n        card-key=\"cardKey\"\n        list-key=\"$ctrl.listKey\"\n        ng-repeat=\"(cardKey, card) in $ctrl.cards\"\n        >\n    </tr-card>\n\n    <!--New Card-->\n    <tr-new-card list-key=\"$ctrl.listKey\"></tr-new-card>\n</div>"
+	module.exports = "<div class=\"lists\">\n    <tr-list\n            ng-repeat=\"(listKey, list) in $ctrl.lists\"\n            list=\"list\"\n            list-key=\"listKey\"\n            >\n    </tr-list>\n    <tr-new-list></tr-new-list>\n</div>"
 
 /***/ },
-/* 175 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-
-	Object.defineProperty(exports, "__esModule", {
-	    value: true
-	});
-
-	var _trListsController = __webpack_require__(176);
-
-	var _trListsController2 = _interopRequireDefault(_trListsController);
-
-	var _trLists = __webpack_require__(177);
-
-	var _trLists2 = _interopRequireDefault(_trLists);
-
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-	exports.default = {
-	    bindings: {},
-	    controller: _trListsController2.default,
-	    template: _trLists2.default
-	};
-
-/***/ },
-/* 176 */
+/* 210 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -69347,39 +69441,13 @@
 	}
 
 /***/ },
-/* 177 */
+/* 211 */
 /***/ function(module, exports) {
 
-	module.exports = "<div class=\"lists\">\n    <tr-list\n            ng-repeat=\"(listKey, list) in $ctrl.lists\"\n            list=\"list\"\n            list-key=\"listKey\"\n            >\n    </tr-list>\n    <tr-new-list></tr-new-list>\n</div>"
+	module.exports = "<div class=\"col-xs-12 col-sm-6 col-md-4\">\n    <!--Not Editable State-->\n    <div\n        class=\"board board--new board--notediting\"\n        ng-click=\"$ctrl.startEdit()\"\n        event-focus=\"click\" event-focus-id=\"{{$ctrl.inputId}}\"\n        ng-if=\"!$ctrl.isEdited\"\n        >\n        <span class=\"board__name\">New Board</span>\n    </div>\n\n    <!--Editable State-->\n    <div ng-if=\"$ctrl.isEdited\" class=\"board board--new board--editing\">\n        <div class=\"form-group\">\n            <label class=\"control-label\" for=\"newBoardName\">Title</label>\n            <input\n                id=\"{{$ctrl.inputId}}\"\n                ng-model=\"$ctrl.boardName\"\n                class=\"form-control input-sm board_input\"\n                type=\"text\"\n                id=\"newBoardName\"\n                value=\"\"\n                />\n        </div>\n        <div class=\"form-group\">\n            <button ng-click=\"$ctrl.save()\" class=\"btn btn-success btn-sm\">Save</button>\n            <button ng-click=\"$ctrl.cancel()\" class=\"btn btn-default btn-sm\">Cancel</button>\n        </div>\n    </div>\n</div>"
 
 /***/ },
-/* 178 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-
-	Object.defineProperty(exports, "__esModule", {
-	    value: true
-	});
-
-	var _trNewBoardController = __webpack_require__(179);
-
-	var _trNewBoardController2 = _interopRequireDefault(_trNewBoardController);
-
-	var _trNewBoard = __webpack_require__(180);
-
-	var _trNewBoard2 = _interopRequireDefault(_trNewBoard);
-
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-	exports.default = {
-	    bindings: {},
-	    controller: _trNewBoardController2.default,
-	    template: _trNewBoard2.default
-	};
-
-/***/ },
-/* 179 */
+/* 212 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -69419,47 +69487,13 @@
 	}
 
 /***/ },
-/* 180 */
-/***/ function(module, exports) {
-
-	module.exports = "<div class=\"col-xs-12 col-sm-6 col-md-4\">\n    <!--Not Editable State-->\n    <div\n        class=\"board board--new board--notediting\"\n        ng-click=\"$ctrl.startEdit()\"\n        event-focus=\"click\" event-focus-id=\"{{$ctrl.inputId}}\"\n        ng-if=\"!$ctrl.isEdited\"\n        >\n        <span class=\"board__name\">New Board</span>\n    </div>\n\n    <!--Editable State-->\n    <div ng-if=\"$ctrl.isEdited\" class=\"board board--new board--editing\">\n        <div class=\"form-group\">\n            <label class=\"control-label\" for=\"newBoardName\">Title</label>\n            <input\n                id=\"{{$ctrl.inputId}}\"\n                ng-model=\"$ctrl.boardName\"\n                class=\"form-control input-sm board_input\"\n                type=\"text\"\n                id=\"newBoardName\"\n                value=\"\"\n                />\n        </div>\n        <div class=\"form-group\">\n            <button ng-click=\"$ctrl.save()\" class=\"btn btn-success btn-sm\">Save</button>\n            <button ng-click=\"$ctrl.cancel()\" class=\"btn btn-default btn-sm\">Cancel</button>\n        </div>\n    </div>\n</div>"
-
-/***/ },
-/* 181 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-
-	Object.defineProperty(exports, "__esModule", {
-	    value: true
-	});
-
-	var _trNewCard = __webpack_require__(182);
-
-	var _trNewCard2 = _interopRequireDefault(_trNewCard);
-
-	var _trNewCardController = __webpack_require__(183);
-
-	var _trNewCardController2 = _interopRequireDefault(_trNewCardController);
-
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-	exports.default = {
-	    bindings: {
-	        listKey: '<'
-	    },
-	    controller: _trNewCardController2.default,
-	    template: _trNewCard2.default
-	};
-
-/***/ },
-/* 182 */
+/* 213 */
 /***/ function(module, exports) {
 
 	module.exports = "<div>\n    <!--Not Edited State-->\n    <div\n        ng-click=\"$ctrl.startEdit()\"\n        event-focus=\"click\" event-focus-id=\"{{$ctrl.inputId}}\"\n        ng-if=\"!$ctrl.isEdited\"\n        class=\"card card--new\"\n        >\n        <div class=\"card__name\">New Card...</div>\n    </div>\n\n    <!--Edited State-->\n    <div ng-if=\"$ctrl.isEdited\" class=\"card card--new\">\n        <div class=\"form-group\">\n            <input id=\"{{$ctrl.inputId}}\" ng-model=\"$ctrl.cardName\" class=\"form-control input-sm card__input\" type=\"text\" value=\"\"/>\n        </div>\n        <div class=\"form-group\">\n            <button ng-click=\"$ctrl.save()\" class=\"btn btn-success btn-sm\">Save</button>\n            <button ng-click=\"$ctrl.cancel()\" class=\"btn btn-default btn-sm\">Cancel</button>\n        </div>\n    </div>\n</div>"
 
 /***/ },
-/* 183 */
+/* 214 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -69518,39 +69552,13 @@
 	}
 
 /***/ },
-/* 184 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-
-	Object.defineProperty(exports, "__esModule", {
-	    value: true
-	});
-
-	var _trNewList = __webpack_require__(185);
-
-	var _trNewList2 = _interopRequireDefault(_trNewList);
-
-	var _trNewListController = __webpack_require__(186);
-
-	var _trNewListController2 = _interopRequireDefault(_trNewListController);
-
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-	exports.default = {
-	    bindings: {},
-	    controller: _trNewListController2.default,
-	    template: _trNewList2.default
-	};
-
-/***/ },
-/* 185 */
+/* 215 */
 /***/ function(module, exports) {
 
 	module.exports = "<!--Not Edited State-->\n<div\n    ng-click=\"$ctrl.startEdit()\"\n    event-focus=\"click\" event-focus-id=\"{{$ctrl.inputId}}\"\n    ng-if=\"!$ctrl.isEdited\"\n    class=\"list list--new\"\n    >\n    <span class=\"list__header_new_name\">New List</span>\n</div>\n\n<!--Edited State-->\n<div ng-if=\"$ctrl.isEdited\" class=\"list list--new\">\n    <div class=\"form-group\">\n        <label for=\"newListName\" class=\"control-label\">Title</label>\n        <input\n            id=\"{{$ctrl.inputId}}\"\n            ng-model=\"$ctrl.listName\"\n            class=\"form-control input-sm list__input\"\n            type=\"text\"\n            id=\"newListName\"\n            />\n    </div>\n    <div class=\"form-group\">\n        <button ng-click=\"$ctrl.save()\" class=\"btn btn-success btn-sm\">Save</button>\n        <button ng-click=\"$ctrl.cancel()\" class=\"btn btn-default btn-sm\">Cancel</button>\n    </div>\n</div>\n\n"
 
 /***/ },
-/* 186 */
+/* 216 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -69605,6 +69613,42 @@
 
 	    this.cancel = function () {
 	        this.resetState();
+	    };
+	};
+
+/***/ },
+/* 217 */
+/***/ function(module, exports) {
+
+	module.exports = "<div>I am a test Component</div>\n<hr/>\n<button ng-click=\"$ctrl.trimName()\">TrimName</button>\n<br/>\n<button ng-click=\"$ctrl.newBoard()\">New Board</button>"
+
+/***/ },
+/* 218 */
+/***/ function(module, exports) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	    value: true
+	});
+
+	exports.default = function (ServiceHelper, FactoryBoards) {
+	    var obj = {
+	        name: '   Vasyl   '
+	    };
+
+	    var Boards = new FactoryBoards();
+
+	    this.newBoard = function () {
+	        Boards.push({
+	            name: 'MyNew Board'
+	        });
+	    };
+
+	    this.trimName = function () {
+	        console.log('trim name');
+	        var res = ServiceHelper.trimName(obj);
+	        console.log('res:' + res);
 	    };
 	};
 

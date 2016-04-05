@@ -1,5 +1,5 @@
-import boardController from './trBoardController.js'
-import boardTemplate from './trBoard.html'
+import boardController from './boardController.js'
+import boardTemplate from './board.html'
 
 export default {
     bindings: {

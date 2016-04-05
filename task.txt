@@ -3,10 +3,11 @@ WEBPACK
 - add context to webpack config
 - resetState should be method of controller
 - rewrite firebase factories on classes
--
+- add dev server
+- delete gulp task
 
 Features
 - add comments to card
 - add due time to card
 - add ability to edit board name
--
+- check and fix unit tests!

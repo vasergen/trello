@@ -1,5 +1,5 @@
-import listController from './trListController.js'
-import listHtml from './trList.html'
+import listController from './listController.js'
+import listHtml from './list.html'
 
 export default {
     bindings: {

@@ -1,5 +1,5 @@
-import newCardTemplate from './trNewCard.html'
-import newCardController from './trNewCardController.js'
+import newCardTemplate from './newCard.html'
+import newCardController from './newCardController.js'
 
 export default {
     bindings: {

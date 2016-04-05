@@ -1,5 +1,5 @@
-import iconController from './trIconController.js'
-import iconTemplate from './trIcon.html'
+import iconController from './iconController.js'
+import iconTemplate from './icon.html'
 
 export default {
     bindings: {

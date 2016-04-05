@@ -1,3 +1,16 @@
+/*Animation*/
+tr-board.ng-leave
+  animation: flipOutX 0.3s
+  .board
+    animation: flipOutX 0.3s
+
+.board--editing.ng-enter
+  animation: flipInX 0.3s
+
+.board--notediting.ng-enter
+  animation: fadeIn 0.3s
+/*Animation END*/
+
 .board
   position relative
   margin 20px 0 0 0
@@ -14,17 +27,6 @@
     .board__delete
       opacity 1
       right 15px
-
-.board--new
-  background: $board_bgr_new
-  min-height 100px
-  .board_input
-    background $card_inp_bgr
-    color white
-  .board__name
-    color $green
-  &:hover
-    background $board_bgr_new - 15%
 
 .board--starred
   .board__star

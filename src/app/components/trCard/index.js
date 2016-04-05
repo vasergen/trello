@@ -1,5 +1,5 @@
-import cardController from './trCardController.js'
-import cardTemplate from './trCard.html'
+import cardController from './cardController.js'
+import cardTemplate from './card.html'
 
 export default {
     bindings: {

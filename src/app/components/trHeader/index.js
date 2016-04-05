@@ -1,5 +1,5 @@
-import headerTemplate from './trHeader.html'
-import headerController from './trHeaderController.js'
+import headerTemplate from './header.html'
+import headerController from './headerController.js'
 
 export default {
     controller: headerController,

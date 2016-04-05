@@ -1,5 +1,5 @@
-import footerController from './trFooterController.js'
-import footerTemplate from './trFooter.html'
+import footerController from './footerController.js'
+import footerTemplate from './footer.html'
 
 export default {
     bindings: {},
