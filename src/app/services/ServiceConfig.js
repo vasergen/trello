@@ -1,8 +1,7 @@
-export default function ServiceConfig() {
-    let getFirebaseBaseUrl = () => "https://vstrello.firebaseio.com/"
+export default class ServiceConfig {
+    constructor() {}
 
-    //Public API
-    return {
-        getFirebaseBaseUrl
+    getFirebaseBaseUrl() {
+        return "https://vstrello.firebaseio.com/"
     }
 }

@@ -1,18 +1,15 @@
 WEBPACK
-- rewrite firebase factories on classes - [IN PROGRESS]
-- rewrite services on classes
 - ngAnnotate or ngInject
 - add dev server
-- add context to webpack config
 
 Features
 - show validate error or other on page (under header)
 - if bad url (boardKey) than say it to user
-- remove dependency from lodash or rewrite to import only needed functions
 - add comments to card
 - add due time to card
 - add ability to edit board name
 - check and fix unit tests!
+- login page
 
 NPM
 - remove modules that doesnt used
