@@ -4,7 +4,6 @@ export default class BoardScheme {
     }
 
     getScheme() {
-
         return {
             id: this.ServiceHelper.randomString(),
             timestamp: this.ServiceHelper.timestamp(),

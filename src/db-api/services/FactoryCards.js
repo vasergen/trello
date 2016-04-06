@@ -6,10 +6,10 @@ export default function FactoryCards(FactoryList, CardScheme) {
         if(!listKey)
             throw new Error('Cards Error! Does not provided listKey')
 
-        let self = new FactoryList(boardKey, listKey)
-        self.ref = self.ref.child('cards')
-        self.getScheme = () => CardScheme.getScheme()
-        self.validate = () => CardScheme.validate()
-        return self
+        let CardsDB = new FactoryList(boardKey, listKey)
+        CardsDB.ref = CardsDB.ref.child('cards')
+        CardsDB.getScheme = () => CardScheme.getScheme()
+        CardsDB.validate = (item) => CardScheme.validate(item)
+        return CardsDB
     }
 }

@@ -1,9 +1,10 @@
 export default function FactoryBoards(FactoryDbDriver, BoardScheme) {
     return function() {
-        let self = new FactoryDbDriver()
-        self.ref = self.ref.child("boards")
-        self.getScheme = () => BoardScheme.getScheme()
-        self.validate = () => BoardScheme.validate()
-        return self
+        let BoardsDB = new FactoryDbDriver()
+
+        BoardsDB.ref = BoardsDB.ref.child("boards")
+        BoardsDB.getScheme = () => BoardScheme.getScheme()
+        BoardsDB.validate= (item) => BoardScheme.validate(item)
+        return BoardsDB
     }
 }

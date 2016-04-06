@@ -3,12 +3,10 @@ export default function FactoryLists(FactoryDbDriver, ListScheme) {
         if(!boardKey)
             throw new Error('Lists Error! Does not provided boardKey')
 
-        let self = new FactoryDbDriver()
-        self.ref = self.ref.child("lists").child(boardKey)
-
-        self.getScheme = () => ListScheme.getScheme()
-        self.validate = () => ListScheme.validate()
-
-        return self
+        let ListsDB = new FactoryDbDriver()
+        ListsDB.ref = ListsDB.ref.child("lists").child(boardKey)
+        ListsDB.getScheme = () => ListScheme.getScheme()
+        ListsDB.validate = (item) => ListScheme.validate(item)
+        return ListsDB
     }
 }

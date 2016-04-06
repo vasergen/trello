@@ -3,8 +3,8 @@ export default function FactoryBoard(FactoryBoards) {
         if(!boardKey)
             throw new Error('Board Error! Not provided boardKey')
 
-        let self = new FactoryBoards()
-        self.ref = self.ref.child(boardKey)
-        return self
+        let BoardDB = new FactoryBoards()
+        BoardDB.ref = BoardDB.ref.child(boardKey)
+        return BoardDB
     }
 }

@@ -9,9 +9,8 @@ export default function FactoryCard(FactoryCards) {
         if(!cardKey)
             throw new Error('Card Error! Does not provided cardKey')
 
-        let self = new FactoryCards(boardKey, listKey)
-        self.ref = self.ref.child(cardKey)
-
-        return self
+        let CardDB = new FactoryCards(boardKey, listKey)
+        CardDB.ref = CardDB.ref.child(cardKey)
+        return CardDB
     }
 }

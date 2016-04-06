@@ -19493,7 +19493,6 @@
 	    _createClass(BoardScheme, [{
 	        key: 'getScheme',
 	        value: function getScheme() {
-
 	            return {
 	                id: this.ServiceHelper.randomString(),
 	                timestamp: this.ServiceHelper.timestamp(),
@@ -19624,9 +19623,9 @@
 	    return function (boardKey) {
 	        if (!boardKey) throw new Error('Board Error! Not provided boardKey');
 
-	        var self = new FactoryBoards();
-	        self.ref = self.ref.child(boardKey);
-	        return self;
+	        var BoardDB = new FactoryBoards();
+	        BoardDB.ref = BoardDB.ref.child(boardKey);
+	        return BoardDB;
 	    };
 	}
 
@@ -19642,15 +19641,16 @@
 	exports.default = FactoryBoards;
 	function FactoryBoards(FactoryDbDriver, BoardScheme) {
 	    return function () {
-	        var self = new FactoryDbDriver();
-	        self.ref = self.ref.child("boards");
-	        self.getScheme = function () {
+	        var BoardsDB = new FactoryDbDriver();
+
+	        BoardsDB.ref = BoardsDB.ref.child("boards");
+	        BoardsDB.getScheme = function () {
 	            return BoardScheme.getScheme();
 	        };
-	        self.validate = function () {
-	            return BoardScheme.validate();
+	        BoardsDB.validate = function (item) {
+	            return BoardScheme.validate(item);
 	        };
-	        return self;
+	        return BoardsDB;
 	    };
 	}
 
@@ -19672,10 +19672,9 @@
 
 	        if (!cardKey) throw new Error('Card Error! Does not provided cardKey');
 
-	        var self = new FactoryCards(boardKey, listKey);
-	        self.ref = self.ref.child(cardKey);
-
-	        return self;
+	        var CardDB = new FactoryCards(boardKey, listKey);
+	        CardDB.ref = CardDB.ref.child(cardKey);
+	        return CardDB;
 	    };
 	}
 
@@ -19695,15 +19694,15 @@
 
 	        if (!listKey) throw new Error('Cards Error! Does not provided listKey');
 
-	        var self = new FactoryList(boardKey, listKey);
-	        self.ref = self.ref.child('cards');
-	        self.getScheme = function () {
+	        var CardsDB = new FactoryList(boardKey, listKey);
+	        CardsDB.ref = CardsDB.ref.child('cards');
+	        CardsDB.getScheme = function () {
 	            return CardScheme.getScheme();
 	        };
-	        self.validate = function () {
-	            return CardScheme.validate();
+	        CardsDB.validate = function (item) {
+	            return CardScheme.validate(item);
 	        };
-	        return self;
+	        return CardsDB;
 	    };
 	}
 
@@ -19718,106 +19717,15 @@
 	});
 	exports.default = FactoryDbDriver;
 
-	var _firebase = __webpack_require__(17);
+	var _DbDriver = __webpack_require__(199);
 
-	var _firebase2 = _interopRequireDefault(_firebase);
+	var _DbDriver2 = _interopRequireDefault(_DbDriver);
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-	function FactoryDbDriver($timeout, ServiceConfig, ServiceHelper, $q) {
+	function FactoryDbDriver(ServiceConfig, ServiceHelper, $timeout, $q) {
 	    return function () {
-	        var self = this;
-
-	        /*Warning: need to redefine in child*/
-	        self.ref = new _firebase2.default(ServiceConfig.getFirebaseBaseUrl());
-
-	        /*Warning: need to implement in child */
-	        self.getScheme = function () {
-	            throw new Error('Error! Not implemented getScheme function');
-	        };
-
-	        /*Warning: need to implement in child */
-	        self.validate = function (item) {
-	            throw new Error('Error! Not implemented validate function');
-	        };
-
-	        self._prepareForPush = function (item) {
-	            var itemFields = {
-	                id: ServiceHelper.randomString(),
-	                slug: ServiceHelper.slug(item.name),
-	                updated: ServiceHelper.timestamp(),
-	                timestamp: ServiceHelper.timestamp()
-	            };
-
-	            return Object.assign({}, self.getScheme(), item, itemFields);
-	        };
-	        self._prepareForUpdate = function (item) {
-	            var itemFields = {
-	                slug: ServiceHelper.slug(item.name),
-	                updated: ServiceHelper.timestamp()
-	            };
-
-	            return Object.assign({}, item, itemFields);
-	        };
-	        self._beforePush = function (item) {
-	            return self._prepareForPush(item);
-	        };
-	        self._beforeUpdate = function (item) {
-	            return self._prepareForUpdate(item);
-	        };
-
-	        self.push = function (item) {
-	            item = self._beforePush(item);
-
-	            var validateMessage = void 0;
-
-	            return $q(function (resolve, reject) {
-	                if (validateMessage = self.validate(item)) {
-	                    return reject(validateMessage);
-	                }
-
-	                self.ref.push(item).then(function (response) {
-	                    return resolve(response);
-	                }).catch(function (err) {
-	                    return reject(err);
-	                });
-	            });
-	        };
-	        self.onValue = function (fn, fnErr) {
-	            var _fn = fn || function () {};
-	            var _fnError = fnErr || function (err) {
-	                console.error(err);
-	            };
-
-	            return self.ref.on("value", function (snapshot) {
-	                $timeout(function () {
-	                    return _fn(snapshot);
-	                }, 0);
-	            }, _fnError);
-	        };
-
-	        self.update = function (item) {
-	            item = self._beforeUpdate(item);
-
-	            var validateMessage = void 0;
-
-	            return $q(function (resolve, reject) {
-	                if (validateMessage = self.validate(item)) {
-	                    return reject(new Error(validateMessage));
-	                }
-
-	                self.ref.update(item).then(function (response) {
-	                    return resolve(response);
-	                }).catch(function (err) {
-	                    return reject(err);
-	                });
-	            });
-	        };
-	        self.remove = function (fn) {
-	            return self.ref.remove(fn);
-	        };
-
-	        return self;
+	        return new _DbDriver2.default(ServiceConfig, ServiceHelper, $timeout, $q);
 	    };
 	}
 
@@ -19837,10 +19745,10 @@
 
 	        if (!listKey) throw new Error('Lists Error! Does not provided listKey');
 
-	        var self = new FactoryLists(boardKey);
-	        self.ref = self.ref.child(listKey);
+	        var ListDB = new FactoryLists(boardKey);
+	        ListDB.ref = ListDB.ref.child(listKey);
 
-	        return self;
+	        return ListDB;
 	    };
 	}
 
@@ -19858,17 +19766,15 @@
 	    return function (boardKey) {
 	        if (!boardKey) throw new Error('Lists Error! Does not provided boardKey');
 
-	        var self = new FactoryDbDriver();
-	        self.ref = self.ref.child("lists").child(boardKey);
-
-	        self.getScheme = function () {
+	        var ListsDB = new FactoryDbDriver();
+	        ListsDB.ref = ListsDB.ref.child("lists").child(boardKey);
+	        ListsDB.getScheme = function () {
 	            return ListScheme.getScheme();
 	        };
-	        self.validate = function () {
-	            return ListScheme.validate();
+	        ListsDB.validate = function (item) {
+	            return ListScheme.validate(item);
 	        };
-
-	        return self;
+	        return ListsDB;
 	    };
 	}
 
@@ -20021,6 +19927,140 @@
 	        return trans();
 	    }
 	}
+
+/***/ },
+/* 199 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	    value: true
+	});
+
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	var _firebase = __webpack_require__(17);
+
+	var _firebase2 = _interopRequireDefault(_firebase);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	var DbDriver = function () {
+	    function DbDriver(ServiceConfig, ServiceHelper, $timeout, $q) {
+	        _classCallCheck(this, DbDriver);
+
+	        this.ServiceConfig = ServiceConfig;
+	        this.ServiceHelper = ServiceHelper;
+	        this.$timeout = $timeout;
+	        this.$q = $q;
+	        this.ref = new _firebase2.default(this.ServiceConfig.getFirebaseBaseUrl());
+	    }
+
+	    /*Warning: need to implement in child */
+
+
+	    _createClass(DbDriver, [{
+	        key: 'getScheme',
+	        value: function getScheme() {
+	            throw new Error('Error! Not implemented getScheme function');
+	        }
+
+	        /*Warning: need to implement in child */
+
+	    }, {
+	        key: 'validate',
+	        value: function validate(item) {
+	            throw new Error('Error! Not implemented validate function');
+	        }
+	    }, {
+	        key: '_prepareItemForPush',
+	        value: function _prepareItemForPush(item) {
+	            var itemRequiredFields = {
+	                id: this.ServiceHelper.randomString(),
+	                slug: this.ServiceHelper.slug(item.name),
+	                updated: this.ServiceHelper.timestamp(),
+	                timestamp: this.ServiceHelper.timestamp()
+	            };
+
+	            return Object.assign({}, this.getScheme(), item, itemRequiredFields);
+	        }
+	    }, {
+	        key: '_prepareItemForUpdate',
+	        value: function _prepareItemForUpdate(item) {
+	            var itemRequiredFields = {
+	                slug: this.ServiceHelper.slug(item.name),
+	                updated: this.ServiceHelper.timestamp()
+	            };
+
+	            return Object.assign({}, item, itemRequiredFields);
+	        }
+	    }, {
+	        key: 'push',
+	        value: function push(item) {
+	            var self = this;
+	            var validateMessage = void 0;
+	            var preparedItem = this._prepareItemForPush(item);
+
+	            return this.$q(function (resolve, reject) {
+	                if (validateMessage = self.validate(preparedItem)) {
+	                    return reject(validateMessage);
+	                }
+
+	                self.ref.push(preparedItem).then(function (response) {
+	                    return resolve(response);
+	                }).catch(function (err) {
+	                    return reject(err);
+	                });
+	            });
+	        }
+	    }, {
+	        key: 'update',
+	        value: function update(item) {
+	            var self = this;
+	            var validateMessage = void 0;
+	            var preparedItem = this._prepareItemForUpdate(item);
+
+	            return this.$q(function (resolve, reject) {
+	                if (validateMessage = self.validate(preparedItem)) {
+	                    return reject(new Error(validateMessage));
+	                }
+
+	                self.ref.update(preparedItem).then(function (response) {
+	                    return resolve(response);
+	                }).catch(function (err) {
+	                    return reject(err);
+	                });
+	            });
+	        }
+	    }, {
+	        key: 'onValue',
+	        value: function onValue(fn, fnErr) {
+	            var self = this;
+	            var _fn = fn || function () {};
+	            var _fnError = fnErr || function (err) {
+	                console.error(err);
+	            };
+
+	            return this.ref.on("value", function (snapshot) {
+	                self.$timeout(function () {
+	                    return _fn(snapshot);
+	                }, 0); //$timeout - hack for angular, otherwise doesn't see changes
+	            }, _fnError);
+	        }
+	    }, {
+	        key: 'remove',
+	        value: function remove(fn) {
+	            return this.ref.remove(fn);
+	        }
+	    }]);
+
+	    return DbDriver;
+	}();
+
+	exports.default = DbDriver;
 
 /***/ }
 /******/ ]);

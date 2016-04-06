@@ -6,9 +6,9 @@ export default function FactoryList(FactoryLists) {
         if(!listKey)
             throw new Error('Lists Error! Does not provided listKey')
 
-        let self = new FactoryLists(boardKey)
-        self.ref = self.ref.child(listKey)
+        let ListDB = new FactoryLists(boardKey)
+        ListDB.ref = ListDB.ref.child(listKey)
 
-        return self
+        return ListDB
     }
 }
