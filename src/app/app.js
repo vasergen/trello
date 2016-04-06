@@ -2,7 +2,7 @@
 
 /*Modules depends on*/
 import trelloDbApi from './../db-api/app.js'
-import trelloShared from './../shared/app.js'
+import trelloShared from './../common/app.js'
 
 /*Css*/
 import './_sharedCss/app.styl'

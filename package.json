@@ -28,8 +28,12 @@
     "angular-ui-bootstrap": "^1.2.5",
     "angular-ui-router": "^1.0.0-alpha.3",
     "css-loader": "^0.23.1",
+    "cyrillic-to-translit-js": "^1.0.1",
     "firebase": "^2.4.2",
-    "lodash-fp": "^0.10.4"
+    "lodash-fp": "^0.10.4",
+    "phantomjs-prebuilt": "^2.1.7",
+    "randomstring": "^1.1.4",
+    "webpack": "^1.12.14"
   },
   "devDependencies": {
     "babel-core": "^6.7.4",

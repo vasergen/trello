@@ -1,7 +1,7 @@
 "use strict"
 
 /*Modules Depends On*/
-import trelloShared from './../shared/app.js'
+import trelloShared from './../common/app.js'
 
 /*Schemes Firebase*/
 import BoardScheme from './schemes/BoardScheme.js'
