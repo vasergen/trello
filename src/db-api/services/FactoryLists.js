@@ -5,8 +5,9 @@ export default function FactoryLists(FactoryDbDriver, ListScheme) {
 
         let self = new FactoryDbDriver()
         self.ref = self.ref.child("lists").child(boardKey)
-        self.getScheme = ListScheme.getScheme
-        self.validate = ListScheme.validate
+
+        self.getScheme = () => ListScheme.getScheme()
+        self.validate = () => ListScheme.validate()
 
         return self
     }

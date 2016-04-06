@@ -8,9 +8,8 @@ export default function FactoryCards(FactoryList, CardScheme) {
 
         let self = new FactoryList(boardKey, listKey)
         self.ref = self.ref.child('cards')
-        self.getScheme = CardScheme.getScheme
-        self.validate = CardScheme.validate
-
+        self.getScheme = () => CardScheme.getScheme()
+        self.validate = () => CardScheme.validate()
         return self
     }
 }

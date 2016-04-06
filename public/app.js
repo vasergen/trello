@@ -46,57 +46,25 @@
 
 	"use strict";
 
-	/*Css*/
+	/*Modules depends on*/
 
 	Object.defineProperty(exports, "__esModule", {
 	    value: true
 	});
+
+	var _app = __webpack_require__(185);
+
+	var _app2 = _interopRequireDefault(_app);
+
+	var _app3 = __webpack_require__(196);
+
+	var _app4 = _interopRequireDefault(_app3);
 
 	__webpack_require__(1);
 
 	var _routes = __webpack_require__(5);
 
 	var _routes2 = _interopRequireDefault(_routes);
-
-	var _BoardScheme = __webpack_require__(9);
-
-	var _BoardScheme2 = _interopRequireDefault(_BoardScheme);
-
-	var _CardScheme = __webpack_require__(10);
-
-	var _CardScheme2 = _interopRequireDefault(_CardScheme);
-
-	var _ListScheme = __webpack_require__(11);
-
-	var _ListScheme2 = _interopRequireDefault(_ListScheme);
-
-	var _FactoryBoard = __webpack_require__(12);
-
-	var _FactoryBoard2 = _interopRequireDefault(_FactoryBoard);
-
-	var _FactoryBoards = __webpack_require__(13);
-
-	var _FactoryBoards2 = _interopRequireDefault(_FactoryBoards);
-
-	var _FactoryCard = __webpack_require__(14);
-
-	var _FactoryCard2 = _interopRequireDefault(_FactoryCard);
-
-	var _FactoryCards = __webpack_require__(15);
-
-	var _FactoryCards2 = _interopRequireDefault(_FactoryCards);
-
-	var _FactoryDbDriver = __webpack_require__(16);
-
-	var _FactoryDbDriver2 = _interopRequireDefault(_FactoryDbDriver);
-
-	var _FactoryList = __webpack_require__(18);
-
-	var _FactoryList2 = _interopRequireDefault(_FactoryList);
-
-	var _FactoryLists = __webpack_require__(19);
-
-	var _FactoryLists2 = _interopRequireDefault(_FactoryLists);
 
 	var _ServiceConfig = __webpack_require__(20);
 
@@ -105,14 +73,6 @@
 	var _ServiceEvents = __webpack_require__(21);
 
 	var _ServiceEvents2 = _interopRequireDefault(_ServiceEvents);
-
-	var _ServiceHelper = __webpack_require__(22);
-
-	var _ServiceHelper2 = _interopRequireDefault(_ServiceHelper);
-
-	var _ServiceTranslit = __webpack_require__(143);
-
-	var _ServiceTranslit2 = _interopRequireDefault(_ServiceTranslit);
 
 	var _eventFocus = __webpack_require__(144);
 
@@ -138,19 +98,19 @@
 
 	var _trCard2 = _interopRequireDefault(_trCard);
 
-	var _trFooter = __webpack_require__(160);
+	var _trFooter = __webpack_require__(161);
 
 	var _trFooter2 = _interopRequireDefault(_trFooter);
 
-	var _trHeader = __webpack_require__(163);
+	var _trHeader = __webpack_require__(164);
 
 	var _trHeader2 = _interopRequireDefault(_trHeader);
 
-	var _trIcon = __webpack_require__(166);
+	var _trIcon = __webpack_require__(167);
 
 	var _trIcon2 = _interopRequireDefault(_trIcon);
 
-	var _trList = __webpack_require__(169);
+	var _trList = __webpack_require__(170);
 
 	var _trList2 = _interopRequireDefault(_trList);
 
@@ -174,23 +134,20 @@
 
 	/*Directives*/
 
+
 	/*Services*/
 
-	/*Schemes Firebase*/
-	exports.default = angular.module("trello", ['ui.router', 'ngAnimate', 'ui.bootstrap']).config(_routes2.default)
-	/*Schemes Firebase*/
-	.service('BoardScheme', _BoardScheme2.default).service('CardScheme', _CardScheme2.default).service('ListScheme', _ListScheme2.default)
-	/*Services Firebase*/
-	.factory('FactoryBoard', _FactoryBoard2.default).factory('FactoryBoards', _FactoryBoards2.default).factory('FactoryCard', _FactoryCard2.default).factory('FactoryCards', _FactoryCards2.default).factory('FactoryDbDriver', _FactoryDbDriver2.default).factory('FactoryList', _FactoryList2.default).factory('FactoryLists', _FactoryLists2.default)
+
+	/*Css*/
+	exports.default = angular.module("trello", ['ui.router', 'ngAnimate', 'ui.bootstrap', _app2.default, _app4.default]).config(_routes2.default)
 	/*Services*/
-	.service('ServiceConfig', _ServiceConfig2.default).service('ServiceEvents', _ServiceEvents2.default).service('ServiceHelper', _ServiceHelper2.default).service('ServiceTranslit', _ServiceTranslit2.default)
+	.service('ServiceConfig', _ServiceConfig2.default).service('ServiceEvents', _ServiceEvents2.default)
 	/*Directives*/
 	.directive('eventFocus', _eventFocus2.default)
 	/*Components*/
 	.component('trTest', _trTest2.default).component('trBoard', _trBoard2.default).component('trBoardHeader', _trBoardHeader2.default).component('trBoards', _trBoards2.default).component('trCard', _trCard2.default).component('trFooter', _trFooter2.default).component('trHeader', _trHeader2.default).component('trIcon', _trIcon2.default).component('trList', _trList2.default).component('trLists', _trLists2.default).component('trNewBoard', _trNewBoard2.default).component('trNewCard', _trNewCard2.default).component('trNewList', _trNewList2.default).name;
-	/*Components*/
 
-	/*Services Firebase*/
+	/*Components*/
 
 
 	/*Routes*/
@@ -267,296 +224,14 @@
 	module.exports = "<h3>Test Page!!!!</h3>\n\n<tr-test></tr-test>\n\n\n\n"
 
 /***/ },
-/* 9 */
-/***/ function(module, exports) {
-
-	'use strict';
-
-	Object.defineProperty(exports, "__esModule", {
-	    value: true
-	});
-	exports.default = BoardScheme;
-	function BoardScheme(ServiceHelper) {
-	    this.getScheme = function () {
-	        return {
-	            id: ServiceHelper.randomString(),
-	            timestamp: ServiceHelper.timestamp(),
-	            updated: ServiceHelper.timestamp(),
-	            name: '',
-	            slug: '',
-	            starred: false
-	        };
-	    };
-
-	    this.validate = function (item) {
-	        if (!ServiceHelper.trimName(item)) return 'Board Validate Error: Empty name';
-
-	        return false;
-	    };
-	}
-
-/***/ },
-/* 10 */
-/***/ function(module, exports) {
-
-	'use strict';
-
-	Object.defineProperty(exports, "__esModule", {
-	    value: true
-	});
-	exports.default = CardScheme;
-	function CardScheme(ServiceHelper) {
-	    this.getScheme = function () {
-	        return {
-	            id: ServiceHelper.randomString(),
-	            timestamp: ServiceHelper.timestamp(),
-	            updated: ServiceHelper.timestamp(),
-	            name: '',
-	            slug: '',
-	            isDone: false
-	        };
-	    };
-
-	    this.validate = function (item) {
-	        if (!ServiceHelper.trimName(item)) return 'Card Validate Error: Empty name';
-
-	        return false;
-	    };
-	}
-
-/***/ },
-/* 11 */
-/***/ function(module, exports) {
-
-	'use strict';
-
-	Object.defineProperty(exports, "__esModule", {
-	    value: true
-	});
-	exports.default = ListScheme;
-	function ListScheme(ServiceHelper) {
-	    this.getScheme = function () {
-	        return {
-	            id: ServiceHelper.randomString(),
-	            timestamp: ServiceHelper.timestamp(),
-	            updated: ServiceHelper.timestamp(),
-	            name: '',
-	            slug: ''
-	        };
-	    };
-
-	    this.validate = function (item) {
-	        if (!ServiceHelper.trimName(item)) return 'List Validate Error: Empty name';
-
-	        return false;
-	    };
-	}
-
-/***/ },
-/* 12 */
-/***/ function(module, exports) {
-
-	'use strict';
-
-	Object.defineProperty(exports, "__esModule", {
-	    value: true
-	});
-	exports.default = FactoryBoard;
-	function FactoryBoard(FactoryBoards) {
-	    return function (boardKey) {
-	        if (!boardKey) throw new Error('Board Error! Not provided boardKey');
-
-	        var self = new FactoryBoards();
-	        self.ref = self.ref.child(boardKey);
-	        return self;
-	    };
-	}
-
-/***/ },
-/* 13 */
-/***/ function(module, exports) {
-
-	"use strict";
-
-	Object.defineProperty(exports, "__esModule", {
-	    value: true
-	});
-	exports.default = FactoryBoards;
-	function FactoryBoards(FactoryDbDriver, BoardScheme) {
-	    return function () {
-	        var self = new FactoryDbDriver();
-	        self.ref = self.ref.child("boards");
-	        self.getScheme = BoardScheme.getScheme;
-	        self.validate = BoardScheme.validate;
-	        return self;
-	    };
-	}
-
-/***/ },
-/* 14 */
-/***/ function(module, exports) {
-
-	'use strict';
-
-	Object.defineProperty(exports, "__esModule", {
-	    value: true
-	});
-	exports.default = FactoryCard;
-	function FactoryCard(FactoryCards) {
-	    return function (boardKey, listKey, cardKey) {
-	        if (!boardKey) throw new Error('Card Error! Does not provided boardKey');
-
-	        if (!listKey) throw new Error('Card Error! Does not provided listKey');
-
-	        if (!cardKey) throw new Error('Card Error! Does not provided cardKey');
-
-	        var self = new FactoryCards(boardKey, listKey);
-	        self.ref = self.ref.child(cardKey);
-
-	        return self;
-	    };
-	}
-
-/***/ },
-/* 15 */
-/***/ function(module, exports) {
-
-	'use strict';
-
-	Object.defineProperty(exports, "__esModule", {
-	    value: true
-	});
-	exports.default = FactoryCards;
-	function FactoryCards(FactoryList, CardScheme) {
-	    return function (boardKey, listKey) {
-	        if (!boardKey) throw new Error('Cards Error! Does not provided boardKey');
-
-	        if (!listKey) throw new Error('Cards Error! Does not provided listKey');
-
-	        var self = new FactoryList(boardKey, listKey);
-	        self.ref = self.ref.child('cards');
-	        self.getScheme = CardScheme.getScheme;
-	        self.validate = CardScheme.validate;
-
-	        return self;
-	    };
-	}
-
-/***/ },
-/* 16 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-
-	Object.defineProperty(exports, "__esModule", {
-	    value: true
-	});
-	exports.default = FactoryDbDriver;
-
-	var _firebase = __webpack_require__(17);
-
-	var _firebase2 = _interopRequireDefault(_firebase);
-
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-	function FactoryDbDriver($timeout, ServiceConfig, ServiceHelper, $q) {
-	    return function () {
-	        var self = this;
-
-	        /*Warning: need to redefine in child*/
-	        self.ref = new _firebase2.default(ServiceConfig.getFirebaseBaseUrl());
-
-	        /*Warning: need to implement in child */
-	        self.getScheme = function () {
-	            throw new Error('Error! Not implemented getScheme function');
-	        };
-
-	        /*Warning: need to implement in child */
-	        self.validate = function (item) {
-	            throw new Error('Error! Not implemented validate function');
-	        };
-
-	        self._prepareForPush = function (item) {
-	            var itemFields = {
-	                id: ServiceHelper.randomString(),
-	                slug: ServiceHelper.slug(item.name),
-	                updated: ServiceHelper.timestamp(),
-	                timestamp: ServiceHelper.timestamp()
-	            };
-
-	            return Object.assign({}, self.getScheme(), item, itemFields);
-	        };
-	        self._prepareForUpdate = function (item) {
-	            var itemFields = {
-	                slug: ServiceHelper.slug(item.name),
-	                updated: ServiceHelper.timestamp()
-	            };
-
-	            return Object.assign({}, item, itemFields);
-	        };
-	        self._beforePush = function (item) {
-	            return self._prepareForPush(item);
-	        };
-	        self._beforeUpdate = function (item) {
-	            return self._prepareForUpdate(item);
-	        };
-
-	        self.push = function (item) {
-	            item = self._beforePush(item);
-
-	            var validateMessage = void 0;
-
-	            return $q(function (resolve, reject) {
-	                if (validateMessage = self.validate(item)) {
-	                    return reject(validateMessage);
-	                }
-
-	                self.ref.push(item).then(function (response) {
-	                    return resolve(response);
-	                }).catch(function (err) {
-	                    return reject(err);
-	                });
-	            });
-	        };
-	        self.onValue = function (fn, fnErr) {
-	            var _fn = fn || function () {};
-	            var _fnError = fnErr || function (err) {
-	                console.error(err);
-	            };
-
-	            return self.ref.on("value", function (snapshot) {
-	                $timeout(function () {
-	                    return _fn(snapshot);
-	                }, 0);
-	            }, _fnError);
-	        };
-
-	        self.update = function (item) {
-	            item = self._beforeUpdate(item);
-
-	            var validateMessage = void 0;
-
-	            return $q(function (resolve, reject) {
-	                if (validateMessage = self.validate(item)) {
-	                    return reject(new Error(validateMessage));
-	                }
-
-	                self.ref.update(item).then(function (response) {
-	                    return resolve(response);
-	                }).catch(function (err) {
-	                    return reject(err);
-	                });
-	            });
-	        };
-	        self.remove = function (fn) {
-	            return self.ref.remove(fn);
-	        };
-
-	        return self;
-	    };
-	}
-
-/***/ },
+/* 9 */,
+/* 10 */,
+/* 11 */,
+/* 12 */,
+/* 13 */,
+/* 14 */,
+/* 15 */,
+/* 16 */,
 /* 17 */
 /***/ function(module, exports) {
 
@@ -843,52 +518,8 @@
 
 
 /***/ },
-/* 18 */
-/***/ function(module, exports) {
-
-	'use strict';
-
-	Object.defineProperty(exports, "__esModule", {
-	    value: true
-	});
-	exports.default = FactoryList;
-	function FactoryList(FactoryLists) {
-	    return function (boardKey, listKey) {
-	        if (!boardKey) throw new Error('Lists Error! Does not provided boardKey');
-
-	        if (!listKey) throw new Error('Lists Error! Does not provided listKey');
-
-	        var self = new FactoryLists(boardKey);
-	        self.ref = self.ref.child(listKey);
-
-	        return self;
-	    };
-	}
-
-/***/ },
-/* 19 */
-/***/ function(module, exports) {
-
-	"use strict";
-
-	Object.defineProperty(exports, "__esModule", {
-	    value: true
-	});
-	exports.default = FactoryLists;
-	function FactoryLists(FactoryDbDriver, ListScheme) {
-	    return function (boardKey) {
-	        if (!boardKey) throw new Error('Lists Error! Does not provided boardKey');
-
-	        var self = new FactoryDbDriver();
-	        self.ref = self.ref.child("lists").child(boardKey);
-	        self.getScheme = ListScheme.getScheme;
-	        self.validate = ListScheme.validate;
-
-	        return self;
-	    };
-	}
-
-/***/ },
+/* 18 */,
+/* 19 */,
 /* 20 */
 /***/ function(module, exports) {
 
@@ -946,74 +577,7 @@
 	}
 
 /***/ },
-/* 22 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-
-	Object.defineProperty(exports, "__esModule", {
-	    value: true
-	});
-	exports.default = ServiceHelper;
-
-	var _lodashFp = __webpack_require__(23);
-
-	var _lodashFp2 = _interopRequireDefault(_lodashFp);
-
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-	function ServiceHelper(ServiceTranslit) {
-	    var trimName = _lodashFp2.default.flow(_lodashFp2.default.get('name'), _lodashFp2.default.trim);
-	    var timestamp = Date.now;
-
-	    //Public API
-	    return {
-	        trimName: trimName,
-	        timestamp: timestamp,
-	        randomString: randomString,
-	        slug: slug,
-	        logError: logError
-	    };
-
-	    //Function Declaration Section
-	    /**
-	     * Generate random string
-	     * @param length
-	     * @returns {string}
-	     */
-	    function randomString(len) {
-	        var length = len || 16;
-	        var chars = '0123456789ABCDEFGHIJKLMNOPQRSTUVWXTZabcdefghiklmnopqrstuvwxyz'.split('');
-
-	        var str = '';
-	        for (var i = 0; i < length; i++) {
-	            str += chars[Math.floor(Math.random() * chars.length)];
-	        }
-	        return str;
-	    }
-
-	    /**
-	     * Return slug (string without spaces)
-	     * @param str
-	     * @returns {*}
-	     */
-	    function slug(str) {
-	        if (!_lodashFp2.default.isString(str)) return '';
-
-	        var translit = ServiceTranslit.translit(str);
-	        return _lodashFp2.default.kebabCase(translit);
-	    }
-
-	    /**
-	     * logError
-	     * @param err
-	     */
-	    function logError(err) {
-	        console.error(err);
-	    }
-	}
-
-/***/ },
+/* 22 */,
 /* 23 */
 /***/ function(module, exports, __webpack_require__) {
 
@@ -18691,66 +18255,7 @@
 
 
 /***/ },
-/* 143 */
-/***/ function(module, exports) {
-
-	'use strict';
-
-	Object.defineProperty(exports, "__esModule", {
-	    value: true
-	});
-	exports.default = ServiceTranslit;
-	function ServiceTranslit() {
-	    //Public API
-	    return {
-	        translit: translit
-	    };
-
-	    //Function Declaration Section
-	    function translit(str) {
-	        if (!str) return '';
-
-	        var L = {
-	            'А': 'A', 'а': 'a', 'Б': 'B', 'б': 'b', 'В': 'V', 'в': 'v', 'Г': 'G', 'г': 'g',
-	            'Д': 'D', 'д': 'd', 'Е': 'E', 'е': 'e', 'Ё': 'Yo', 'ё': 'yo', 'Ж': 'Zh', 'ж': 'zh',
-	            'З': 'Z', 'з': 'z', 'И': 'I', 'и': 'i', 'Й': 'Y', 'й': 'y', 'К': 'K', 'к': 'k',
-	            'Л': 'L', 'л': 'l', 'М': 'M', 'м': 'm', 'Н': 'N', 'н': 'n', 'О': 'O', 'о': 'o',
-	            'П': 'P', 'п': 'p', 'Р': 'R', 'р': 'r', 'С': 'S', 'с': 's', 'Т': 'T', 'т': 't',
-	            'У': 'U', 'у': 'u', 'Ф': 'F', 'ф': 'f', 'Х': 'Kh', 'х': 'kh', 'Ц': 'Ts', 'ц': 'ts',
-	            'Ч': 'Ch', 'ч': 'ch', 'Ш': 'Sh', 'ш': 'sh', 'Щ': 'Sch', 'щ': 'sch', 'Ъ': '', 'ъ': '',
-	            'Ы': 'Y', 'ы': 'y', 'Ь': "", 'ь': "", 'Э': 'E', 'э': 'e', 'Ю': 'Yu', 'ю': 'yu',
-	            'Я': 'Ya', 'я': 'ya', ' ': ' ', '_': '-',
-	            'І': 'I', 'і': 'i',
-	            '"': '', "'": '', '.': '', ',': '', '!': '', ':': '', ';': ''
-	        };
-	        var r = '';
-	        var k = void 0;
-
-	        for (k in L) {
-	            r += k;
-	        }r = new RegExp('[' + r + ']', 'g');
-	        k = function k(a) {
-	            return a in L ? L[a] : '';
-	        };
-
-	        var trans = function trans() {
-	            var text_string = str.replace(r, k).replace(' ', '-').toString();
-
-	            var literals = 'QqWwEeRrTtYyUuIiOoPpAaSsDdFfGgHhJjKkLlZzXxCcVvBbNnMm-0123456789';
-	            var newString = '';
-	            for (var i = 0; i < text_string.length; i++) {
-	                if (!(literals.indexOf(text_string.charAt(i)) == -1)) {
-	                    newString += text_string.charAt(i);
-	                }
-	            }
-	            return newString;
-	        };
-
-	        return trans();
-	    }
-	}
-
-/***/ },
+/* 143 */,
 /* 144 */
 /***/ function(module, exports) {
 
@@ -19082,7 +18587,7 @@
 
 	var _cardController2 = _interopRequireDefault(_cardController);
 
-	var _card = __webpack_require__(159);
+	var _card = __webpack_require__(160);
 
 	var _card2 = _interopRequireDefault(_card);
 
@@ -19110,7 +18615,7 @@
 
 	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-	var _EditedElementController = __webpack_require__(171);
+	var _EditedElementController = __webpack_require__(159);
 
 	var _EditedElementController2 = _interopRequireDefault(_EditedElementController);
 
@@ -19164,10 +18669,80 @@
 /* 159 */
 /***/ function(module, exports) {
 
-	module.exports = "<div class=\"card\" ng-class=\"{'card--edited': $ctrl.isEdited}\">\n\n    <!--Card Not Edited State -->\n    <div ng-if=\"!$ctrl.isEdited\">\n        <div\n            class=\"form-group\"\n            event-focus=\"click\" event-focus-id=\"{{$ctrl.cardKey}}\"\n            >\n            <!--Action Done-->\n            <tr-icon\n                icon=\"check\"\n                ng-click=\"$ctrl.markDone(); $event.preventDefault()\"\n                class=\"card__done-action\"\n                >\n            </tr-icon>\n\n            <!--Action Edit-->\n            <tr-icon\n                icon=\"edit\"\n                ng-click=\"$ctrl.startEdit()\"\n                event-focus=\"click\" event-focus-id=\"{{$ctrl.cardKey}}\"\n                class=\"card__edit-action\"\n                >\n            </tr-icon>\n\n            <!--Action Remove-->\n            <tr-icon\n                icon=\"remove\"\n                ng-click=\"$ctrl.remove(); $event.preventDefault()\"\n                class=\"card__remove-action\"\n                >\n            </tr-icon>\n\n            <input\n                ng-model=\"$ctrl.card.name\"\n                class=\"form-control input-sm card__input\"\n                ng-class=\"{'card--done': $ctrl.card.isDone}\"\n                type=\"text\"\n                disabled\n                />\n        </div>\n    </div>\n\n    <!--Card Edited State-->\n    <div ng-if=\"$ctrl.isEdited\">\n        <div class=\"form-group\">\n            <input\n                ng-model=\"$ctrl.card.name\"\n                class=\"form-control input-sm card__input\"\n                id=\"{{$ctrl.cardKey}}\"\n                type=\"text\"\n                />\n        </div>\n        <div class=\"form-group\">\n            <button ng-click=\"$ctrl.save()\" class=\"btn btn-success btn-sm\">Save</button>\n            <button ng-click=\"$ctrl.cancel()\" class=\"btn btn-default btn-sm\">Cancel</button>\n        </div>\n    </div>\n</div>"
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	    value: true
+	});
+
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	var EditedElementController = function () {
+	    function EditedElementController(ServiceEvents, ServiceHelper) {
+	        _classCallCheck(this, EditedElementController);
+
+	        this.ServiceEvents = ServiceEvents;
+	        this.ServiceHelper = ServiceHelper;
+	        this.isEdited = false;
+	        this.elementId = null; /*Warning: Need to define in child*/
+
+	        this.activate();
+	    }
+
+	    _createClass(EditedElementController, [{
+	        key: 'activate',
+	        value: function activate() {
+	            var self = this;
+
+	            this.ServiceEvents.subscribe('startEdit', function (data) {
+	                if (data.id == self.elementId) {
+	                    return null;
+	                }
+
+	                self.resetState();
+	            });
+	        }
+	    }, {
+	        key: 'publishEventStartEdit',
+	        value: function publishEventStartEdit() {
+	            var self = this;
+	            this.ServiceEvents.publish('startEdit', {
+	                id: self.elementId
+	            });
+	        }
+	    }, {
+	        key: 'startEdit',
+	        value: function startEdit() {
+	            this.isEdited = true;
+	            this.publishEventStartEdit();
+	        }
+	    }, {
+	        key: 'resetState',
+	        value: function resetState() {
+	            this.isEdited = false;
+	        }
+	    }, {
+	        key: 'cancel',
+	        value: function cancel() {
+	            this.resetState();
+	        }
+	    }]);
+
+	    return EditedElementController;
+	}();
+
+	exports.default = EditedElementController;
 
 /***/ },
 /* 160 */
+/***/ function(module, exports) {
+
+	module.exports = "<div class=\"card\" ng-class=\"{'card--edited': $ctrl.isEdited}\">\n\n    <!--Card Not Edited State -->\n    <div ng-if=\"!$ctrl.isEdited\">\n        <div\n            class=\"form-group\"\n            event-focus=\"click\" event-focus-id=\"{{$ctrl.cardKey}}\"\n            >\n            <!--Action Done-->\n            <tr-icon\n                icon=\"check\"\n                ng-click=\"$ctrl.markDone(); $event.preventDefault()\"\n                class=\"card__done-action\"\n                >\n            </tr-icon>\n\n            <!--Action Edit-->\n            <tr-icon\n                icon=\"edit\"\n                ng-click=\"$ctrl.startEdit()\"\n                event-focus=\"click\" event-focus-id=\"{{$ctrl.cardKey}}\"\n                class=\"card__edit-action\"\n                >\n            </tr-icon>\n\n            <!--Action Remove-->\n            <tr-icon\n                icon=\"remove\"\n                ng-click=\"$ctrl.remove(); $event.preventDefault()\"\n                class=\"card__remove-action\"\n                >\n            </tr-icon>\n\n            <input\n                ng-model=\"$ctrl.card.name\"\n                class=\"form-control input-sm card__input\"\n                ng-class=\"{'card--done': $ctrl.card.isDone}\"\n                type=\"text\"\n                disabled\n                />\n        </div>\n    </div>\n\n    <!--Card Edited State-->\n    <div ng-if=\"$ctrl.isEdited\">\n        <div class=\"form-group\">\n            <input\n                ng-model=\"$ctrl.card.name\"\n                class=\"form-control input-sm card__input\"\n                id=\"{{$ctrl.cardKey}}\"\n                type=\"text\"\n                />\n        </div>\n        <div class=\"form-group\">\n            <button ng-click=\"$ctrl.save()\" class=\"btn btn-success btn-sm\">Save</button>\n            <button ng-click=\"$ctrl.cancel()\" class=\"btn btn-default btn-sm\">Cancel</button>\n        </div>\n    </div>\n</div>"
+
+/***/ },
+/* 161 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -19176,11 +18751,11 @@
 	    value: true
 	});
 
-	var _footerController = __webpack_require__(161);
+	var _footerController = __webpack_require__(162);
 
 	var _footerController2 = _interopRequireDefault(_footerController);
 
-	var _footer = __webpack_require__(162);
+	var _footer = __webpack_require__(163);
 
 	var _footer2 = _interopRequireDefault(_footer);
 
@@ -19193,7 +18768,7 @@
 	};
 
 /***/ },
-/* 161 */
+/* 162 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -19211,13 +18786,13 @@
 	exports.default = FooterController;
 
 /***/ },
-/* 162 */
+/* 163 */
 /***/ function(module, exports) {
 
 	module.exports = "<div class=\"footer\">\n\n</div>"
 
 /***/ },
-/* 163 */
+/* 164 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -19226,11 +18801,11 @@
 	    value: true
 	});
 
-	var _header = __webpack_require__(164);
+	var _header = __webpack_require__(165);
 
 	var _header2 = _interopRequireDefault(_header);
 
-	var _headerController = __webpack_require__(165);
+	var _headerController = __webpack_require__(166);
 
 	var _headerController2 = _interopRequireDefault(_headerController);
 
@@ -19242,13 +18817,13 @@
 	};
 
 /***/ },
-/* 164 */
+/* 165 */
 /***/ function(module, exports) {
 
 	module.exports = "<nav class=\"navbar navbar-default navbar-static-top\">\n    <div class=\"container\">\n        <div class=\"navbar-header\">\n            <a class=\"navbar-brand\" href=\"#\">Trello</a>\n        </div>\n        <div id=\"navbar\" class=\"navbar-collapse collapse\">\n            <ul class=\"nav navbar-nav\">\n                <li><a href=\"#\">Boards</a></li>\n            </ul>\n            <ul class=\"nav navbar-nav navbar-right\">\n            </ul>\n        </div>\n    </div>\n</nav>"
 
 /***/ },
-/* 165 */
+/* 166 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -19266,7 +18841,7 @@
 	exports.default = HeaderController;
 
 /***/ },
-/* 166 */
+/* 167 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -19275,11 +18850,11 @@
 	    value: true
 	});
 
-	var _iconController = __webpack_require__(167);
+	var _iconController = __webpack_require__(168);
 
 	var _iconController2 = _interopRequireDefault(_iconController);
 
-	var _icon = __webpack_require__(168);
+	var _icon = __webpack_require__(169);
 
 	var _icon2 = _interopRequireDefault(_icon);
 
@@ -19294,7 +18869,7 @@
 	};
 
 /***/ },
-/* 167 */
+/* 168 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -19312,13 +18887,13 @@
 	exports.default = IconController;
 
 /***/ },
-/* 168 */
+/* 169 */
 /***/ function(module, exports) {
 
 	module.exports = "<i class=\"fa fa-{{$ctrl.icon}}\"></i>"
 
 /***/ },
-/* 169 */
+/* 170 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -19327,7 +18902,7 @@
 	    value: true
 	});
 
-	var _listController = __webpack_require__(170);
+	var _listController = __webpack_require__(171);
 
 	var _listController2 = _interopRequireDefault(_listController);
 
@@ -19347,7 +18922,7 @@
 	};
 
 /***/ },
-/* 170 */
+/* 171 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -19358,7 +18933,7 @@
 
 	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-	var _EditedElementController = __webpack_require__(171);
+	var _EditedElementController = __webpack_require__(159);
 
 	var _EditedElementController2 = _interopRequireDefault(_EditedElementController);
 
@@ -19456,76 +19031,6 @@
 	}(_EditedElementController2.default);
 
 	exports.default = ListController;
-
-/***/ },
-/* 171 */
-/***/ function(module, exports) {
-
-	'use strict';
-
-	Object.defineProperty(exports, "__esModule", {
-	    value: true
-	});
-
-	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-	var EditedElementController = function () {
-	    function EditedElementController(ServiceEvents, ServiceHelper) {
-	        _classCallCheck(this, EditedElementController);
-
-	        this.ServiceEvents = ServiceEvents;
-	        this.ServiceHelper = ServiceHelper;
-	        this.isEdited = false;
-	        this.elementId = null; /*Warning: Need to define in child*/
-
-	        this.activate();
-	    }
-
-	    _createClass(EditedElementController, [{
-	        key: 'activate',
-	        value: function activate() {
-	            var self = this;
-
-	            this.ServiceEvents.subscribe('startEdit', function (data) {
-	                if (data.id == self.elementId) {
-	                    return null;
-	                }
-
-	                self.resetState();
-	            });
-	        }
-	    }, {
-	        key: 'publishEventStartEdit',
-	        value: function publishEventStartEdit() {
-	            var self = this;
-	            this.ServiceEvents.publish('startEdit', {
-	                id: self.elementId
-	            });
-	        }
-	    }, {
-	        key: 'startEdit',
-	        value: function startEdit() {
-	            this.isEdited = true;
-	            this.publishEventStartEdit();
-	        }
-	    }, {
-	        key: 'resetState',
-	        value: function resetState() {
-	            this.isEdited = false;
-	        }
-	    }, {
-	        key: 'cancel',
-	        value: function cancel() {
-	            this.resetState();
-	        }
-	    }]);
-
-	    return EditedElementController;
-	}();
-
-	exports.default = EditedElementController;
 
 /***/ },
 /* 172 */
@@ -19646,7 +19151,7 @@
 
 	var _get = function get(object, property, receiver) { if (object === null) object = Function.prototype; var desc = Object.getOwnPropertyDescriptor(object, property); if (desc === undefined) { var parent = Object.getPrototypeOf(object); if (parent === null) { return undefined; } else { return get(parent, property, receiver); } } else if ("value" in desc) { return desc.value; } else { var getter = desc.get; if (getter === undefined) { return undefined; } return getter.call(receiver); } };
 
-	var _EditedElementController = __webpack_require__(171);
+	var _EditedElementController = __webpack_require__(159);
 
 	var _EditedElementController2 = _interopRequireDefault(_EditedElementController);
 
@@ -19749,7 +19254,7 @@
 
 	var _get = function get(object, property, receiver) { if (object === null) object = Function.prototype; var desc = Object.getOwnPropertyDescriptor(object, property); if (desc === undefined) { var parent = Object.getPrototypeOf(object); if (parent === null) { return undefined; } else { return get(parent, property, receiver); } } else if ("value" in desc) { return desc.value; } else { var getter = desc.get; if (getter === undefined) { return undefined; } return getter.call(receiver); } };
 
-	var _EditedElementController = __webpack_require__(171);
+	var _EditedElementController = __webpack_require__(159);
 
 	var _EditedElementController2 = _interopRequireDefault(_EditedElementController);
 
@@ -19846,7 +19351,7 @@
 
 	var _get = function get(object, property, receiver) { if (object === null) object = Function.prototype; var desc = Object.getOwnPropertyDescriptor(object, property); if (desc === undefined) { var parent = Object.getPrototypeOf(object); if (parent === null) { return undefined; } else { return get(parent, property, receiver); } } else if ("value" in desc) { return desc.value; } else { var getter = desc.get; if (getter === undefined) { return undefined; } return getter.call(receiver); } };
 
-	var _EditedElementController = __webpack_require__(171);
+	var _EditedElementController = __webpack_require__(159);
 
 	var _EditedElementController2 = _interopRequireDefault(_EditedElementController);
 
@@ -19896,6 +19401,626 @@
 	}(_EditedElementController2.default);
 
 	exports.default = NewListController;
+
+/***/ },
+/* 185 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+
+	/*Modules Depends On*/
+
+	Object.defineProperty(exports, "__esModule", {
+	    value: true
+	});
+
+	var _app = __webpack_require__(196);
+
+	var _app2 = _interopRequireDefault(_app);
+
+	var _BoardScheme = __webpack_require__(186);
+
+	var _BoardScheme2 = _interopRequireDefault(_BoardScheme);
+
+	var _CardScheme = __webpack_require__(187);
+
+	var _CardScheme2 = _interopRequireDefault(_CardScheme);
+
+	var _ListScheme = __webpack_require__(188);
+
+	var _ListScheme2 = _interopRequireDefault(_ListScheme);
+
+	var _FactoryBoard = __webpack_require__(189);
+
+	var _FactoryBoard2 = _interopRequireDefault(_FactoryBoard);
+
+	var _FactoryBoards = __webpack_require__(190);
+
+	var _FactoryBoards2 = _interopRequireDefault(_FactoryBoards);
+
+	var _FactoryCard = __webpack_require__(191);
+
+	var _FactoryCard2 = _interopRequireDefault(_FactoryCard);
+
+	var _FactoryCards = __webpack_require__(192);
+
+	var _FactoryCards2 = _interopRequireDefault(_FactoryCards);
+
+	var _FactoryDbDriver = __webpack_require__(193);
+
+	var _FactoryDbDriver2 = _interopRequireDefault(_FactoryDbDriver);
+
+	var _FactoryList = __webpack_require__(194);
+
+	var _FactoryList2 = _interopRequireDefault(_FactoryList);
+
+	var _FactoryLists = __webpack_require__(195);
+
+	var _FactoryLists2 = _interopRequireDefault(_FactoryLists);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	/*Schemes Firebase*/
+	exports.default = angular.module("trello-db-api", [_app2.default])
+	/*Schemes Firebase*/
+	.service('BoardScheme', _BoardScheme2.default).service('CardScheme', _CardScheme2.default).service('ListScheme', _ListScheme2.default)
+	/*Services Firebase*/
+	.factory('FactoryBoard', _FactoryBoard2.default).factory('FactoryBoards', _FactoryBoards2.default).factory('FactoryCard', _FactoryCard2.default).factory('FactoryCards', _FactoryCards2.default).factory('FactoryDbDriver', _FactoryDbDriver2.default).factory('FactoryList', _FactoryList2.default).factory('FactoryLists', _FactoryLists2.default).name;
+
+	/*Services Firebase*/
+
+/***/ },
+/* 186 */
+/***/ function(module, exports) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	    value: true
+	});
+
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	var BoardScheme = function () {
+	    function BoardScheme(ServiceHelper) {
+	        _classCallCheck(this, BoardScheme);
+
+	        this.ServiceHelper = ServiceHelper;
+	    }
+
+	    _createClass(BoardScheme, [{
+	        key: 'getScheme',
+	        value: function getScheme() {
+
+	            return {
+	                id: this.ServiceHelper.randomString(),
+	                timestamp: this.ServiceHelper.timestamp(),
+	                updated: this.ServiceHelper.timestamp(),
+	                name: '',
+	                slug: '',
+	                starred: false
+	            };
+	        }
+	    }, {
+	        key: 'validate',
+	        value: function validate(item) {
+	            if (!this.ServiceHelper.trimName(item)) return 'Board Validate Error: Empty name';
+
+	            return false;
+	        }
+	    }]);
+
+	    return BoardScheme;
+	}();
+
+	exports.default = BoardScheme;
+
+/***/ },
+/* 187 */
+/***/ function(module, exports) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	    value: true
+	});
+
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	var CardScheme = function () {
+	    function CardScheme(ServiceHelper) {
+	        _classCallCheck(this, CardScheme);
+
+	        this.ServiceHelper = ServiceHelper;
+	    }
+
+	    _createClass(CardScheme, [{
+	        key: 'getScheme',
+	        value: function getScheme() {
+	            return {
+	                id: this.ServiceHelper.randomString(),
+	                timestamp: this.ServiceHelper.timestamp(),
+	                updated: this.ServiceHelper.timestamp(),
+	                name: '',
+	                slug: '',
+	                isDone: false
+	            };
+	        }
+	    }, {
+	        key: 'validate',
+	        value: function validate(item) {
+	            if (!this.ServiceHelper.trimName(item)) return 'Card Validate Error: Empty name';
+
+	            return false;
+	        }
+	    }]);
+
+	    return CardScheme;
+	}();
+
+	exports.default = CardScheme;
+
+/***/ },
+/* 188 */
+/***/ function(module, exports) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	    value: true
+	});
+
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	var ListScheme = function () {
+	    function ListScheme(ServiceHelper) {
+	        _classCallCheck(this, ListScheme);
+
+	        this.ServiceHelper = ServiceHelper;
+	    }
+
+	    _createClass(ListScheme, [{
+	        key: 'getScheme',
+	        value: function getScheme() {
+	            return {
+	                id: this.ServiceHelper.randomString(),
+	                timestamp: this.ServiceHelper.timestamp(),
+	                updated: this.ServiceHelper.timestamp(),
+	                name: '',
+	                slug: ''
+	            };
+	        }
+	    }, {
+	        key: 'validate',
+	        value: function validate(item) {
+	            if (!this.ServiceHelper.trimName(item)) return 'List Validate Error: Empty name';
+
+	            return false;
+	        }
+	    }]);
+
+	    return ListScheme;
+	}();
+
+	exports.default = ListScheme;
+
+/***/ },
+/* 189 */
+/***/ function(module, exports) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	    value: true
+	});
+	exports.default = FactoryBoard;
+	function FactoryBoard(FactoryBoards) {
+	    return function (boardKey) {
+	        if (!boardKey) throw new Error('Board Error! Not provided boardKey');
+
+	        var self = new FactoryBoards();
+	        self.ref = self.ref.child(boardKey);
+	        return self;
+	    };
+	}
+
+/***/ },
+/* 190 */
+/***/ function(module, exports) {
+
+	"use strict";
+
+	Object.defineProperty(exports, "__esModule", {
+	    value: true
+	});
+	exports.default = FactoryBoards;
+	function FactoryBoards(FactoryDbDriver, BoardScheme) {
+	    return function () {
+	        var self = new FactoryDbDriver();
+	        self.ref = self.ref.child("boards");
+	        self.getScheme = function () {
+	            return BoardScheme.getScheme();
+	        };
+	        self.validate = function () {
+	            return BoardScheme.validate();
+	        };
+	        return self;
+	    };
+	}
+
+/***/ },
+/* 191 */
+/***/ function(module, exports) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	    value: true
+	});
+	exports.default = FactoryCard;
+	function FactoryCard(FactoryCards) {
+	    return function (boardKey, listKey, cardKey) {
+	        if (!boardKey) throw new Error('Card Error! Does not provided boardKey');
+
+	        if (!listKey) throw new Error('Card Error! Does not provided listKey');
+
+	        if (!cardKey) throw new Error('Card Error! Does not provided cardKey');
+
+	        var self = new FactoryCards(boardKey, listKey);
+	        self.ref = self.ref.child(cardKey);
+
+	        return self;
+	    };
+	}
+
+/***/ },
+/* 192 */
+/***/ function(module, exports) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	    value: true
+	});
+	exports.default = FactoryCards;
+	function FactoryCards(FactoryList, CardScheme) {
+	    return function (boardKey, listKey) {
+	        if (!boardKey) throw new Error('Cards Error! Does not provided boardKey');
+
+	        if (!listKey) throw new Error('Cards Error! Does not provided listKey');
+
+	        var self = new FactoryList(boardKey, listKey);
+	        self.ref = self.ref.child('cards');
+	        self.getScheme = function () {
+	            return CardScheme.getScheme();
+	        };
+	        self.validate = function () {
+	            return CardScheme.validate();
+	        };
+	        return self;
+	    };
+	}
+
+/***/ },
+/* 193 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	    value: true
+	});
+	exports.default = FactoryDbDriver;
+
+	var _firebase = __webpack_require__(17);
+
+	var _firebase2 = _interopRequireDefault(_firebase);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	function FactoryDbDriver($timeout, ServiceConfig, ServiceHelper, $q) {
+	    return function () {
+	        var self = this;
+
+	        /*Warning: need to redefine in child*/
+	        self.ref = new _firebase2.default(ServiceConfig.getFirebaseBaseUrl());
+
+	        /*Warning: need to implement in child */
+	        self.getScheme = function () {
+	            throw new Error('Error! Not implemented getScheme function');
+	        };
+
+	        /*Warning: need to implement in child */
+	        self.validate = function (item) {
+	            throw new Error('Error! Not implemented validate function');
+	        };
+
+	        self._prepareForPush = function (item) {
+	            var itemFields = {
+	                id: ServiceHelper.randomString(),
+	                slug: ServiceHelper.slug(item.name),
+	                updated: ServiceHelper.timestamp(),
+	                timestamp: ServiceHelper.timestamp()
+	            };
+
+	            return Object.assign({}, self.getScheme(), item, itemFields);
+	        };
+	        self._prepareForUpdate = function (item) {
+	            var itemFields = {
+	                slug: ServiceHelper.slug(item.name),
+	                updated: ServiceHelper.timestamp()
+	            };
+
+	            return Object.assign({}, item, itemFields);
+	        };
+	        self._beforePush = function (item) {
+	            return self._prepareForPush(item);
+	        };
+	        self._beforeUpdate = function (item) {
+	            return self._prepareForUpdate(item);
+	        };
+
+	        self.push = function (item) {
+	            item = self._beforePush(item);
+
+	            var validateMessage = void 0;
+
+	            return $q(function (resolve, reject) {
+	                if (validateMessage = self.validate(item)) {
+	                    return reject(validateMessage);
+	                }
+
+	                self.ref.push(item).then(function (response) {
+	                    return resolve(response);
+	                }).catch(function (err) {
+	                    return reject(err);
+	                });
+	            });
+	        };
+	        self.onValue = function (fn, fnErr) {
+	            var _fn = fn || function () {};
+	            var _fnError = fnErr || function (err) {
+	                console.error(err);
+	            };
+
+	            return self.ref.on("value", function (snapshot) {
+	                $timeout(function () {
+	                    return _fn(snapshot);
+	                }, 0);
+	            }, _fnError);
+	        };
+
+	        self.update = function (item) {
+	            item = self._beforeUpdate(item);
+
+	            var validateMessage = void 0;
+
+	            return $q(function (resolve, reject) {
+	                if (validateMessage = self.validate(item)) {
+	                    return reject(new Error(validateMessage));
+	                }
+
+	                self.ref.update(item).then(function (response) {
+	                    return resolve(response);
+	                }).catch(function (err) {
+	                    return reject(err);
+	                });
+	            });
+	        };
+	        self.remove = function (fn) {
+	            return self.ref.remove(fn);
+	        };
+
+	        return self;
+	    };
+	}
+
+/***/ },
+/* 194 */
+/***/ function(module, exports) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	    value: true
+	});
+	exports.default = FactoryList;
+	function FactoryList(FactoryLists) {
+	    return function (boardKey, listKey) {
+	        if (!boardKey) throw new Error('Lists Error! Does not provided boardKey');
+
+	        if (!listKey) throw new Error('Lists Error! Does not provided listKey');
+
+	        var self = new FactoryLists(boardKey);
+	        self.ref = self.ref.child(listKey);
+
+	        return self;
+	    };
+	}
+
+/***/ },
+/* 195 */
+/***/ function(module, exports) {
+
+	"use strict";
+
+	Object.defineProperty(exports, "__esModule", {
+	    value: true
+	});
+	exports.default = FactoryLists;
+	function FactoryLists(FactoryDbDriver, ListScheme) {
+	    return function (boardKey) {
+	        if (!boardKey) throw new Error('Lists Error! Does not provided boardKey');
+
+	        var self = new FactoryDbDriver();
+	        self.ref = self.ref.child("lists").child(boardKey);
+
+	        self.getScheme = function () {
+	            return ListScheme.getScheme();
+	        };
+	        self.validate = function () {
+	            return ListScheme.validate();
+	        };
+
+	        return self;
+	    };
+	}
+
+/***/ },
+/* 196 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+
+	Object.defineProperty(exports, "__esModule", {
+	    value: true
+	});
+
+	var _ServiceHelper = __webpack_require__(197);
+
+	var _ServiceHelper2 = _interopRequireDefault(_ServiceHelper);
+
+	var _ServiceTranslit = __webpack_require__(198);
+
+	var _ServiceTranslit2 = _interopRequireDefault(_ServiceTranslit);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	exports.default = angular.module("trello-shared", []).service('ServiceHelper', _ServiceHelper2.default).service('ServiceTranslit', _ServiceTranslit2.default).name;
+
+/***/ },
+/* 197 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	    value: true
+	});
+	exports.default = ServiceHelper;
+
+	var _lodashFp = __webpack_require__(23);
+
+	var _lodashFp2 = _interopRequireDefault(_lodashFp);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	function ServiceHelper(ServiceTranslit) {
+	    var trimName = _lodashFp2.default.flow(_lodashFp2.default.get('name'), _lodashFp2.default.trim);
+	    var timestamp = Date.now;
+
+	    //Public API
+	    return {
+	        trimName: trimName,
+	        timestamp: timestamp,
+	        randomString: randomString,
+	        slug: slug,
+	        logError: logError
+	    };
+
+	    //Function Declaration Section
+	    /**
+	     * Generate random string
+	     * @param length
+	     * @returns {string}
+	     */
+	    function randomString(len) {
+	        var length = len || 16;
+	        var chars = '0123456789ABCDEFGHIJKLMNOPQRSTUVWXTZabcdefghiklmnopqrstuvwxyz'.split('');
+
+	        var str = '';
+	        for (var i = 0; i < length; i++) {
+	            str += chars[Math.floor(Math.random() * chars.length)];
+	        }
+	        return str;
+	    }
+
+	    /**
+	     * Return slug (string without spaces)
+	     * @param str
+	     * @returns {*}
+	     */
+	    function slug(str) {
+	        if (!_lodashFp2.default.isString(str)) return '';
+
+	        var translit = ServiceTranslit.translit(str);
+	        return _lodashFp2.default.kebabCase(translit);
+	    }
+
+	    /**
+	     * logError
+	     * @param err
+	     */
+	    function logError(err) {
+	        console.error(err);
+	    }
+	}
+
+/***/ },
+/* 198 */
+/***/ function(module, exports) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	    value: true
+	});
+	exports.default = ServiceTranslit;
+	function ServiceTranslit() {
+	    //Public API
+	    return {
+	        translit: translit
+	    };
+
+	    //Function Declaration Section
+	    function translit(str) {
+	        if (!str) return '';
+
+	        var L = {
+	            'А': 'A', 'а': 'a', 'Б': 'B', 'б': 'b', 'В': 'V', 'в': 'v', 'Г': 'G', 'г': 'g',
+	            'Д': 'D', 'д': 'd', 'Е': 'E', 'е': 'e', 'Ё': 'Yo', 'ё': 'yo', 'Ж': 'Zh', 'ж': 'zh',
+	            'З': 'Z', 'з': 'z', 'И': 'I', 'и': 'i', 'Й': 'Y', 'й': 'y', 'К': 'K', 'к': 'k',
+	            'Л': 'L', 'л': 'l', 'М': 'M', 'м': 'm', 'Н': 'N', 'н': 'n', 'О': 'O', 'о': 'o',
+	            'П': 'P', 'п': 'p', 'Р': 'R', 'р': 'r', 'С': 'S', 'с': 's', 'Т': 'T', 'т': 't',
+	            'У': 'U', 'у': 'u', 'Ф': 'F', 'ф': 'f', 'Х': 'Kh', 'х': 'kh', 'Ц': 'Ts', 'ц': 'ts',
+	            'Ч': 'Ch', 'ч': 'ch', 'Ш': 'Sh', 'ш': 'sh', 'Щ': 'Sch', 'щ': 'sch', 'Ъ': '', 'ъ': '',
+	            'Ы': 'Y', 'ы': 'y', 'Ь': "", 'ь': "", 'Э': 'E', 'э': 'e', 'Ю': 'Yu', 'ю': 'yu',
+	            'Я': 'Ya', 'я': 'ya', ' ': ' ', '_': '-',
+	            'І': 'I', 'і': 'i',
+	            '"': '', "'": '', '.': '', ',': '', '!': '', ':': '', ';': ''
+	        };
+	        var r = '';
+	        var k = void 0;
+
+	        for (k in L) {
+	            r += k;
+	        }r = new RegExp('[' + r + ']', 'g');
+	        k = function k(a) {
+	            return a in L ? L[a] : '';
+	        };
+
+	        var trans = function trans() {
+	            var text_string = str.replace(r, k).replace(' ', '-').toString();
+
+	            var literals = 'QqWwEeRrTtYyUuIiOoPpAaSsDdFfGgHhJjKkLlZzXxCcVvBbNnMm-0123456789';
+	            var newString = '';
+	            for (var i = 0; i < text_string.length; i++) {
+	                if (!(literals.indexOf(text_string.charAt(i)) == -1)) {
+	                    newString += text_string.charAt(i);
+	                }
+	            }
+	            return newString;
+	        };
+
+	        return trans();
+	    }
+	}
 
 /***/ }
 /******/ ]);

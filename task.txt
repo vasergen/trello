@@ -1,7 +1,6 @@
 WEBPACK
-- rewrite components on classes
+- rewrite firebase factories on classes - [IN PROGRESS]
 - rewrite services on classes
-- rewrite firebase factories on classes
 - ngAnnotate or ngInject
 - add dev server
 - add context to webpack config
