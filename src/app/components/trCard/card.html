@@ -2,10 +2,7 @@
 
     <!--Card Not Edited State -->
     <div ng-if="!$ctrl.isEdited">
-        <div
-            class="form-group"
-            event-focus="click" event-focus-id="{{$ctrl.cardKey}}"
-            >
+        <div class="form-group">
             <!--Action Done-->
             <tr-icon
                 icon="check"
@@ -26,18 +23,20 @@
             <!--Action Remove-->
             <tr-icon
                 icon="remove"
-                ng-click="$ctrl.remove(); $event.preventDefault()"
+                ng-click="$ctrl.remove(); $event.preventDefault();"
                 class="card__remove-action"
                 >
             </tr-icon>
 
-            <input
-                ng-model="$ctrl.card.name"
-                class="form-control input-sm card__input"
-                ng-class="{'card--done': $ctrl.card.isDone}"
-                type="text"
-                disabled
-                />
+            <div ng-click="$ctrl.showModal()">
+                <input
+                        ng-model="$ctrl.card.name"
+                        class="form-control input-sm card__input"
+                        ng-class="{'card--done': $ctrl.card.isDone}"
+                        type="text"
+                        disabled
+                        />
+            </div>
         </div>
     </div>
 

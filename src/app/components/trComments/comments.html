@@ -1,0 +1,14 @@
+<div class="comments">
+    <!--Header-->
+    <div class="comments__header">Comments</div>
+    <div class="comments__body">
+        <tr-comment
+            ng-repeat="(commentKey, comment) in $ctrl.comments"
+            keys="$ctrl.keys"
+            commentKey="commentKey"
+            comment="comment"
+            >
+        </tr-comment>
+    </div>
+</div>
+

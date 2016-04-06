@@ -1,8 +1,5 @@
 export default function FactoryList(FactoryLists) {
     return function(boardKey, listKey) {
-        if(!boardKey)
-            throw new Error('Lists Error! Does not provided boardKey')
-
         if(!listKey)
             throw new Error('Lists Error! Does not provided listKey')
 

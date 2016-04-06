@@ -147,6 +147,20 @@ tr-board.ng-leave .board {
 .card__remove-action:hover {
   color: #a52214;
 }
+.card-modal__close {
+  font-size: 24px;
+  color: #e43725;
+}
+.card-modal__close:hover {
+  color: #bd2717;
+}
+.card-modal__title {
+  font-size: 22px;
+}
+.comments__header {
+  font-size: 20px;
+  color: #f39c12;
+}
 .footer {
   height: 50px;
 }
@@ -238,6 +252,10 @@ tr-board.ng-leave .board {
 }
 .card--new .card__name {
   color: #0bcb9a;
+}
+.comment__header {
+  font-size: 20px;
+  color: #f39c12;
 }
 .list--new {
   cursor: pointer;

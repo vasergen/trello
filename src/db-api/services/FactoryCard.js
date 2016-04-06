@@ -1,11 +1,5 @@
 export default function FactoryCard(FactoryCards) {
     return function(boardKey, listKey, cardKey) {
-        if(!boardKey)
-            throw new Error('Card Error! Does not provided boardKey')
-
-        if(!listKey)
-            throw new Error('Card Error! Does not provided listKey')
-
         if(!cardKey)
             throw new Error('Card Error! Does not provided cardKey')
 

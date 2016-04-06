@@ -1,3 +1,7 @@
+=>current: implementing comment
+- show comments in reverse order
+- action delete comment
+
 WEBPACK
 - ngAnnotate or ngInject
 - add dev server

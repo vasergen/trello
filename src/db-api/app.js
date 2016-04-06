@@ -7,6 +7,7 @@ import trelloShared from './../common/app.js'
 import BoardScheme from './schemes/BoardScheme.js'
 import CardScheme from './schemes/CardScheme.js'
 import ListScheme from './schemes/ListScheme.js'
+import CommentScheme from './schemes/CommentScheme.js'
 
 /*Services Firebase*/
 import FactoryBoard from './services/FactoryBoard.js'
@@ -16,6 +17,7 @@ import FactoryCards from './services/FactoryCards.js'
 import FactoryDbDriver from './services/FactoryDbDriver.js'
 import FactoryList from './services/FactoryList.js'
 import FactoryLists from './services/FactoryLists.js'
+import FactoryComments from './services/FactoryComments.js'
 
 export default angular
     .module("trello-db-api", [trelloShared])
@@ -23,6 +25,7 @@ export default angular
     .service('BoardScheme', BoardScheme)
     .service('CardScheme', CardScheme)
     .service('ListScheme', ListScheme)
+    .service('CommentScheme', CommentScheme)
     /*Services Firebase*/
     .factory('FactoryBoard', FactoryBoard)
     .factory('FactoryBoards', FactoryBoards)
@@ -31,4 +34,5 @@ export default angular
     .factory('FactoryDbDriver', FactoryDbDriver)
     .factory('FactoryList', FactoryList)
     .factory('FactoryLists', FactoryLists)
+    .factory('FactoryComments', FactoryComments)
     .name

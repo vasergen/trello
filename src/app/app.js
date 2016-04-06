@@ -2,7 +2,7 @@
 
 /*Modules depends on*/
 import trelloDbApi from './../db-api/app.js'
-import trelloShared from './../common/app.js'
+import trelloCommon from './../common/app.js'
 
 /*Css*/
 import './_sharedCss/app.styl'
@@ -30,10 +30,14 @@ import trList from './components/trList'
 import trLists from './components/trLists'
 import trNewBoard from './components/trNewBoard'
 import trNewCard from './components/trNewCard'
+import trNewComment from './components/trNewComment'
 import trNewList from './components/trNewList'
+import trComment from './components/trComment'
+import trComments from './components/trComments'
+
 
 export default angular
-    .module("trello", ['ui.router', 'ngAnimate', 'ui.bootstrap', trelloDbApi, trelloShared])
+    .module("trello", ['ui.router', 'ngAnimate', 'ui.bootstrap', trelloDbApi, trelloCommon])
     .config(routes)
     /*Services*/
     .service('ServiceConfig', ServiceConfig)
@@ -53,7 +57,10 @@ export default angular
     .component('trLists', trLists)
     .component('trNewBoard', trNewBoard)
     .component('trNewCard', trNewCard)
+    .component('trNewComment', trNewComment)
     .component('trNewList', trNewList)
+    .component('trComment', trComment)
+    .component('trComments', trComments)
     .name
 
 window.addEventListener('load', () => {

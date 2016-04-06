@@ -1,0 +1,32 @@
+<!--Modal Body-->
+<div class="modal-body card-modal">
+
+    <!--Modal Header-->
+    <div class="row">
+        <div class="col-xs-11">
+            <h3 class="modal-title" card-modal__title>
+                <tr-icon icon="credit-card"></tr-icon>
+                {{card.name}}
+            </h3>
+        </div>
+        <div class="col-xs-1 pull-right">
+            <tr-icon ng-click="cancel()" class="card-modal__close" icon="remove"></tr-icon>
+        </div>
+    </div>
+
+    <!--New Comment-->
+    <div class="row">
+        <div class="col-xs-12">
+            <tr-new-comment keys="keys"></tr-new-comment>
+        </div>
+    </div>
+
+    <!--Comments-->
+    <div class="row">
+        <div class="col-xs-12">
+            <tr-comments keys="keys"></tr-comments>
+        </div>
+    </div>
+
+</div>
+
