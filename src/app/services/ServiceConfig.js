@@ -1,13 +1,7 @@
-"use strict"
+export default class ServiceConfig {
+    constructor() {}
 
-angular.module("trello")
-    .service('ServiceConfig', ServiceConfig)
-
-function ServiceConfig() {
-    let getFirebaseBaseUrl = () => "https://vstrello.firebaseio.com/"
-
-    //Public API
-    return {
-        getFirebaseBaseUrl
+    getFirebaseBaseUrl() {
+        return "https://vstrello.firebaseio.com/"
     }
 }

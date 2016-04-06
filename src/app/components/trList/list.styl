@@ -1,0 +1,67 @@
+//Grid Masonry effect
+columnCount($count)
+  -webkit-column-count: $count
+  -moz-column-count: $count
+  column-count: $count
+
+columnGap($gap)
+  -webkit-column-gap: $gap
+  -moz-column-gap: $gap
+  column-gap: $gap
+
+.lists
+  columnCount(3)
+  columnGap(10px)
+  margin: 0 auto
+
+@media(max-width: 992px)
+  .lists
+    columnCount(2)
+
+@media(max-width: 768px)
+  .lists
+    columnCount(1)
+
+.list {
+  display: inline-block;
+  width: 99%;
+}
+//Grid Masonry effect END
+
+.list
+  position relative
+  margin 20px 0 0 0
+  padding 10px
+  min-height 100px
+  border-radius 5px
+  background $board_bgr
+
+.list__header_name[disabled]
+  cursor pointer
+  background $list_input_name_bgr !important
+
+.list__header_name
+  padding-left 0
+  font-size 22px
+  color $yellow
+  background $list_input_name_bgr
+
+.list__header
+  cursor pointer
+  margin-bottom 10px
+  &:hover
+    .list__delete
+      right 15px
+      opacity 1
+
+.list__delete
+  position absolute
+  color $red
+  top 8px
+  right 0
+  opacity 0
+  transition-property opacity, right
+  transition-duration 0.3s, 0.3s
+  font-size 20px
+  &:hover
+    font-size 22px

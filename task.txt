@@ -1,0 +1,17 @@
+WEBPACK
+- ngAnnotate or ngInject
+- add dev server
+
+Features
+- show validate error or other on page (under header)
+- if bad url (boardKey) than say it to user
+- add comments to card
+- add due time to card
+- add ability to edit board name
+- check and fix unit tests!
+- login page
+
+NPM
+- remove modules that doesnt used
+- try to install project on windows (check if all is ok)
+-

@@ -1,0 +1,58 @@
+/*Animation*/
+tr-board.ng-leave
+  animation: flipOutX 0.3s
+  .board
+    animation: flipOutX 0.3s
+
+.board--editing.ng-enter
+  animation: flipInX 0.3s
+
+.board--notediting.ng-enter
+  animation: fadeIn 0.3s
+/*Animation END*/
+
+.board
+  position relative
+  margin 20px 0 0 0
+  padding 10px
+  min-height 100px
+  border-radius 5px
+  cursor pointer
+  background $board_bgr
+  &:hover
+    background $board_bgr - 15%
+    .board__star
+      opacity 1
+      right 15px
+    .board__delete
+      opacity 1
+      right 15px
+
+.board--starred
+  .board__star
+    opacity 1
+    right 15px
+
+.board__star
+  color $white
+  position absolute
+  top 10px
+  opacity 0
+  right 0
+  transition-property opacity, right
+  transition-duration 0.3s, 0.3s
+  font-size: 16px
+  &:hover
+    font-size 18px
+
+.board__delete
+  color $red
+  position absolute
+  bottom 10px
+  opacity 0
+  right 0
+  font-size 20px
+  transition-property opacity, right
+  transition-duration 0.3s, 0.3s
+  &:hover
+    font-size 22px

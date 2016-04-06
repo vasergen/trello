@@ -1,0 +1,51 @@
+cardAction($color, $right)
+  cursor pointer
+  position absolute
+  margin auto
+  height 21px
+  font-size 16px
+  top 0
+  bottom 0
+  opacity 0
+  right $right
+  color $color
+  transition-property right, opacity
+  transition-duration 0.3s, 0.3s
+  &:hover
+    color $color - 30%
+
+.card
+  position relative
+  &:hover
+    .card__done-action
+      right 42px
+      opacity 1
+    .card__edit-action
+      right 24px
+      opacity 1
+    .card__remove-action
+      right 9px
+      opacity 1
+    .card__input
+      background $card_inp_bgr - 10%
+  .card__input
+    cursor pointer
+    background $card_inp_bgr
+    color white
+
+.card--done
+  text-decoration line-through
+  color #555 !important
+
+.card--edited
+  .card__input
+    cursor auto !important
+
+.card__done-action
+  cardAction($green, 30px)
+
+.card__edit-action
+  cardAction($gray, 15px)
+
+.card__remove-action
+  cardAction($red, 0)
