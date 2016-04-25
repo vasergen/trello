@@ -13,7 +13,7 @@ Source code are in **src/** directory. First level directory is angular modules.
 1. npm install
 1. npm run start
 
-##Note: App didn't finished
+##TODO:
  - unit test need to rewrite - I rewrited app for webpack and this part didnt touched yet
  - 
 
