@@ -1,6 +1,6 @@
 # Trello
 
-##Description: A small app something like trello. For front here used angular, backend API - firebase.
+##Description: A small app something like trello. (using angular 1.5.x and firebase).
 Source code are in **src/** directory. First level directory is angular modules. In our case we have three 
  modules: 
  - **app** - main module, core for our app, here we have **components**, **directives**, **services** and **views**
