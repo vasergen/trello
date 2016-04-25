@@ -13,7 +13,12 @@ export default function ($stateProvider, $urlRouterProvider) {
         })
         .state('board', {
             url: '/board:boardKey/:slug',
-            template: boardView
+            template: boardView,
+            controller: function($stateParams) {
+                this.boardKey= $stateParams.boardKey;
+                //$ctrl.boardKey
+            },
+            controllerAs: '$ctrl'
         })
         .state('test', {
             url: '/test',
