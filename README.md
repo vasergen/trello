@@ -1,4 +1,4 @@
-# Trello
+# Trello 
 
 ##Description: A small app something like trello. (using angular 1.5.x and firebase).
 Source code are in **src/** directory. First level directory is angular modules. In our case we have three 
@@ -12,4 +12,9 @@ Source code are in **src/** directory. First level directory is angular modules.
 1. cd trello
 1. npm install
 1. npm run start
+
+##Note: App didn't finished
+ - unit test need to rewrite - I rewrited app for webpack and this part didnt touched yet
+ - 
+
 
