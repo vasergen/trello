@@ -11,4 +11,4 @@ Source code are in src/ directory. First level directory is angular modules. In 
 1) git clone git@github.com:vasergen/trello.git
 2) cd trello
 3) npm install
-4) npm run start    
+4) npm run start     
