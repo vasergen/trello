@@ -14,7 +14,8 @@ Source code are in **src/** directory. First level directory is angular modules.
 1. npm run start
 
 ##TODO:
- - unit test need to rewrite - I rewrited app for webpack but unit test didnt touched yet
+ - **unit test** need to rewrite - I rewrited app for webpack but unit test didnt touched yet
+ - **authorization**
  - 
 
 
