@@ -62,83 +62,83 @@
 
 	__webpack_require__(48);
 
-	var _routes = __webpack_require__(51);
+	var _routes = __webpack_require__(52);
 
 	var _routes2 = _interopRequireDefault(_routes);
 
-	var _ServiceConfig = __webpack_require__(55);
+	var _ServiceConfig = __webpack_require__(56);
 
 	var _ServiceConfig2 = _interopRequireDefault(_ServiceConfig);
 
-	var _ServiceEvents = __webpack_require__(56);
+	var _ServiceEvents = __webpack_require__(57);
 
 	var _ServiceEvents2 = _interopRequireDefault(_ServiceEvents);
 
-	var _eventFocus = __webpack_require__(57);
+	var _eventFocus = __webpack_require__(58);
 
 	var _eventFocus2 = _interopRequireDefault(_eventFocus);
 
-	var _trTest = __webpack_require__(58);
+	var _trTest = __webpack_require__(59);
 
 	var _trTest2 = _interopRequireDefault(_trTest);
 
-	var _trBoard = __webpack_require__(61);
+	var _trBoard = __webpack_require__(62);
 
 	var _trBoard2 = _interopRequireDefault(_trBoard);
 
-	var _trBoardHeader = __webpack_require__(64);
+	var _trBoardHeader = __webpack_require__(65);
 
 	var _trBoardHeader2 = _interopRequireDefault(_trBoardHeader);
 
-	var _trBoards = __webpack_require__(67);
+	var _trBoards = __webpack_require__(68);
 
 	var _trBoards2 = _interopRequireDefault(_trBoards);
 
-	var _trCard = __webpack_require__(70);
+	var _trCard = __webpack_require__(71);
 
 	var _trCard2 = _interopRequireDefault(_trCard);
 
-	var _trFooter = __webpack_require__(76);
+	var _trFooter = __webpack_require__(77);
 
 	var _trFooter2 = _interopRequireDefault(_trFooter);
 
-	var _trHeader = __webpack_require__(79);
+	var _trHeader = __webpack_require__(80);
 
 	var _trHeader2 = _interopRequireDefault(_trHeader);
 
-	var _trIcon = __webpack_require__(82);
+	var _trIcon = __webpack_require__(83);
 
 	var _trIcon2 = _interopRequireDefault(_trIcon);
 
-	var _trList = __webpack_require__(85);
+	var _trList = __webpack_require__(86);
 
 	var _trList2 = _interopRequireDefault(_trList);
 
-	var _trLists = __webpack_require__(88);
+	var _trLists = __webpack_require__(89);
 
 	var _trLists2 = _interopRequireDefault(_trLists);
 
-	var _trNewBoard = __webpack_require__(91);
+	var _trNewBoard = __webpack_require__(92);
 
 	var _trNewBoard2 = _interopRequireDefault(_trNewBoard);
 
-	var _trNewCard = __webpack_require__(94);
+	var _trNewCard = __webpack_require__(95);
 
 	var _trNewCard2 = _interopRequireDefault(_trNewCard);
 
-	var _trNewComment = __webpack_require__(97);
+	var _trNewComment = __webpack_require__(98);
 
 	var _trNewComment2 = _interopRequireDefault(_trNewComment);
 
-	var _trNewList = __webpack_require__(100);
+	var _trNewList = __webpack_require__(101);
 
 	var _trNewList2 = _interopRequireDefault(_trNewList);
 
-	var _trComment = __webpack_require__(103);
+	var _trComment = __webpack_require__(104);
 
 	var _trComment2 = _interopRequireDefault(_trComment);
 
-	var _trComments = __webpack_require__(104);
+	var _trComments = __webpack_require__(107);
 
 	var _trComments2 = _interopRequireDefault(_trComments);
 
@@ -21214,7 +21214,8 @@
 /***/ },
 /* 49 */,
 /* 50 */,
-/* 51 */
+/* 51 */,
+/* 52 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -21239,40 +21240,40 @@
 	    });
 	};
 
-	var _boards = __webpack_require__(52);
+	var _boards = __webpack_require__(53);
 
 	var _boards2 = _interopRequireDefault(_boards);
 
-	var _board = __webpack_require__(53);
+	var _board = __webpack_require__(54);
 
 	var _board2 = _interopRequireDefault(_board);
 
-	var _test = __webpack_require__(54);
+	var _test = __webpack_require__(55);
 
 	var _test2 = _interopRequireDefault(_test);
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 /***/ },
-/* 52 */
+/* 53 */
 /***/ function(module, exports) {
 
 	module.exports = "<!--State Boards-->\n\n<tr-header></tr-header>\n<div class=\"container\">\n    <tr-boards></tr-boards>\n</div>\n<tr-footer></tr-footer>"
 
 /***/ },
-/* 53 */
+/* 54 */
 /***/ function(module, exports) {
 
 	module.exports = "<!--State Board-->\n<tr-header></tr-header>\n\n<div class=\"container\">\n    <tr-board-header></tr-board-header>\n    <tr-lists></tr-lists>\n</div>\n<tr-footer></tr-footer>"
 
 /***/ },
-/* 54 */
+/* 55 */
 /***/ function(module, exports) {
 
 	module.exports = "<h3>Test Page!!!!</h3>\n\n<hr/>\n    <div class=\"row\">\n        <tr-new-comment></tr-new-comment>\n    </div>\n<hr/>\n\n\n\n"
 
 /***/ },
-/* 55 */
+/* 56 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -21303,7 +21304,7 @@
 	exports.default = ServiceConfig;
 
 /***/ },
-/* 56 */
+/* 57 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -21354,7 +21355,7 @@
 	exports.default = ServiceEvents;
 
 /***/ },
-/* 57 */
+/* 58 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -21393,7 +21394,7 @@
 	}
 
 /***/ },
-/* 58 */
+/* 59 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -21402,11 +21403,11 @@
 	    value: true
 	});
 
-	var _testController = __webpack_require__(59);
+	var _testController = __webpack_require__(60);
 
 	var _testController2 = _interopRequireDefault(_testController);
 
-	var _test = __webpack_require__(60);
+	var _test = __webpack_require__(61);
 
 	var _test2 = _interopRequireDefault(_test);
 
@@ -21419,7 +21420,7 @@
 	};
 
 /***/ },
-/* 59 */
+/* 60 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -21437,13 +21438,13 @@
 	exports.default = TestController;
 
 /***/ },
-/* 60 */
+/* 61 */
 /***/ function(module, exports) {
 
 	module.exports = ""
 
 /***/ },
-/* 61 */
+/* 62 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -21452,11 +21453,11 @@
 	    value: true
 	});
 
-	var _boardController = __webpack_require__(62);
+	var _boardController = __webpack_require__(63);
 
 	var _boardController2 = _interopRequireDefault(_boardController);
 
-	var _board = __webpack_require__(63);
+	var _board = __webpack_require__(64);
 
 	var _board2 = _interopRequireDefault(_board);
 
@@ -21472,7 +21473,7 @@
 	};
 
 /***/ },
-/* 62 */
+/* 63 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -21521,13 +21522,13 @@
 	exports.default = BoardController;
 
 /***/ },
-/* 63 */
+/* 64 */
 /***/ function(module, exports) {
 
 	module.exports = "<div class=\"col-xs-12 col-sm-6 col-md-4\">\n    <div class=\"board\"\n         ng-class=\"{'board--starred': $ctrl.board.starred}\"\n         ng-click=\"$ctrl.goToBoard()\"\n        >\n        {{$ctrl.board.name}}\n\n        <!--Toggle starred btn-->\n        <span ng-click=\"$ctrl.toggleStarred(); $event.stopPropagation();\" class=\"board__star\">\n            <tr-icon ng-if=\"!$ctrl.board.starred\" icon=\"star-o\"></tr-icon>\n            <tr-icon ng-if=\"$ctrl.board.starred\" icon=\"star\"></tr-icon>\n        </span>\n\n        <!--Remove btn-->\n        <span ng-click=\"$ctrl.remove(); $event.stopPropagation();\" class=\"board__delete\">\n            <tr-icon icon=\"remove\"></tr-icon>\n        </span>\n    </div>\n</div>"
 
 /***/ },
-/* 64 */
+/* 65 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -21536,11 +21537,11 @@
 	    value: true
 	});
 
-	var _boardHeaderController = __webpack_require__(65);
+	var _boardHeaderController = __webpack_require__(66);
 
 	var _boardHeaderController2 = _interopRequireDefault(_boardHeaderController);
 
-	var _boardHeader = __webpack_require__(66);
+	var _boardHeader = __webpack_require__(67);
 
 	var _boardHeader2 = _interopRequireDefault(_boardHeader);
 
@@ -21553,7 +21554,7 @@
 	};
 
 /***/ },
-/* 65 */
+/* 66 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -21594,13 +21595,13 @@
 	exports.default = BoardHeaderController;
 
 /***/ },
-/* 66 */
+/* 67 */
 /***/ function(module, exports) {
 
 	module.exports = "<div class=\"row\">\n    <div class=\"col-xs-12\">\n        <button class=\"btn btn-sm btn-default\">{{$ctrl.board.name}}</button>\n    </div>\n</div>"
 
 /***/ },
-/* 67 */
+/* 68 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -21609,11 +21610,11 @@
 	    value: true
 	});
 
-	var _boardsController = __webpack_require__(68);
+	var _boardsController = __webpack_require__(69);
 
 	var _boardsController2 = _interopRequireDefault(_boardsController);
 
-	var _boards = __webpack_require__(69);
+	var _boards = __webpack_require__(70);
 
 	var _boards2 = _interopRequireDefault(_boards);
 
@@ -21626,7 +21627,7 @@
 	};
 
 /***/ },
-/* 68 */
+/* 69 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -21666,13 +21667,13 @@
 	exports.default = BoardsController;
 
 /***/ },
-/* 69 */
+/* 70 */
 /***/ function(module, exports) {
 
 	module.exports = "<!--Starred Board-->\n<div class=\"row\">\n    <div class=\"col-xs-12\">\n        <h3> <tr-icon icon=\"star\"></tr-icon> Starred Boards</h3>\n    </div>\n</div>\n<div class=\"row\">\n    <tr-board\n        ng-if=\"board.starred\"\n        ng-repeat=\"(boardKey, board) in $ctrl.boards\"\n        board=\"board\"\n        board-key=\"boardKey\"\n        >\n    </tr-board>\n</div>\n\n<!--My Boards-->\n<div class=\"row\">\n    <div class=\"col-xs-12\">\n        <h3> <tr-icon icon=\"user\"></tr-icon> My Boards</h3>\n    </div>\n</div>\n\n<div class=\"row\">\n    <tr-board\n        ng-repeat=\"(boardKey, board) in $ctrl.boards\"\n        board=\"board\"\n        board-key=\"boardKey\"\n        >\n    </tr-board>\n    <tr-new-board></tr-new-board>\n</div>"
 
 /***/ },
-/* 70 */
+/* 71 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -21681,11 +21682,11 @@
 	    value: true
 	});
 
-	var _cardController = __webpack_require__(71);
+	var _cardController = __webpack_require__(72);
 
 	var _cardController2 = _interopRequireDefault(_cardController);
 
-	var _card = __webpack_require__(75);
+	var _card = __webpack_require__(76);
 
 	var _card2 = _interopRequireDefault(_card);
 
@@ -21702,7 +21703,7 @@
 	};
 
 /***/ },
-/* 71 */
+/* 72 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -21713,15 +21714,15 @@
 
 	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-	var _EditedElementController = __webpack_require__(72);
+	var _EditedElementController = __webpack_require__(73);
 
 	var _EditedElementController2 = _interopRequireDefault(_EditedElementController);
 
-	var _cardModal = __webpack_require__(73);
+	var _cardModal = __webpack_require__(74);
 
 	var _cardModal2 = _interopRequireDefault(_cardModal);
 
-	var _cardModalController = __webpack_require__(74);
+	var _cardModalController = __webpack_require__(75);
 
 	var _cardModalController2 = _interopRequireDefault(_cardModalController);
 
@@ -21796,7 +21797,7 @@
 	exports.default = CardController;
 
 /***/ },
-/* 72 */
+/* 73 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -21866,13 +21867,13 @@
 	exports.default = EditedElementController;
 
 /***/ },
-/* 73 */
+/* 74 */
 /***/ function(module, exports) {
 
 	module.exports = "<!--Modal Body-->\n<div class=\"modal-body card-modal\">\n\n    <!--Modal Header-->\n    <div class=\"row\">\n        <div class=\"col-xs-11\">\n            <h3 class=\"modal-title\" card-modal__title>\n                <tr-icon icon=\"credit-card\"></tr-icon>\n                {{card.name}}\n            </h3>\n        </div>\n        <div class=\"col-xs-1 pull-right\">\n            <tr-icon ng-click=\"cancel()\" class=\"card-modal__close\" icon=\"remove\"></tr-icon>\n        </div>\n    </div>\n\n    <!--New Comment-->\n    <div class=\"row\">\n        <div class=\"col-xs-12\">\n            <tr-new-comment keys=\"keys\"></tr-new-comment>\n        </div>\n    </div>\n\n    <!--Comments-->\n    <div class=\"row\">\n        <div class=\"col-xs-12\">\n            <tr-comments keys=\"keys\"></tr-comments>\n        </div>\n    </div>\n\n</div>\n\n"
 
 /***/ },
-/* 74 */
+/* 75 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -21897,13 +21898,13 @@
 	exports.default = CardModalController;
 
 /***/ },
-/* 75 */
+/* 76 */
 /***/ function(module, exports) {
 
 	module.exports = "<div class=\"card\" ng-class=\"{'card--edited': $ctrl.isEdited}\">\n\n    <!--Card Not Edited State -->\n    <div ng-if=\"!$ctrl.isEdited\">\n        <div class=\"form-group\">\n            <!--Action Done-->\n            <tr-icon\n                icon=\"check\"\n                ng-click=\"$ctrl.markDone(); $event.preventDefault()\"\n                class=\"card__done-action\"\n                >\n            </tr-icon>\n\n            <!--Action Edit-->\n            <tr-icon\n                icon=\"edit\"\n                ng-click=\"$ctrl.startEdit()\"\n                event-focus=\"click\" event-focus-id=\"{{$ctrl.cardKey}}\"\n                class=\"card__edit-action\"\n                >\n            </tr-icon>\n\n            <!--Action Remove-->\n            <tr-icon\n                icon=\"remove\"\n                ng-click=\"$ctrl.remove(); $event.preventDefault();\"\n                class=\"card__remove-action\"\n                >\n            </tr-icon>\n\n            <div ng-click=\"$ctrl.showModal()\">\n                <input\n                        ng-model=\"$ctrl.card.name\"\n                        class=\"form-control input-sm card__input\"\n                        ng-class=\"{'card--done': $ctrl.card.isDone}\"\n                        type=\"text\"\n                        disabled\n                        />\n            </div>\n        </div>\n    </div>\n\n    <!--Card Edited State-->\n    <div ng-if=\"$ctrl.isEdited\">\n        <div class=\"form-group\">\n            <input\n                ng-model=\"$ctrl.card.name\"\n                class=\"form-control input-sm card__input\"\n                id=\"{{$ctrl.cardKey}}\"\n                type=\"text\"\n                />\n        </div>\n        <div class=\"form-group\">\n            <button ng-click=\"$ctrl.save()\" class=\"btn btn-success btn-sm\">Save</button>\n            <button ng-click=\"$ctrl.cancel()\" class=\"btn btn-default btn-sm\">Cancel</button>\n        </div>\n    </div>\n</div>"
 
 /***/ },
-/* 76 */
+/* 77 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -21912,11 +21913,11 @@
 	    value: true
 	});
 
-	var _footerController = __webpack_require__(77);
+	var _footerController = __webpack_require__(78);
 
 	var _footerController2 = _interopRequireDefault(_footerController);
 
-	var _footer = __webpack_require__(78);
+	var _footer = __webpack_require__(79);
 
 	var _footer2 = _interopRequireDefault(_footer);
 
@@ -21929,7 +21930,7 @@
 	};
 
 /***/ },
-/* 77 */
+/* 78 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -21947,13 +21948,13 @@
 	exports.default = FooterController;
 
 /***/ },
-/* 78 */
+/* 79 */
 /***/ function(module, exports) {
 
 	module.exports = "<div class=\"footer\">\n\n</div>"
 
 /***/ },
-/* 79 */
+/* 80 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -21962,11 +21963,11 @@
 	    value: true
 	});
 
-	var _header = __webpack_require__(80);
+	var _header = __webpack_require__(81);
 
 	var _header2 = _interopRequireDefault(_header);
 
-	var _headerController = __webpack_require__(81);
+	var _headerController = __webpack_require__(82);
 
 	var _headerController2 = _interopRequireDefault(_headerController);
 
@@ -21978,13 +21979,13 @@
 	};
 
 /***/ },
-/* 80 */
+/* 81 */
 /***/ function(module, exports) {
 
 	module.exports = "<nav class=\"navbar navbar-default navbar-static-top\">\n    <div class=\"container\">\n        <div class=\"navbar-header\">\n            <a class=\"navbar-brand\" href=\"#\">Trello</a>\n        </div>\n        <div id=\"navbar\" class=\"navbar-collapse collapse\">\n            <ul class=\"nav navbar-nav\">\n                <li><a href=\"#\">Boards</a></li>\n            </ul>\n            <ul class=\"nav navbar-nav navbar-right\">\n            </ul>\n        </div>\n    </div>\n</nav>"
 
 /***/ },
-/* 81 */
+/* 82 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -22002,7 +22003,7 @@
 	exports.default = HeaderController;
 
 /***/ },
-/* 82 */
+/* 83 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -22011,11 +22012,11 @@
 	    value: true
 	});
 
-	var _iconController = __webpack_require__(83);
+	var _iconController = __webpack_require__(84);
 
 	var _iconController2 = _interopRequireDefault(_iconController);
 
-	var _icon = __webpack_require__(84);
+	var _icon = __webpack_require__(85);
 
 	var _icon2 = _interopRequireDefault(_icon);
 
@@ -22030,7 +22031,7 @@
 	};
 
 /***/ },
-/* 83 */
+/* 84 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -22048,13 +22049,13 @@
 	exports.default = IconController;
 
 /***/ },
-/* 84 */
+/* 85 */
 /***/ function(module, exports) {
 
 	module.exports = "<i class=\"fa fa-{{$ctrl.icon}}\"></i>"
 
 /***/ },
-/* 85 */
+/* 86 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -22063,11 +22064,11 @@
 	    value: true
 	});
 
-	var _listController = __webpack_require__(86);
+	var _listController = __webpack_require__(87);
 
 	var _listController2 = _interopRequireDefault(_listController);
 
-	var _list = __webpack_require__(87);
+	var _list = __webpack_require__(88);
 
 	var _list2 = _interopRequireDefault(_list);
 
@@ -22083,7 +22084,7 @@
 	};
 
 /***/ },
-/* 86 */
+/* 87 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -22094,7 +22095,7 @@
 
 	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-	var _EditedElementController = __webpack_require__(72);
+	var _EditedElementController = __webpack_require__(73);
 
 	var _EditedElementController2 = _interopRequireDefault(_EditedElementController);
 
@@ -22194,13 +22195,13 @@
 	exports.default = ListController;
 
 /***/ },
-/* 87 */
+/* 88 */
 /***/ function(module, exports) {
 
 	module.exports = "<div class=\"list\" ng-class=\"{'list--edited': $ctrl.isEdited}\">\n    <!--List Header-->\n    <div class=\"list__header\" >\n        <!--Not Edited State-->\n        <div class=\"form-group\"\n             ng-if=\"!$ctrl.isEdited\"\n             ng-click=\"$ctrl.startEdit()\"\n             event-focus=\"click\" event-focus-id=\"{{$ctrl.inputId}}\"\n            >\n            <input type=\"text\" class=\"list__header_name form-control\" ng-model=\"$ctrl.list.name\" disabled/>\n            <!--TODO: MOve to component-->\n            <uib-progressbar class=\"progress\" value=\"$ctrl.progress\" type=\"success\"></uib-progressbar>\n        </div>\n\n        <!--Edited State-->\n        <div ng-if=\"$ctrl.isEdited\">\n            <div class=\"form-group\" >\n                <input type=\"text\" id=\"{{$ctrl.inputId}}\" class=\"list__header_name form-control\" ng-model=\"$ctrl.list.name\">\n            </div>\n            <div class=\"form-group\">\n                <button ng-click=\"$ctrl.save()\" class=\"btn btn-success btn-sm\">Save</button>\n                <button ng-click=\"$ctrl.cancel()\" class=\"btn btn-default btn-sm\">Cancel</button>\n            </div>\n        </div>\n\n        <!--List Delete-->\n        <span class=\"list__delete\" ng-click=\"$ctrl.removeList()\">\n            <tr-icon icon=\"remove\"></tr-icon>\n        </span>\n    </div>\n\n    <!--Cards-->\n    <tr-card\n        card=\"card\"\n        card-key=\"cardKey\"\n        list-key=\"$ctrl.listKey\"\n        ng-repeat=\"(cardKey, card) in $ctrl.cards\"\n        >\n    </tr-card>\n\n    <!--New Card-->\n    <tr-new-card list-key=\"$ctrl.listKey\"></tr-new-card>\n</div>"
 
 /***/ },
-/* 88 */
+/* 89 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -22209,11 +22210,11 @@
 	    value: true
 	});
 
-	var _listsController = __webpack_require__(89);
+	var _listsController = __webpack_require__(90);
 
 	var _listsController2 = _interopRequireDefault(_listsController);
 
-	var _lists = __webpack_require__(90);
+	var _lists = __webpack_require__(91);
 
 	var _lists2 = _interopRequireDefault(_lists);
 
@@ -22226,7 +22227,7 @@
 	};
 
 /***/ },
-/* 89 */
+/* 90 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -22267,13 +22268,13 @@
 	exports.default = ListsController;
 
 /***/ },
-/* 90 */
+/* 91 */
 /***/ function(module, exports) {
 
 	module.exports = "<div class=\"lists\">\n    <tr-list\n            ng-repeat=\"(listKey, list) in $ctrl.lists\"\n            list=\"list\"\n            list-key=\"listKey\"\n            >\n    </tr-list>\n    <tr-new-list></tr-new-list>\n</div>"
 
 /***/ },
-/* 91 */
+/* 92 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -22282,11 +22283,11 @@
 	    value: true
 	});
 
-	var _newBoardController = __webpack_require__(92);
+	var _newBoardController = __webpack_require__(93);
 
 	var _newBoardController2 = _interopRequireDefault(_newBoardController);
 
-	var _newBoard = __webpack_require__(93);
+	var _newBoard = __webpack_require__(94);
 
 	var _newBoard2 = _interopRequireDefault(_newBoard);
 
@@ -22299,7 +22300,7 @@
 	};
 
 /***/ },
-/* 92 */
+/* 93 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -22312,7 +22313,7 @@
 
 	var _get = function get(object, property, receiver) { if (object === null) object = Function.prototype; var desc = Object.getOwnPropertyDescriptor(object, property); if (desc === undefined) { var parent = Object.getPrototypeOf(object); if (parent === null) { return undefined; } else { return get(parent, property, receiver); } } else if ("value" in desc) { return desc.value; } else { var getter = desc.get; if (getter === undefined) { return undefined; } return getter.call(receiver); } };
 
-	var _EditedElementController = __webpack_require__(72);
+	var _EditedElementController = __webpack_require__(73);
 
 	var _EditedElementController2 = _interopRequireDefault(_EditedElementController);
 
@@ -22362,13 +22363,13 @@
 	exports.default = NewBoardController;
 
 /***/ },
-/* 93 */
+/* 94 */
 /***/ function(module, exports) {
 
 	module.exports = "<div class=\"col-xs-12 col-sm-6 col-md-4\">\n    <!--Not Editable State-->\n    <div\n        class=\"board board--new board--notediting\"\n        ng-click=\"$ctrl.startEdit()\"\n        event-focus=\"click\" event-focus-id=\"{{$ctrl.inputId}}\"\n        ng-if=\"!$ctrl.isEdited\"\n        >\n        <span class=\"board__name\">New Board</span>\n    </div>\n\n    <!--Editable State-->\n    <div ng-if=\"$ctrl.isEdited\" class=\"board board--new board--editing\">\n        <div class=\"form-group\">\n            <label class=\"control-label\" for=\"newBoardName\">Title</label>\n            <input\n                id=\"{{$ctrl.inputId}}\"\n                ng-model=\"$ctrl.boardName\"\n                class=\"form-control input-sm board_input\"\n                type=\"text\"\n                id=\"newBoardName\"\n                value=\"\"\n                />\n        </div>\n        <div class=\"form-group\">\n            <button ng-click=\"$ctrl.save()\" class=\"btn btn-success btn-sm\">Save</button>\n            <button ng-click=\"$ctrl.cancel()\" class=\"btn btn-default btn-sm\">Cancel</button>\n        </div>\n    </div>\n</div>"
 
 /***/ },
-/* 94 */
+/* 95 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -22377,11 +22378,11 @@
 	    value: true
 	});
 
-	var _newCard = __webpack_require__(95);
+	var _newCard = __webpack_require__(96);
 
 	var _newCard2 = _interopRequireDefault(_newCard);
 
-	var _newCardController = __webpack_require__(96);
+	var _newCardController = __webpack_require__(97);
 
 	var _newCardController2 = _interopRequireDefault(_newCardController);
 
@@ -22396,13 +22397,13 @@
 	};
 
 /***/ },
-/* 95 */
+/* 96 */
 /***/ function(module, exports) {
 
 	module.exports = "<div>\n    <!--Not Edited State-->\n    <div\n        ng-click=\"$ctrl.startEdit()\"\n        event-focus=\"click\" event-focus-id=\"{{$ctrl.inputId}}\"\n        ng-if=\"!$ctrl.isEdited\"\n        class=\"card card--new\"\n        >\n        <div class=\"card__name\">New Card...</div>\n    </div>\n\n    <!--Edited State-->\n    <div ng-if=\"$ctrl.isEdited\" class=\"card card--new\">\n        <div class=\"form-group\">\n            <input id=\"{{$ctrl.inputId}}\" ng-model=\"$ctrl.cardName\" class=\"form-control input-sm card__input\" type=\"text\" value=\"\"/>\n        </div>\n        <div class=\"form-group\">\n            <button ng-click=\"$ctrl.save()\" class=\"btn btn-success btn-sm\">Save</button>\n            <button ng-click=\"$ctrl.cancel()\" class=\"btn btn-default btn-sm\">Cancel</button>\n        </div>\n    </div>\n</div>"
 
 /***/ },
-/* 96 */
+/* 97 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -22415,7 +22416,7 @@
 
 	var _get = function get(object, property, receiver) { if (object === null) object = Function.prototype; var desc = Object.getOwnPropertyDescriptor(object, property); if (desc === undefined) { var parent = Object.getPrototypeOf(object); if (parent === null) { return undefined; } else { return get(parent, property, receiver); } } else if ("value" in desc) { return desc.value; } else { var getter = desc.get; if (getter === undefined) { return undefined; } return getter.call(receiver); } };
 
-	var _EditedElementController = __webpack_require__(72);
+	var _EditedElementController = __webpack_require__(73);
 
 	var _EditedElementController2 = _interopRequireDefault(_EditedElementController);
 
@@ -22467,7 +22468,7 @@
 	exports.default = NewCardController;
 
 /***/ },
-/* 97 */
+/* 98 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -22476,11 +22477,11 @@
 	    value: true
 	});
 
-	var _newComment = __webpack_require__(98);
+	var _newComment = __webpack_require__(99);
 
 	var _newComment2 = _interopRequireDefault(_newComment);
 
-	var _newCommentController = __webpack_require__(99);
+	var _newCommentController = __webpack_require__(100);
 
 	var _newCommentController2 = _interopRequireDefault(_newCommentController);
 
@@ -22495,13 +22496,13 @@
 	};
 
 /***/ },
-/* 98 */
+/* 99 */
 /***/ function(module, exports) {
 
 	module.exports = "<div class=\"comment\">\n    <div class=\"form-group\">\n        <label class=\"comment__header\" for=\"comment\">Comment</label>\n        <textarea ng-model=\"$ctrl.comment\" id=\"comment\" rows=\"2\" class=\"form-control\"></textarea>\n    </div>\n    <div class=\"form-group\">\n        <button ng-click=\"$ctrl.add()\" class=\"btn btn-sm btn-success\">Add</button>\n    </div>\n</div>\n"
 
 /***/ },
-/* 99 */
+/* 100 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -22545,7 +22546,7 @@
 	exports.default = NewCommentController;
 
 /***/ },
-/* 100 */
+/* 101 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -22554,11 +22555,11 @@
 	    value: true
 	});
 
-	var _newList = __webpack_require__(101);
+	var _newList = __webpack_require__(102);
 
 	var _newList2 = _interopRequireDefault(_newList);
 
-	var _newListController = __webpack_require__(102);
+	var _newListController = __webpack_require__(103);
 
 	var _newListController2 = _interopRequireDefault(_newListController);
 
@@ -22571,13 +22572,13 @@
 	};
 
 /***/ },
-/* 101 */
+/* 102 */
 /***/ function(module, exports) {
 
 	module.exports = "<!--Not Edited State-->\n<div\n    ng-click=\"$ctrl.startEdit()\"\n    event-focus=\"click\" event-focus-id=\"{{$ctrl.inputId}}\"\n    ng-if=\"!$ctrl.isEdited\"\n    class=\"list list--new\"\n    >\n    <span class=\"list__header_new_name\">New List</span>\n</div>\n\n<!--Edited State-->\n<div ng-if=\"$ctrl.isEdited\" class=\"list list--new\">\n    <div class=\"form-group\">\n        <label for=\"newListName\" class=\"control-label\">Title</label>\n        <input\n            id=\"{{$ctrl.inputId}}\"\n            ng-model=\"$ctrl.listName\"\n            class=\"form-control input-sm list__input\"\n            type=\"text\"\n            id=\"newListName\"\n            />\n    </div>\n    <div class=\"form-group\">\n        <button ng-click=\"$ctrl.save()\" class=\"btn btn-success btn-sm\">Save</button>\n        <button ng-click=\"$ctrl.cancel()\" class=\"btn btn-default btn-sm\">Cancel</button>\n    </div>\n</div>\n\n"
 
 /***/ },
-/* 102 */
+/* 103 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -22590,7 +22591,7 @@
 
 	var _get = function get(object, property, receiver) { if (object === null) object = Function.prototype; var desc = Object.getOwnPropertyDescriptor(object, property); if (desc === undefined) { var parent = Object.getPrototypeOf(object); if (parent === null) { return undefined; } else { return get(parent, property, receiver); } } else if ("value" in desc) { return desc.value; } else { var getter = desc.get; if (getter === undefined) { return undefined; } return getter.call(receiver); } };
 
-	var _EditedElementController = __webpack_require__(72);
+	var _EditedElementController = __webpack_require__(73);
 
 	var _EditedElementController2 = _interopRequireDefault(_EditedElementController);
 
@@ -22642,7 +22643,7 @@
 	exports.default = NewListController;
 
 /***/ },
-/* 103 */
+/* 104 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -22651,11 +22652,11 @@
 	    value: true
 	});
 
-	var _comment = __webpack_require__(108);
+	var _comment = __webpack_require__(105);
 
 	var _comment2 = _interopRequireDefault(_comment);
 
-	var _commentController = __webpack_require__(109);
+	var _commentController = __webpack_require__(106);
 
 	var _commentController2 = _interopRequireDefault(_commentController);
 
@@ -22672,7 +22673,31 @@
 	};
 
 /***/ },
-/* 104 */
+/* 105 */
+/***/ function(module, exports) {
+
+	module.exports = "<div>{{$ctrl.comment.name}}</div>"
+
+/***/ },
+/* 106 */
+/***/ function(module, exports) {
+
+	"use strict";
+
+	Object.defineProperty(exports, "__esModule", {
+	    value: true
+	});
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	var CommentController = function CommentController() {
+	    _classCallCheck(this, CommentController);
+	};
+
+	exports.default = CommentController;
+
+/***/ },
+/* 107 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -22681,11 +22706,11 @@
 	    value: true
 	});
 
-	var _comments = __webpack_require__(105);
+	var _comments = __webpack_require__(108);
 
 	var _comments2 = _interopRequireDefault(_comments);
 
-	var _commentsController = __webpack_require__(106);
+	var _commentsController = __webpack_require__(109);
 
 	var _commentsController2 = _interopRequireDefault(_commentsController);
 
@@ -22700,13 +22725,13 @@
 	};
 
 /***/ },
-/* 105 */
+/* 108 */
 /***/ function(module, exports) {
 
 	module.exports = "<div class=\"comments\">\n    <!--Header-->\n    <div class=\"comments__header\">Comments</div>\n    <div class=\"comments__body\">\n        <tr-comment\n            ng-repeat=\"(commentKey, comment) in $ctrl.comments\"\n            keys=\"$ctrl.keys\"\n            commentKey=\"commentKey\"\n            comment=\"comment\"\n            >\n        </tr-comment>\n    </div>\n</div>\n\n"
 
 /***/ },
-/* 106 */
+/* 109 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -22745,31 +22770,6 @@
 	}();
 
 	exports.default = CommentsController;
-
-/***/ },
-/* 107 */,
-/* 108 */
-/***/ function(module, exports) {
-
-	module.exports = "<div>{{$ctrl.comment.name}}</div>"
-
-/***/ },
-/* 109 */
-/***/ function(module, exports) {
-
-	"use strict";
-
-	Object.defineProperty(exports, "__esModule", {
-	    value: true
-	});
-
-	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-	var CommentController = function CommentController() {
-	    _classCallCheck(this, CommentController);
-	};
-
-	exports.default = CommentController;
 
 /***/ }
 /******/ ]);
